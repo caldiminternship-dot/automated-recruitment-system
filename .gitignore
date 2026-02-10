@@ -4,3 +4,4 @@ backend/venv
 backend/__pycache__
 frontend/__pycache__
 frontend/.next
+ai_hr_react_and_flask/
