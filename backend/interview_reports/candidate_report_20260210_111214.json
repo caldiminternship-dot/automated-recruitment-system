@@ -1,0 +1,184 @@
+{
+  "report_id": "INT20260210111214",
+  "timestamp": "2026-02-10T11:12:14.443726",
+  "display_date": "2026-02-10 11:12:14",
+  "candidate_profile": {
+    "skills": [
+      "data"
+    ],
+    "primary_skill": "data",
+    "experience": "mid",
+    "intro_score": 0
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the difference between a star schema and a snowflake schema in data warehousing, and when would you choose to use each?",
+      "answer": "What is the difference between a star schema and a snowflake schema in data warehousing, and when would you choose to use each?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's knowledge of data warehousing concepts."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 1,
+      "question_type": "technical"
+    },
+    {
+      "question": "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?",
+      "answer": "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should provide a clear explanation of data lake architecture, its key components, and how it differs from traditional data warehousing approaches, including technical terms, examples, and real-world applications. This answer falls far short of those expectations."
+        ]
+      },
+      "score": 1.1,
+      "question_number": 2,
+      "question_type": "technical"
+    },
+    {
+      "question": "Suppose you have a dataset with 10 million rows and 20 columns, and you need to perform frequent aggregations on a subset of the data. How would you design a database schema to optimize query performance, and what indexing strategies would you use?",
+      "answer": "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?",
+      "evaluation": {
+        "technical_accuracy": 2.5,
+        "completeness": 1,
+        "clarity": 4.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.9,
+        "strengths": [
+          "The answer attempts to introduce a relevant concept in data management, which is the data lake architecture."
+        ],
+        "weaknesses": [
+          "The answer completely fails to address the question, lacks technical details, and does not provide any examples or practical applications, resulting in a very low overall score.",
+          "Note: The answer does not address the question at all. It seems like the candidate got confused or did not understand the question. A good answer should have discussed database schema design, indexing strategies, and possibly data partitioning to optimize query performance for frequent aggregations on a large dataset."
+        ]
+      },
+      "score": 1.9,
+      "question_number": 3,
+      "question_type": "technical"
+    },
+    {
+      "question": "You are tasked with building a data pipeline to ingest log data from a web application. The log data is currently stored in a JSON format, and you need to transform it into a structured format for analysis. How would you design the pipeline, and what tools or technologies would you use?",
+      "answer": "You are tasked with building a data pipeline to ingest log data from a web application. The log data is currently stored in a JSON format, and you need to transform it into a structured format for analysis. How would you design the pipeline, and what tools or technologies would you use?",
+      "evaluation": {
+        "technical_accuracy": 0.5,
+        "completeness": 0.0,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding and failure to provide any relevant information. The answer does not demonstrate any technical knowledge, does not address the question, and lacks clarity, depth, and practicality.",
+          "Note: The answer provided does not meet the minimum requirements for a technical interview answer. A good answer should provide a clear and concise design for the data pipeline, including the tools and technologies used, and demonstrate a deep understanding of the subject matter."
+        ]
+      },
+      "score": 0.1,
+      "question_number": 4,
+      "question_type": "technical"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?\n",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer is essentially blank, as it only repeats the question. A good answer should provide a specific example from the candidate's experience, explain the challenge, and describe the steps taken to resolve it, demonstrating technical skills, problem-solving abilities, and communication skills."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 5,
+      "question_type": "behavioral"
+    }
+  ],
+  "questions_asked": [
+    "What is the difference between a star schema and a snowflake schema in data warehousing, and when would you choose to use each?",
+    "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?",
+    "Suppose you have a dataset with 10 million rows and 20 columns, and you need to perform frequent aggregations on a subset of the data. How would you design a database schema to optimize query performance, and what indexing strategies would you use?",
+    "You are tasked with building a data pipeline to ingest log data from a web application. The log data is currently stored in a JSON format, and you need to transform it into a structured format for analysis. How would you design the pipeline, and what tools or technologies would you use?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.02,
+  "final_score": 1.02,
+  "introduction_analyzed": false,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interview initialized for Senior Backend Developer",
+      "timestamp": "2026-02-10 05:41:35.130731"
+    },
+    {
+      "role": "system",
+      "content": "Question: What is the difference between a star schema and a snowflake schema in data warehousing, and when would you choose to use each?"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the difference between a star schema and a snowflake schema in data warehousing, and when would you choose to use each?"
+    },
+    {
+      "role": "system",
+      "content": "Question: Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?"
+    },
+    {
+      "role": "candidate",
+      "content": "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?"
+    },
+    {
+      "role": "system",
+      "content": "Question: Suppose you have a dataset with 10 million rows and 20 columns, and you need to perform frequent aggregations on a subset of the data. How would you design a database schema to optimize query performance, and what indexing strategies would you use?"
+    },
+    {
+      "role": "candidate",
+      "content": "Can you explain the concept of data lake architecture and how it differs from traditional data warehousing approaches?"
+    },
+    {
+      "role": "system",
+      "content": "Question: You are tasked with building a data pipeline to ingest log data from a web application. The log data is currently stored in a JSON format, and you need to transform it into a structured format for analysis. How would you design the pipeline, and what tools or technologies would you use?"
+    },
+    {
+      "role": "candidate",
+      "content": "You are tasked with building a data pipeline to ingest log data from a web application. The log data is currently stored in a JSON format, and you need to transform it into a structured format for analysis. How would you design the pipeline, and what tools or technologies would you use?"
+    },
+    {
+      "role": "system",
+      "content": "Question: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-10 11:12:14"
+}
