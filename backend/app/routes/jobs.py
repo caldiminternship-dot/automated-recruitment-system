@@ -155,12 +155,42 @@ def delete_job(
             detail="You can only delete your own job postings"
         )
     
-    # Delete the job
+    # Delete the job (and associated data manually to ensure cascade)
     try:
+        # Fetch all applications for this job
+        applications = db.query(Application).filter(Application.job_id == job_id).all()
+        
+        for app in applications:
+            # Delete related data for each application
+            # Interviews
+            if app.interview:
+                # Delete interview questions and answers (if cascade doesn't handle it)
+                for question in app.interview.questions:
+                    for answer in question.answers:
+                        db.delete(answer)
+                    db.delete(question)
+                if app.interview.report:
+                    db.delete(app.interview.report)
+                db.delete(app.interview)
+            
+            # Resume Extraction
+            if app.resume_extraction:
+                db.delete(app.resume_extraction)
+                
+            # Hiring Decision
+            if app.hiring_decision:
+                db.delete(app.hiring_decision)
+            
+            # Finally delete the application
+            db.delete(app)
+            
+        # Delete the job
         db.delete(job)
         db.commit()
     except Exception as e:
         print(f"Error deleting job: {e}")
+        import traceback
+        traceback.print_exc()
         db.rollback()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

@@ -5,6 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { APIClient } from '@/lib/api-client'
 import { useRouter } from 'next/navigation'
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
     interface Job {
     id: number
@@ -22,6 +25,7 @@ export default function CandidateJobsPage() {
     const [jobs, setJobs] = useState<Job[]>([])
     const [error, setError] = useState('')
     const [selectedJobId, setSelectedJobId] = useState<number | null>(null)
+    const [viewJob, setViewJob] = useState<Job | null>(null)
     const [isLoading, setIsLoading] = useState(true)
 
     // Application Form State
@@ -210,11 +214,121 @@ export default function CandidateJobsPage() {
                                 >
                                     {job.is_applied ? 'Applied' : 'Apply Now'}
                                 </Button>
+                                <Button
+                                    variant="outline"
+                                    className="w-full mt-2"
+                                    onClick={() => setViewJob(job)}
+                                >
+                                    View Details
+                                </Button>
                             </CardContent>
                         </Card>
                     ))}
                 </div>
             )}
+            {/* Application Dialog */}
+            <Dialog open={!!selectedJobId} onOpenChange={(open) => !open && setSelectedJobId(null)}>
+                <DialogContent className="sm:max-w-md bg-white">
+                    <DialogHeader>
+                        <DialogTitle>Apply for Job</DialogTitle>
+                        <DialogDescription>
+                            Upload your resume to apply for this position.
+                        </DialogDescription>
+                    </DialogHeader>
+                    <form onSubmit={handleSubmitApplication}>
+                        <div className="grid gap-4 py-4">
+                            <div className="grid gap-2">
+                                <Label htmlFor="resume">Resume (PDF/DOCX)</Label>
+                                <Input
+                                    id="resume"
+                                    type="file"
+                                    accept=".pdf,.doc,.docx"
+                                    onChange={handleFileChange}
+                                    required
+                                />
+                            </div>
+                            {error && (
+                                <p className="text-sm text-red-500 font-medium">{error}</p>
+                            )}
+                        </div>
+                        <DialogFooter>
+                            <Button
+                                type="button"
+                                variant="outline"
+                                onClick={() => setSelectedJobId(null)}
+                                disabled={isApplying}
+                            >
+                                Cancel
+                            </Button>
+                            <Button type="submit" disabled={isApplying || !resumeFile}>
+                                {isApplying ? (
+                                    <>
+                                        <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                                        Submitting...
+                                    </>
+                                ) : (
+                                    'Submit Application'
+                                )}
+                            </Button>
+                        </DialogFooter>
+                    </form>
+                </DialogContent>
+            </Dialog>
+
+            {/* View Job Details Dialog */}
+            <Dialog open={!!viewJob} onOpenChange={(open) => !open && setViewJob(null)}>
+                <DialogContent className="sm:max-w-2xl bg-white max-h-[90vh] overflow-y-auto">
+                    <DialogHeader>
+                        <DialogTitle className="text-2xl font-bold">{viewJob?.title}</DialogTitle>
+                        <DialogDescription className="text-base mt-2">
+                            {viewJob?.experience_level.replace('_', ' ').toUpperCase()} • {viewJob?.status.toUpperCase()}
+                        </DialogDescription>
+                    </DialogHeader>
+                    
+                    <div className="space-y-6 py-4">
+                        <div>
+                            <h4 className="text-sm font-semibold text-gray-900 mb-2">Job Description</h4>
+                            <div className="text-gray-700 whitespace-pre-wrap leading-relaxed">
+                                {viewJob?.description}
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 className="text-sm font-semibold text-gray-900 mb-2">Required Skills</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {viewJob?.required_skills.split(',').map((skill, i) => (
+                                    <span key={i} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
+                                        {skill.trim()}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="text-sm text-gray-500 pt-4 border-t">
+                            Posted on {viewJob ? new Date(viewJob.created_at).toLocaleDateString() : ''}
+                        </div>
+                    </div>
+
+                    <DialogFooter className="gap-2 sm:gap-0">
+                        <Button variant="outline" onClick={() => setViewJob(null)}>
+                            Close
+                        </Button>
+                        {!viewJob?.is_applied && (
+                            <Button 
+                                className="bg-slate-900 text-white hover:bg-slate-800"
+                                onClick={() => {
+                                    if (viewJob) {
+                                        handleApplyClick(viewJob.id)
+                                        setViewJob(null)
+                                    }
+                                }}
+                            >
+                                Apply Now
+                            </Button>
+                        )}
+                    </DialogFooter>
+                </DialogContent>
+            </Dialog>
         </div>
     )
 }

@@ -40,7 +40,7 @@ class ReportManager:
         user_id = session_state.get('user_id')
         if user_id:
             try:
-                from models import SessionLocal, Report
+                from app.models import SessionLocal, Report
                 db = SessionLocal()
                 new_report = Report(
                     user_id=user_id,

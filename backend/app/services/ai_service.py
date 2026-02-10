@@ -220,15 +220,7 @@ async def generate_domain_questions(skill_category: str, candidate_level: str = 
     # question_gen returns a list of strings
     return await run_sync(question_gen.generate_initial_skill_questions, skill_category, candidate_level)
 
-async def generate_initial_interview_question(resume_text: str, job_title: str, required_skills: str, candidate_name: str) -> dict:
-    """
-    Hybrid: Use QuestionGenerator for the text, return dict for API compatibility.
-    """
-    question_text = await run_sync(question_gen.generate_general_intro_question)
-    return {
-        "question_text": question_text,
-        "question_type": "behavioral"
-    }
+
 
 async def generate_adaptive_interview_question(previous_answer: str, previous_question: str, interview_history: list, job_title: str, required_skills: str, candidate_skills: list, current_question_number: int) -> dict:
     """

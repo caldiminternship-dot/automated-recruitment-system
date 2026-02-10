@@ -1,4 +1,7 @@
-from config import SKILL_CATEGORIES
+try:
+    from .config import SKILL_CATEGORIES
+except ImportError:
+    from config import SKILL_CATEGORIES
 
 def map_skills_to_category(detected_skills: list[str]) -> str:
     scores = {cat: 0 for cat in SKILL_CATEGORIES}

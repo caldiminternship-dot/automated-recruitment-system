@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260210114000",
+  "timestamp": "2026-02-10T11:40:00.467154",
+  "display_date": "2026-02-10 11:40:00",
+  "candidate_profile": {
+    "skills": [
+      "backend"
+    ],
+    "primary_skill": "backend",
+    "experience": "mid",
+    "intro_score": 0
+  },
+  "question_evaluations": [
+    {
+      "question": "**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?",
+      "answer": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n`",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely empty and does not provide any information or explanation about the differences in async/await implementation between Python and Java, making it impossible to evaluate its technical merits.",
+          "Note: The response does not contain any content, so it's not possible to assess its technical accuracy, completeness, clarity, depth, or practicality. The ideal answer should provide a clear comparison of async/await in Python and Java, including examples and explanations of how these implementations impact performance and readability."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 1,
+      "question_type": "technical"
+    },
+    {
+      "question": "**Database Indexing**: What are the differences between B-Tree indexing and Hash indexing in databases? How do these indexing strategies impact query performance, and when would you choose to use each?",
+      "answer": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer does not address the question about database indexing, instead it appears to be a question about async/await in Python and Java. The response is also extremely brief and lacks any technical information or examples.",
+          "Note: The answer provided does not address the question asked, so it is not possible to evaluate it based on the content. A proper answer should discuss the differences between B-Tree indexing and Hash indexing, their impact on query performance, and provide examples or scenarios where each indexing strategy would be chosen."
+        ]
+      },
+      "score": 0.2,
+      "question_number": 2,
+      "question_type": "technical"
+    },
+    {
+      "question": "**Node.js Clustering**: Write a simple Node.js application that uses the cluster module to create multiple worker processes. How would you handle load balancing and communication between these worker processes? What are the benefits and challenges of using clustering in a production environment?",
+      "answer": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n\n",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer does not address the question at all, it seems to be a mix of the question and another unrelated question, and it lacks any technical information or explanation.",
+          "Note: The answer provided does not address the question about Node.js clustering, but instead seems to be a jumbled mix of the question and another unrelated question about async/await in Python and Java. A good answer should provide a clear and concise explanation of how to use the cluster module in Node.js, handle load balancing and communication between worker processes, and discuss the benefits and challenges of using clustering in a production environment.",
+          "A correct answer might look something like this:",
+          "Node.js provides a built-in module called 'cluster' that allows you to create multiple worker processes. To handle load balancing, you can use the cluster module's built-in load balancing features, such as the 'round-robin' approach. For communication between worker processes, you can use the 'worker.send()' and 'worker.on('message')' methods. The benefits of using clustering include improved"
+        ]
+      },
+      "score": 0.2,
+      "question_number": 3,
+      "question_type": "technical"
+    },
+    {
+      "question": "**Go Concurrency**: Write a Go program that uses goroutines and channels to perform concurrent execution of tasks. How would you handle errors and exceptions in this concurrent program, and what are some best practices for debugging goroutine-related issues?",
+      "answer": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n\n",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer does not address the question at all, it appears to be a completely unrelated response. The answer lacks technical terms, examples, structure, and organization.",
+          "Note: The answer provided does not address the question about Go Concurrency, instead, it seems to be a question or topic related to a different programming concept (Async/Await in Python vs Java). A proper answer should provide a Go program that uses goroutines and channels, discuss error handling, and provide best practices for debugging goroutine-related issues."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 4,
+      "question_type": "technical"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The response does not address the question at all, lacks technical terms, examples, and has a poor structure and organization. The word count is also extremely low, indicating a lack of effort to provide a meaningful answer.",
+          "Note: The provided answer seems to be a question itself and does not address the initial question about facing an unexpected challenge at work. It appears to be a different question about async/await in Python and Java."
+        ]
+      },
+      "score": 0.2,
+      "question_number": 5,
+      "question_type": "behavioral"
+    }
+  ],
+  "questions_asked": [
+    "**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?",
+    "**Database Indexing**: What are the differences between B-Tree indexing and Hash indexing in databases? How do these indexing strategies impact query performance, and when would you choose to use each?",
+    "**Node.js Clustering**: Write a simple Node.js application that uses the cluster module to create multiple worker processes. How would you handle load balancing and communication between these worker processes? What are the benefits and challenges of using clustering in a production environment?",
+    "**Go Concurrency**: Write a Go program that uses goroutines and channels to perform concurrent execution of tasks. How would you handle errors and exceptions in this concurrent program, and what are some best practices for debugging goroutine-related issues?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.52,
+  "final_score": 0.52,
+  "introduction_analyzed": false,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interview initialized for Tekla Modeler",
+      "timestamp": "2026-02-10 06:08:58.407849"
+    },
+    {
+      "role": "system",
+      "content": "Question: **Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?"
+    },
+    {
+      "role": "candidate",
+      "content": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n`"
+    },
+    {
+      "role": "system",
+      "content": "Question: **Database Indexing**: What are the differences between B-Tree indexing and Hash indexing in databases? How do these indexing strategies impact query performance, and when would you choose to use each?"
+    },
+    {
+      "role": "candidate",
+      "content": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n"
+    },
+    {
+      "role": "system",
+      "content": "Question: **Node.js Clustering**: Write a simple Node.js application that uses the cluster module to create multiple worker processes. How would you handle load balancing and communication between these worker processes? What are the benefits and challenges of using clustering in a production environment?"
+    },
+    {
+      "role": "candidate",
+      "content": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n\n"
+    },
+    {
+      "role": "system",
+      "content": "Question: **Go Concurrency**: Write a Go program that uses goroutines and channels to perform concurrent execution of tasks. How would you handle errors and exceptions in this concurrent program, and what are some best practices for debugging goroutine-related issues?"
+    },
+    {
+      "role": "candidate",
+      "content": "\nCurrent Question\n\n**Async/Await in Python vs Java**: Can you explain the differences in how async/await is implemented in Python (using asyncio) versus Java (using Project Loom or CompletableFuture)? How do these implementations impact the performance and readability of your code?\nYour Response\n\n"
+    },
+    {
+      "role": "system",
+      "content": "Question: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-10 11:40:00"
+}

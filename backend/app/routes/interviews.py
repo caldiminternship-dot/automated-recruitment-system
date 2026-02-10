@@ -11,7 +11,6 @@ from app.schemas import (
 )
 from app.auth import get_current_user, get_current_candidate, get_current_hr
 from app.services.ai_service import (
-    generate_initial_interview_question,
     generate_adaptive_interview_question,
     evaluate_interview_answer,
     generate_interview_report,

@@ -37,7 +37,7 @@ class Job(Base):
     
     # Relationships
     hr = relationship("User", back_populates="jobs")
-    applications = relationship("Application", back_populates="job")
+    applications = relationship("Application", back_populates="job", cascade="all, delete-orphan")
 
 class Application(Base):
     __tablename__ = "applications"
@@ -58,9 +58,9 @@ class Application(Base):
     # Relationships
     job = relationship("Job", back_populates="applications")
     candidate = relationship("User", back_populates="applications")
-    resume_extraction = relationship("ResumeExtraction", back_populates="application", uselist=False)
-    interview = relationship("Interview", back_populates="application", uselist=False)
-    hiring_decision = relationship("HiringDecision", back_populates="application", uselist=False)
+    resume_extraction = relationship("ResumeExtraction", back_populates="application", uselist=False, cascade="all, delete-orphan")
+    interview = relationship("Interview", back_populates="application", uselist=False, cascade="all, delete-orphan")
+    hiring_decision = relationship("HiringDecision", back_populates="application", uselist=False, cascade="all, delete-orphan")
 
 class ResumeExtraction(Base):
     __tablename__ = "resume_extractions"
