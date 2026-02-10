@@ -43,7 +43,7 @@ export default function CandidateDashboard() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-            <h3 className="font-semibold text-blue-900 mb-2">Welcome to HireAI</h3>
+            <h3 className="font-semibold text-blue-900 mb-2">Welcome to Caldim Recruitment Portal</h3>
             <p className="text-blue-800 text-sm mb-4">
               Start by browsing available job opportunities and submit your application with your resume.
             </p>

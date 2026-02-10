@@ -44,7 +44,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 p-4">
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-blue-600 mb-2">HireAI</CardTitle>
+          <CardTitle className="text-3xl font-bold text-blue-600 mb-2">Caldim Recruitment Portal</CardTitle>
           <CardDescription>Sign in to your account</CardDescription>
         </CardHeader>
         <CardContent>

@@ -35,7 +35,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 max-w-7xl mx-auto">
-        <div className="text-2xl font-bold text-blue-600">HireAI</div>
+        <div className="text-2xl font-bold text-blue-600">Caldim Recruitment Portal</div>
         <div className="flex gap-4">
           {!isAuthenticated ? (
             <>
@@ -179,7 +179,7 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12 mt-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2024 HireAI. AI-powered recruitment platform for modern teams.
+            © 2026 Caldim Engineering. AI-powered recruitment platform for modern teams.
           </p>
         </div>
       </footer>
