@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260202173230",
+  "timestamp": "2026-02-02T17:32:30.918620",
+  "display_date": "2026-02-02 17:32:30",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the difference between a \"Managed\" and \"Unmanaged\" model in a BIM environment, and how does it impact the collaboration and data exchange between architects, engineers, and contractors in an AEC project?",
+      "answer": "What is the difference between a \"Managed\" and \"Unmanaged\" model in a BIM environment, and how does it impact the collaboration and data exchange between architects, engineers, and contractors in an AEC projec",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical information, and does not provide any relevant examples or explanations. It appears to be a repetition of the question rather than a response.",
+          "Note: The answer does not provide any meaningful information, and it seems like the candidate did not attempt to address the question. A good answer should provide a clear explanation of the differences between \"Managed\" and \"Unmanaged\" models in a BIM environment, their impact on collaboration and data exchange, and include relevant technical terms and examples."
+        ]
+      },
+      "timestamp": "17:32:03"
+    },
+    {
+      "question": "How does the concept of \"Level of Development\" (LOD) influence the creation and management of structural steel detailing models in Tekla, and what are the implications for downstream processes such as fabrication and construction?",
+      "answer": "How does the concept of \"Level of Development\" (LOD) influence the creation and management of structural steel detailing models in Tekla, and what are the implications for downstream processes such as fabrication and construction?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 1.0,
+        "overall": 0.4,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should provide a clear explanation of how the Level of Development (LOD) concept affects the creation and management of structural steel detailing models in Tekla, including its implications for downstream processes. It should demonstrate technical knowledge, provide relevant examples, and showcase a deep understanding of the subject matter."
+        ]
+      },
+      "timestamp": "17:32:09"
+    },
+    {
+      "question": "Suppose you are working on a large-scale commercial project, and you notice that the structural steel model in Tekla is not properly aligning with the architectural model in AutoCAD. What steps would you take to troubleshoot and resolve this issue, and what tools or features would you use to ensure accurate data exchange and model coordination?",
+      "answer": "Suppose you are working on a large-scale commercial project, and you notice that the structural steel model in Tekla is not properly aligning with the architectural model in AutoCAD. What steps would you take to troubleshoot and resolve this issue, and what tools or features would you use to ensure accurate data exchange and model coordination?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 0.0,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a complete lack of understanding or attempt to address the problem. The response does not provide any technical information, examples, or solutions to the issue presented.",
+          "Note: The answer does not meet any of the evaluation criteria, as it simply repeats the question without providing any meaningful content. A good answer should provide a step-by-step approach to troubleshooting and resolving the issue, including specific tools or features that would be used to ensure accurate data exchange and model coordination."
+        ]
+      },
+      "timestamp": "17:32:16"
+    },
+    {
+      "question": "Explain a core concept in aec_bim.",
+      "answer": "Explain a core concept in aec_bim.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any meaningful content, technical terms, examples, and structure, indicating a complete failure to address the question.",
+          "Note: The answer is essentially a repetition of the question, providing no value or insight into the topic of aec_bim. A good answer should include a clear explanation of a core concept in aec_bim, such as the importance of data exchange formats like IFC, the role of BIM in architectural, engineering, and construction projects, or the benefits of using aec_bim in design and construction workflows."
+        ]
+      },
+      "timestamp": "17:32:23"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or preparation to address the prompt. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet any of the evaluation criteria, as it simply restates the question without providing any meaningful content. A good answer should include a specific example from the candidate's experience, explain the challenge, the actions taken to resolve it, and the outcome, demonstrating technical accuracy, completeness, clarity, depth, and practicality."
+        ]
+      },
+      "timestamp": "17:32:30"
+    }
+  ],
+  "questions_asked": [
+    "What is the difference between a \"Managed\" and \"Unmanaged\" model in a BIM environment, and how does it impact the collaboration and data exchange between architects, engineers, and contractors in an AEC project?",
+    "How does the concept of \"Level of Development\" (LOD) influence the creation and management of structural steel detailing models in Tekla, and what are the implications for downstream processes such as fabrication and construction?",
+    "Suppose you are working on a large-scale commercial project, and you notice that the structural steel model in Tekla is not properly aligning with the architectural model in AutoCAD. What steps would you take to troubleshoot and resolve this issue, and what tools or features would you use to ensure accurate data exchange and model coordination?",
+    "Explain a core concept in aec_bim.",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.6799999999999999,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "17:31:45"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the difference between a \"Managed\" and \"Unmanaged\" model in a BIM environment, and how does it impact the collaboration and data exchange between architects, engineers, and contractors in an AEC projec",
+      "timestamp": "17:32:02"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "17:32:03"
+    },
+    {
+      "role": "candidate",
+      "content": "How does the concept of \"Level of Development\" (LOD) influence the creation and management of structural steel detailing models in Tekla, and what are the implications for downstream processes such as fabrication and construction?",
+      "timestamp": "17:32:08"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "17:32:09"
+    },
+    {
+      "role": "candidate",
+      "content": "Suppose you are working on a large-scale commercial project, and you notice that the structural steel model in Tekla is not properly aligning with the architectural model in AutoCAD. What steps would you take to troubleshoot and resolve this issue, and what tools or features would you use to ensure accurate data exchange and model coordination?",
+      "timestamp": "17:32:15"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "17:32:16"
+    },
+    {
+      "role": "candidate",
+      "content": "Explain a core concept in aec_bim.",
+      "timestamp": "17:32:21"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "17:32:23"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "17:32:29"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:44",
+  "analysis_date": "2026-02-02 17:32:30"
+}

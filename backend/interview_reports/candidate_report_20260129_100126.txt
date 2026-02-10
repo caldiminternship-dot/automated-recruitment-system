@@ -1,0 +1,32 @@
+======================================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+======================================================================
+
+Report ID: INT20260129100126
+Generated: 2026-01-29 10:01:26
+----------------------------------------------------------------------
+
+CANDIDATE SUMMARY
+----------------------------------------
+Experience Level: mid
+Primary Skill Area: backend
+Confidence Level: N/A
+Communication: N/A
+Introduction Score: 8/10
+Skills Identified: Python, Flask
+Questions Answered: 0
+Overall Score: 0.00/10
+Final Score: 0.00/10
+
+DETAILED QUESTION ANALYSIS
+----------------------------------------
+
+RECOMMENDATION
+----------------------------------------
+❌ NOT RECOMMENDED
+The candidate needs significant improvement in technical
+knowledge and communication skills.
+
+======================================================================
+END OF REPORT
+======================================================================

@@ -1,0 +1,136 @@
+{
+  "report_id": "INT20260123_120147",
+  "timestamp": "2026-01-23T12:01:47.845161",
+  "display_date": "2026-01-23 12:01:47",
+  "candidate_profile": {
+    "skills": [
+      "flutter",
+      "android",
+      "ios"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "mobile",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 5
+  },
+  "question_evaluations": [
+    {
+      "question": "Explain a core concept in mobile.",
+      "answer": "geqrg gregher gerhgreg reghq rgh erhqer qerhg",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None. The answer appears to be random keystrokes or \"gibberish\" and contains no discernible technical content."
+        ],
+        "weaknesses": [
+          "Fails to address the question entirely. The response is incoherent, lacks any technical terms, examples, or structure, and is far below the ideal word count."
+        ]
+      },
+      "timestamp": "11:59:48"
+    },
+    {
+      "question": "Describe a real-world problem you solved using mobile.",
+      "answer": "rgerw gwergqrwg greqg gqergqer gqergeq",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None. The answer is completely unintelligible and fails to address the prompt in any meaningful way."
+        ],
+        "weaknesses": [
+          "The response consists of random characters and words, providing zero technical content, context, or structure. It does not describe a problem, a solution, or the use of mobile technology."
+        ]
+      },
+      "timestamp": "12:00:25"
+    },
+    {
+      "question": "What challenges do you face when working in mobile?",
+      "answer": "fdgrfa grwg greg rehg hqegr heq rheqrhg ergh erhg ewrhg erhg etrhgetr",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "The answer is extremely concise."
+        ],
+        "weaknesses": [
+          "The answer is completely incoherent and contains no technical content, examples, or structure. It fails to address the question in any meaningful way."
+        ]
+      },
+      "timestamp": "12:00:41"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "etfr e4tgwqreg grqgq grqeq greqg reqg",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None. The response is entirely nonsensical and does not contain any English words or meaningful data."
+        ],
+        "weaknesses": [
+          "The answer fails to address the behavioral question in any capacity. It contains no structure, no examples, and no technical content. It appears to be random keystrokes or gibberish."
+        ]
+      },
+      "timestamp": "12:01:37"
+    }
+  ],
+  "questions_asked": [
+    "Explain a core concept in mobile.",
+    "Describe a real-world problem you solved using mobile.",
+    "What challenges do you face when working in mobile?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 4,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "candidate",
+      "content": "I am expertise in Android , iOS and Flutter",
+      "timestamp": "11:57:54"
+    },
+    {
+      "role": "system",
+      "content": "🔒 Skill locked: **MOBILE**. Interview questions fixed.",
+      "timestamp": "11:58:12"
+    },
+    {
+      "role": "candidate",
+      "content": "geqrg gregher gerhgreg reghq rgh erhqer qerhg",
+      "timestamp": "11:59:28"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:59:48"
+    },
+    {
+      "role": "candidate",
+      "content": "rgerw gwergqrwg greqg gqergqer gqergeq",
+      "timestamp": "12:00:21"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false
+}

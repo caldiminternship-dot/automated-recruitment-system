@@ -1,0 +1,6 @@
+type object 'Job' has no attribute 'is_active'
+Traceback (most recent call last):
+  File "D:\CALDIM\hr_rb\automated-recruitment-system\backend\app\routes\analytics.py", line 28, in get_dashboard_analytics
+    open_jobs_count = db.query(Job).filter(Job.is_active == True).count()
+                                           ^^^^^^^^^^^^^
+AttributeError: type object 'Job' has no attribute 'is_active'

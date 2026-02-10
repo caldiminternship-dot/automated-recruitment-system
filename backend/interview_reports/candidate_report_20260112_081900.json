@@ -1,0 +1,138 @@
+{
+  "report_id": "INT20260112_081900",
+  "timestamp": "2026-01-12T08:19:00.757475",
+  "display_date": "2026-01-12 08:19:00",
+  "candidate_profile": {
+    "skills": [
+      "aws",
+      "docker",
+      "kubernetes"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "devops",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 4
+  },
+  "question_evaluations": [
+    {
+      "question": "Explain a core concept in devops.",
+      "answer": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "evaluation": {
+        "technical_accuracy": 9.5,
+        "completeness": 8.0,
+        "clarity": 9.0,
+        "depth": 8.0,
+        "practicality": 10.0,
+        "overall": 8.9,
+        "strengths": [
+          "- **Practicality**: The answer is grounded in a realistic, high-stakes scenario (impending client demo) that demonstrates genuine operational experience.",
+          "- **Clarity**: The narrative follows a logical, chronological flow (problem → action → resolution → prevention) that is easy to follow."
+        ],
+        "weaknesses": [
+          "- **Completeness**: The answer is a narrative about *incident management* rather than an *explanation* of a core DevOps concept (like CI/CD, IaC, or observability). While the concepts are implied, the answer doesn't explicitly define or explain them.",
+          "- **Depth**: It lacks specific technical details (e.g., the specific database technology, the exact query optimization technique, or the specific monitoring tools used), which would have elevated the technical credibility."
+        ]
+      },
+      "timestamp": "08:18:04"
+    },
+    {
+      "question": "Describe a real-world problem you solved using devops.",
+      "answer": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "evaluation": {
+        "technical_accuracy": 10,
+        "completeness": 9.0,
+        "clarity": 9.0,
+        "depth": 7.0,
+        "practicality": 9.0,
+        "overall": 8.8,
+        "strengths": [
+          "Excellent structure using the STAR method (Situation, Task, Action, Result) and strong command of technical terms (rollback, indexing, monitoring alerts). It demonstrates a mature, production-first mindset."
+        ],
+        "weaknesses": [
+          "While the answer mentions \"DevOps,\" it leans heavily toward SRE/Operations. To improve, the candidate could briefly mention the CI/CD pipeline aspect (e.g., \"added a query linting step to the pipeline\") to show a more holistic DevOps approach."
+        ]
+      },
+      "timestamp": "08:18:16"
+    },
+    {
+      "question": "What challenges do you face when working in devops?",
+      "answer": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "evaluation": {
+        "technical_accuracy": 10,
+        "completeness": 10,
+        "clarity": 10.0,
+        "depth": 9.0,
+        "practicality": 10.0,
+        "overall": 9.8,
+        "strengths": [
+          "Excellent use of the STAR method (Situation, Task, Action, Result) to structure the answer; demonstrates a complete incident response lifecycle from detection to post-mortem."
+        ],
+        "weaknesses": [
+          "Could briefly mention specific tools used (e.g., \"using Datadog\" or \"via Jenkins\") to add more concrete context; the answer is slightly generic (database query issues are very common), though well-explained."
+        ]
+      },
+      "timestamp": "08:18:44"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "evaluation": {
+        "technical_accuracy": 10,
+        "completeness": 10,
+        "clarity": 10.0,
+        "depth": 9.0,
+        "practicality": 10.0,
+        "overall": 9.8,
+        "strengths": [
+          "Excellent structure (STAR method) and use of relevant technical terms (indexing, logs, metrics, monitoring). It demonstrates a complete and logical troubleshooting workflow."
+        ],
+        "weaknesses": [
+          "Could briefly mention the specific impact (e.g., \"latency increased by 200ms\") to add more quantitative context, though the qualitative description is strong."
+        ]
+      },
+      "timestamp": "08:18:53"
+    }
+  ],
+  "questions_asked": [
+    "Explain a core concept in devops.",
+    "Describe a real-world problem you solved using devops.",
+    "What challenges do you face when working in devops?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 9.325000000000001,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 4,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "candidate",
+      "content": "I am a AWS developer with Docker and Kubernetes",
+      "timestamp": "08:17:13"
+    },
+    {
+      "role": "system",
+      "content": "🔒 Skill locked: **DEVOPS**. Interview questions fixed.",
+      "timestamp": "08:17:20"
+    },
+    {
+      "role": "candidate",
+      "content": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "timestamp": "08:17:57"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "08:18:04"
+    },
+    {
+      "role": "candidate",
+      "content": "During one project, a production deployment unexpectedly caused a spike in API latency just hours before a client demo. I took ownership by immediately rolling back the release to stabilize the system, then analyzed logs and metrics to identify the root cause, which turned out to be an inefficient database query introduced in a recent feature. I coordinated with the team to optimize the query, added proper indexing, and introduced monitoring alerts to catch similar issues earlier. After validating the fix in staging, I redeployed with confidence and documented the incident and preventive steps, ensuring the team was better prepared for future releases.",
+      "timestamp": "08:18:12"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false
+}

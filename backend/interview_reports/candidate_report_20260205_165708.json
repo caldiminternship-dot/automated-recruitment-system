@@ -1,0 +1,504 @@
+{
+  "report_id": "INT20260205165708",
+  "timestamp": "2026-02-05T16:57:08.065129",
+  "display_date": "2026-02-05 16:57:08",
+  "candidate_profile": {
+    "skills": [
+      "Data",
+      "AutoCAD",
+      "Structural Steel Detailing",
+      "Shop Drawings",
+      "GA Drawings",
+      "UI"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 7
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the primary function of AutoCAD in the AEC/BIM industry?",
+      "answer": "What is the primary function of AutoCAD in the AEC/BIM industry?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to provide a meaningful response. The answer does not demonstrate any technical knowledge, completeness, clarity, depth, or practicality, and does not provide any examples or technical terms.",
+          "Note: The ideal answer should have provided a clear explanation of AutoCAD's primary function in the AEC/BIM industry, such as its role in creating and editing 2D and 3D models, facilitating collaboration and data exchange, and supporting various design and construction workflows. A well-structured answer would have included relevant technical terms, examples, and applications to demonstrate a deep understanding of the topic."
+        ]
+      },
+      "timestamp": "16:54:41"
+    },
+    {
+      "question": "What is Structural Steel Detailing and its importance in construction projects?",
+      "answer": "What is Structural Steel Detailing and its importance in construction projects?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative."
+        ]
+      },
+      "timestamp": "16:54:46"
+    },
+    {
+      "question": "What are GA Drawings and how are they used in the AEC/BIM industry?",
+      "answer": "What are GA Drawings and how are they used in the AEC/BIM industry?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should provide a clear definition of GA Drawings, explain their purpose and usage in the AEC/BIM industry, and possibly include examples or real-world applications. This answer falls significantly short of expectations."
+        ]
+      },
+      "timestamp": "16:54:56"
+    },
+    {
+      "question": "What is the purpose of Shop Drawings in the construction process?",
+      "answer": "What is the purpose of Shop Drawings in the construction process?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insights into the purpose of Shop Drawings in the construction process.",
+          "Note: The ideal answer should have provided a clear explanation of the purpose of Shop Drawings, which typically includes detailing the fabrication and installation of specific components, ensuring compliance with design specifications, and facilitating communication among stakeholders. The response should have demonstrated technical knowledge, organization, and the ability to convey complex information in a straightforward manner."
+        ]
+      },
+      "timestamp": "16:55:02"
+    },
+    {
+      "question": "What role does Data play in the AEC/BIM industry, specifically in Structural Steel Detailing?",
+      "answer": "What role does Data play in the AEC/BIM industry, specifically in Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided an explanation of how data is used in the AEC/BIM industry, specifically in Structural Steel Detailing, such as its role in designing, modeling, and analyzing structures, or how it is used to optimize construction processes and improve collaboration among stakeholders. The answer should have included technical terms, examples, and a clear structure to demonstrate a good understanding of the topic."
+        ]
+      },
+      "timestamp": "16:55:12"
+    },
+    {
+      "question": "How do you create a basic 2D drawing in AutoCAD for a structural steel detail?",
+      "answer": "How do you create a basic 2D drawing in AutoCAD for a structural steel detail?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not include any technical terms, examples, or structure, making it completely uninformative.",
+          "Note: The ideal answer should include steps to create a basic 2D drawing in AutoCAD, such as setting up a new drawing, using the LINE and CIRCLE commands to draw shapes, using the DIMENSION command to add dimensions, and using layers to organize the drawing. The answer should also include technical terms related to AutoCAD and structural steel details, and provide examples or real-world applications to demonstrate practicality."
+        ]
+      },
+      "timestamp": "16:55:17"
+    },
+    {
+      "question": "What are the key components of a Shop Drawing for a steel structure?",
+      "answer": "What are the key components of a Shop Drawing for a steel structure?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any knowledge of shop drawings for steel structures, which typically include components like detailed drawings of individual parts, assembly instructions, material specifications, and fabrication details. A satisfactory answer would have listed these components and possibly provided examples or explanations to support the response."
+        ]
+      },
+      "timestamp": "16:55:25"
+    },
+    {
+      "question": "How do you use AutoCAD to create a detailed GA Drawing for a building project?",
+      "answer": "How do you use AutoCAD to create a detailed GA Drawing for a building project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, provide examples, or show a clear structure, making it completely uninformative."
+        ]
+      },
+      "timestamp": "16:55:33"
+    },
+    {
+      "question": "What are the differences between a Shop Drawing and a GA Drawing in the AEC/BIM industry?",
+      "answer": "What are the differences between a Shop Drawing and a GA Drawing in the AEC/BIM industry?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insight into the differences between a Shop Drawing and a GA Drawing in the AEC/BIM industry.",
+          "Note: The answer does not demonstrate any knowledge or effort to answer the question, resulting in the lowest possible scores across all categories. A satisfactory answer would typically include explanations of what Shop Drawings and GA Drawings are, their purposes, and how they differ in terms of content, scope, and application within the AEC/BIM industry."
+        ]
+      },
+      "timestamp": "16:55:43"
+    },
+    {
+      "question": "Can you explain the process of creating a structural steel detail in AutoCAD from start to finish?",
+      "answer": "Can you explain the process of creating a structural steel detail in AutoCAD from start to finish?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet the minimum expectations for a technical interview response, as it does not demonstrate any knowledge or understanding of the topic. A good answer should provide a step-by-step explanation of the process, including technical terms, examples, and real-world applications, within the ideal word count range of 80-200 words."
+        ]
+      },
+      "timestamp": "16:55:50"
+    },
+    {
+      "question": "How do you ensure accuracy and precision when creating Shop Drawings for steel structures?",
+      "answer": "How do you ensure accuracy and precision when creating Shop Drawings for steel structures?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a repetition of the question, indicating a complete lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insight into ensuring accuracy and precision in creating Shop Drawings for steel structures.",
+          "Note: The response does not meet the minimum expectations for a technical interview answer, as it fails to provide any relevant information or demonstrate any knowledge of the subject matter. A satisfactory answer would typically include discussions on using precise measurements, following industry standards, utilizing software tools for drafting, and implementing quality control processes to ensure accuracy and precision in shop drawings."
+        ]
+      },
+      "timestamp": "16:55:57"
+    },
+    {
+      "question": "What are some common errors to avoid when creating GA Drawings in AutoCAD?",
+      "answer": "What are some common errors to avoid when creating GA Drawings in AutoCAD?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful.",
+          "Note: The answer does not demonstrate any knowledge of AutoCAD or GA Drawings, and it does not attempt to address the question in a meaningful way. A good answer would provide specific examples of common errors to avoid, such as incorrect scaling, insufficient detail, or poor layer management, and explain how to avoid or correct these errors."
+        ]
+      },
+      "timestamp": "16:56:04"
+    },
+    {
+      "question": "Can you describe a situation where you had to use Data to inform a design decision in a structural steel detailing project?",
+      "answer": "Can you describe a situation where you had to use Data to inform a design decision in a structural steel detailing project?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the prompt. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should provide a specific scenario where data was used to inform a design decision in a structural steel detailing project, including technical terms, examples, and a clear structure. This response fails to meet all expectations, resulting in the lowest possible scores."
+        ]
+      },
+      "timestamp": "16:56:21"
+    },
+    {
+      "question": "How do you organize and manage your work when creating multiple Shop Drawings for a large construction project?",
+      "answer": "How do you organize and manage your work when creating multiple Shop Drawings for a large construction project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, organization, or management skills related to creating Shop Drawings for a large construction project.",
+          "Note: The answer does not provide any useful information, and it seems like the candidate did not attempt to address the question. A good answer should include information about tools, methods, or strategies used to organize and manage work, such as utilizing project management software, creating a schedule, or implementing a quality control process."
+        ]
+      },
+      "timestamp": "16:56:27"
+    },
+    {
+      "question": "What are some best practices for creating clear and concise GA Drawings in AutoCAD?",
+      "answer": "What are some best practices for creating clear and concise GA Drawings in AutoCAD?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or best practices for creating clear and concise GA Drawings in AutoCAD.",
+          "Note: The ideal answer should provide specific best practices, such as using standardized layers, creating a consistent scale, and utilizing clear labeling and annotation, along with examples or real-world applications to demonstrate a deep understanding of the topic."
+        ]
+      },
+      "timestamp": "16:56:34"
+    },
+    {
+      "question": "Can you walk me through your process for reviewing and revising a Shop Drawing for a steel structure?",
+      "answer": "Can you walk me through your process for reviewing and revising a Shop Drawing for a steel structure?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, showing no understanding or attempt to address the query. It lacks any technical information, examples, or structure, making it an unsatisfactory response.",
+          "Note: The answer provided does not demonstrate any knowledge or effort to answer the question, resulting in the lowest possible scores across all categories. A satisfactory answer would involve a step-by-step explanation of the process for reviewing and revising a Shop Drawing for a steel structure, including technical terms, examples, and a clear structure."
+        ]
+      },
+      "timestamp": "16:56:41"
+    },
+    {
+      "question": "How do you handle changes or revisions to a structural steel detail in AutoCAD?",
+      "answer": "How do you handle changes or revisions to a structural steel detail in AutoCAD?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insight into handling changes or revisions to a structural steel detail in AutoCAD.",
+          "Note: The response does not meet the minimum expectations for a technical interview answer, as it fails to provide any relevant information or demonstrate knowledge of the topic. A suitable answer would discuss methods such as using AutoCAD's revision cloud tool, updating block attributes, or utilizing the \"Compare\" feature to identify changes between different versions of a drawing."
+        ]
+      },
+      "timestamp": "16:56:48"
+    },
+    {
+      "question": "Can you explain how you use UI elements in AutoCAD to enhance the usability of your drawings?",
+      "answer": "Can you explain how you use UI elements in AutoCAD to enhance the usability of your drawings?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the topic, and fails to provide any relevant information or examples.",
+          "Note: The answer does not demonstrate any technical knowledge, does not provide any examples, and lacks structure and organization. It is essentially a non-answer, which is why all scores are at the minimum."
+        ]
+      },
+      "timestamp": "16:56:54"
+    },
+    {
+      "question": "How do you collaborate with team members to ensure consistency in GA Drawings and Shop Drawings?",
+      "answer": "ow do you collaborate with team members to ensure consistency in GA Drawings and Shop Drawings?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer is extremely brief and does not address the question in any way, resulting in the lowest possible scores across all categories. A good answer should provide specific examples, technical terms, and a clear structure to demonstrate the candidate's understanding and experience in collaborating with team members to ensure consistency in GA Drawings and Shop Drawings."
+        ]
+      },
+      "timestamp": "16:57:00"
+    },
+    {
+      "question": "Can you describe a time when you had to communicate complex technical information to a non-technical team member in a construction project?",
+      "answer": "n you describe a time when you had to communicate complex technical information to a non-technical team member in a construction project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer does not provide any relevant information, lacks technical terms, examples, and a clear structure, and is extremely brief, failing to address the question in any meaningful way.",
+          "Note: The answer appears to be a repetition of the question itself, rather than a response. This suggests a lack of preparation or understanding of the topic, and is not a viable answer in a technical interview setting."
+        ]
+      },
+      "timestamp": "16:57:08"
+    }
+  ],
+  "questions_asked": [
+    "What is the primary function of AutoCAD in the AEC/BIM industry?",
+    "What is Structural Steel Detailing and its importance in construction projects?",
+    "What are GA Drawings and how are they used in the AEC/BIM industry?",
+    "What is the purpose of Shop Drawings in the construction process?",
+    "What role does Data play in the AEC/BIM industry, specifically in Structural Steel Detailing?",
+    "How do you create a basic 2D drawing in AutoCAD for a structural steel detail?",
+    "What are the key components of a Shop Drawing for a steel structure?",
+    "How do you use AutoCAD to create a detailed GA Drawing for a building project?",
+    "What are the differences between a Shop Drawing and a GA Drawing in the AEC/BIM industry?",
+    "Can you explain the process of creating a structural steel detail in AutoCAD from start to finish?",
+    "How do you ensure accuracy and precision when creating Shop Drawings for steel structures?",
+    "What are some common errors to avoid when creating GA Drawings in AutoCAD?",
+    "Can you describe a situation where you had to use Data to inform a design decision in a structural steel detailing project?",
+    "How do you organize and manage your work when creating multiple Shop Drawings for a large construction project?",
+    "What are some best practices for creating clear and concise GA Drawings in AutoCAD?",
+    "Can you walk me through your process for reviewing and revising a Shop Drawing for a steel structure?",
+    "How do you handle changes or revisions to a structural steel detail in AutoCAD?",
+    "Can you explain how you use UI elements in AutoCAD to enhance the usability of your drawings?",
+    "How do you collaborate with team members to ensure consistency in GA Drawings and Shop Drawings?",
+    "Can you describe a time when you had to communicate complex technical information to a non-technical team member in a construction project?"
+  ],
+  "overall_score": 1.0050000000000001,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 20,
+  "total_questions": 20,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Data, AutoCAD, Structural Steel Detailing, Shop Drawings, GA Drawings, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "16:54:32"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the primary function of AutoCAD in the AEC/BIM industry?",
+      "timestamp": "16:54:39"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:54:41"
+    },
+    {
+      "role": "candidate",
+      "content": "What is Structural Steel Detailing and its importance in construction projects?",
+      "timestamp": "16:54:45"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:54:46"
+    },
+    {
+      "role": "candidate",
+      "content": "What are GA Drawings and how are they used in the AEC/BIM industry?",
+      "timestamp": "16:54:55"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:54:56"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the purpose of Shop Drawings in the construction process?",
+      "timestamp": "16:55:01"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:55:02"
+    },
+    {
+      "role": "candidate",
+      "content": "What role does Data play in the AEC/BIM industry, specifically in Structural Steel Detailing?",
+      "timestamp": "16:55:10"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:02:35",
+  "analysis_date": "2026-02-05 16:57:08"
+}

@@ -1,0 +1,27 @@
+{
+  "report_id": "INT20260129100126",
+  "timestamp": "2026-01-29T10:01:26.388747",
+  "display_date": "2026-01-29 10:01:26",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Flask"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "backend",
+    "intro_score": 8
+  },
+  "question_evaluations": [],
+  "questions_asked": [],
+  "overall_score": 0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 0,
+  "total_questions": 2,
+  "messages": [],
+  "adaptive_interview": true,
+  "tab_switch_count": 5,
+  "terminated_by_tab_switch": true,
+  "interview_duration": null,
+  "analysis_date": "2026-01-29 10:01:26"
+}

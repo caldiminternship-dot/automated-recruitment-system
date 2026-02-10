@@ -1,0 +1,191 @@
+{
+  "report_id": "INT20260205111133",
+  "timestamp": "2026-02-05T11:11:33.927154",
+  "display_date": "2026-02-05 11:11:33",
+  "candidate_profile": {
+    "skills": [
+      "Go",
+      "Data",
+      "AutoCAD",
+      "Structural Steel Detailing",
+      "Shop Drawings",
+      "GA Drawings",
+      "UI"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 7
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the primary purpose of GA (General Arrangement) drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+      "answer": "What is the primary purpose of GA (General Arrangement) drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical information, and does not provide any relevant examples or explanations. It appears to be a repetition of the question rather than a response.",
+          "Note: The answer does not provide any meaningful information, and the word count is significantly below the ideal range. The structure and organization are non-existent, and no technical terms or examples are used. This response would not be considered a valid answer in a technical interview."
+        ]
+      },
+      "timestamp": "11:10:48"
+    },
+    {
+      "question": "Can you provide a simple example of the type of information typically included in a General Arrangement drawing?",
+      "answer": "Can you provide a simple example of the type of information typically included in a General Arrangement drawing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in assessing the candidate's knowledge or skills."
+        ]
+      },
+      "timestamp": "11:10:57"
+    },
+    {
+      "question": "What specific details would you typically find on a General Arrangement drawing for a common structure, like a building?",
+      "answer": "What specific details would you typically find on a General Arrangement drawing for a common structure, like a building?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 2.0,
+        "overall": 1.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided details such as floor plans, elevations, sections, room layouts, door and window locations, stairwells, and other relevant architectural features that are typically found on a General Arrangement drawing for a building."
+        ]
+      },
+      "timestamp": "11:11:05"
+    },
+    {
+      "question": "Can you provide an example of a specific detail that is commonly included on a General Arrangement drawing for a building?",
+      "answer": "Can you provide an example of a specific detail that is commonly included on a General Arrangement drawing for a building?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided a specific detail commonly included on a General Arrangement drawing, such as door and window schedules, room layouts, or structural elements, along with a brief explanation of its significance. This would have demonstrated technical accuracy, completeness, and clarity, among other qualities."
+        ]
+      },
+      "timestamp": "11:11:19"
+    },
+    {
+      "question": "What is one basic element that you would typically find on a General Arrangement drawing for a building?",
+      "answer": "What is one basic element that you would typically find on a General Arrangement drawing for a building?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided a basic element typically found on a General Arrangement drawing, such as doors, windows, stairs, or columns, and possibly included a brief explanation or example to demonstrate understanding."
+        ]
+      },
+      "timestamp": "11:11:33"
+    }
+  ],
+  "questions_asked": [
+    "What is the primary purpose of GA (General Arrangement) drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+    "Can you provide a simple example of the type of information typically included in a General Arrangement drawing?",
+    "What specific details would you typically find on a General Arrangement drawing for a common structure, like a building?",
+    "Can you provide an example of a specific detail that is commonly included on a General Arrangement drawing for a building?",
+    "What is one basic element that you would typically find on a General Arrangement drawing for a building?"
+  ],
+  "overall_score": 0.8800000000000001,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 9,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Go, Data, AutoCAD, Structural Steel Detailing, Shop Drawings, GA Drawings, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "11:10:34"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the primary purpose of GA (General Arrangement) drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+      "timestamp": "11:10:47"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you provide a simple example of the type of information typically included in a General Arrangement drawing?",
+      "timestamp": "11:10:48"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:10:48"
+    },
+    {
+      "role": "candidate",
+      "content": "Can you provide a simple example of the type of information typically included in a General Arrangement drawing?",
+      "timestamp": "11:10:56"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: What specific details would you typically find on a General Arrangement drawing for a common structure, like a building?",
+      "timestamp": "11:10:57"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:10:57"
+    },
+    {
+      "role": "candidate",
+      "content": "What specific details would you typically find on a General Arrangement drawing for a common structure, like a building?",
+      "timestamp": "11:11:04"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you provide an example of a specific detail that is commonly included on a General Arrangement drawing for a building?",
+      "timestamp": "11:11:05"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:11:05"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:58",
+  "analysis_date": "2026-02-05 11:11:33"
+}

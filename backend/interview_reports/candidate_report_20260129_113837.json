@@ -1,0 +1,207 @@
+{
+  "report_id": "INT20260129113837",
+  "timestamp": "2026-01-29T11:38:37.756461",
+  "display_date": "2026-01-29 11:38:37",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "React",
+      "HTML",
+      "CSS",
+      "Data",
+      "Data Science",
+      "SQL",
+      "Machine Learning",
+      "HR",
+      "UI",
+      "UX",
+      "UI/UX",
+      "Figma",
+      "Security"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "data",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 8
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the difference between a left join and an inner join in SQL, and how would you troubleshoot a query that is returning incorrect results due to a join issue?",
+      "answer": "What is the difference between a left join and an inner join in SQL, and how would you troubleshoot a query that is returning incorrect results due to a join issue?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a complete lack of understanding or attempt to address the technical query. The response does not provide any technical information, examples, or structure, making it entirely unhelpful in a technical interview setting."
+        ]
+      },
+      "timestamp": "11:38:04"
+    },
+    {
+      "question": "How does Python's pandas library handle missing or null values in a dataset, and what steps would you take to identify and resolve issues with missing data in a DataFrame?",
+      "answer": "How does Python's pandas library handle missing or null values in a dataset, and what steps would you take to identify and resolve issues with missing data in a DataFrame?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's knowledge of Python's pandas library and handling missing or null values.",
+          "Note: The ideal answer should provide an explanation of how pandas handles missing values (e.g., using NaN, None, or empty strings), methods for identifying missing values (e.g., isnull(), isna()), and techniques for resolving issues with missing data (e.g., dropping, filling, or interpolating values). The answer should also demonstrate a clear understanding of the library's capabilities and best practices for working with missing data."
+        ]
+      },
+      "timestamp": "11:38:14"
+    },
+    {
+      "question": "Suppose you are working with a dataset that contains inconsistent date formats. Write a Python code snippet using the pandas library to detect and standardize the date formats to a consistent format (e.g. YYYY-MM-DD). How would you handle any errors that occur during the date parsing process?",
+      "answer": "you are working with a dataset that contains inconsistent date formats. Write a Python code snippet using the pandas library to detect and standardize the date formats to a consistent format (e.g. YYYY-MM-DD). How would you handle any errors that occur during the date parsing process?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer does not provide any technical information, code snippet, or explanation to address the question. It appears to be a repetition of the question itself, lacking any substance or relevance to the topic.",
+          "Note: The answer is severely lacking in all aspects, as it does not provide any meaningful response to the question. A good answer would include a Python code snippet using the pandas library to detect and standardize date formats, handle errors during the date parsing process, and provide explanations and examples to support the solution.",
+          "Example of a good answer:",
+          "```python",
+          "import pandas as pd",
+          "# assume 'df' is the DataFrame and 'date_column' is the column with inconsistent date formats",
+          "df['date_column'] = pd.to_datetime(df['date_column'], errors='coerce')",
+          "# handle errors (missing or invalid dates)",
+          "df['date_column'] = df['date_column'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else None)",
+          "```"
+        ]
+      },
+      "timestamp": "11:38:25"
+    },
+    {
+      "question": "You are tasked with optimizing a slow-running SQL query that is used to extract data from a large database table. What steps would you take to identify the bottleneck in the query, and what techniques would you use to improve the query's performance (e.g. indexing, caching, rewriting the query)?",
+      "answer": "e tasked with optimizing a slow-running SQL query that is used to extract data from a large database table. What steps would you take to identify the bottleneck in the query, and what techniques would you use to improve the query's performance (e.g. indexing, caching, rewriting the query)?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights into optimizing a slow-running SQL query.",
+          "Note: The answer is extremely brief and does not address the question in any way. A good answer should provide a step-by-step approach to identifying the bottleneck in the query, such as using EXPLAIN statements, analyzing query plans, and checking indexing. It should also discuss techniques for improving query performance, such as indexing, caching, rewriting the query, and optimizing database configuration."
+        ]
+      },
+      "timestamp": "11:38:32"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or preparation to address the prompt. The response does not provide any meaningful information, examples, or technical terms, making it completely uninformative.",
+          "Note: The answer provided does not meet any of the criteria for a satisfactory response, as it merely repeats the question without offering any substance, technical insight, or personal experience. A good answer should include a specific scenario, technical details, and a clear explanation of how the challenge was resolved, none of which are present in this response."
+        ]
+      },
+      "timestamp": "11:38:37"
+    }
+  ],
+  "questions_asked": [
+    "What is the difference between a left join and an inner join in SQL, and how would you troubleshoot a query that is returning incorrect results due to a join issue?",
+    "How does Python's pandas library handle missing or null values in a dataset, and what steps would you take to identify and resolve issues with missing data in a DataFrame?",
+    "Suppose you are working with a dataset that contains inconsistent date formats. Write a Python code snippet using the pandas library to detect and standardize the date formats to a consistent format (e.g. YYYY-MM-DD). How would you handle any errors that occur during the date parsing process?",
+    "You are tasked with optimizing a slow-running SQL query that is used to extract data from a large database table. What steps would you take to identify the bottleneck in the query, and what techniques would you use to improve the query's performance (e.g. indexing, caching, rewriting the query)?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.86,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, React, HTML, CSS, Data, Data Science, SQL, Machine Learning, HR, UI, UX, UI/UX, Figma, Security. Locking interview to: **DATA**.",
+      "timestamp": "11:37:57"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the difference between a left join and an inner join in SQL, and how would you troubleshoot a query that is returning incorrect results due to a join issue?",
+      "timestamp": "11:38:03"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:38:04"
+    },
+    {
+      "role": "candidate",
+      "content": "How does Python's pandas library handle missing or null values in a dataset, and what steps would you take to identify and resolve issues with missing data in a DataFrame?",
+      "timestamp": "11:38:13"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:38:14"
+    },
+    {
+      "role": "candidate",
+      "content": "you are working with a dataset that contains inconsistent date formats. Write a Python code snippet using the pandas library to detect and standardize the date formats to a consistent format (e.g. YYYY-MM-DD). How would you handle any errors that occur during the date parsing process?",
+      "timestamp": "11:38:23"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:38:25"
+    },
+    {
+      "role": "candidate",
+      "content": "e tasked with optimizing a slow-running SQL query that is used to extract data from a large database table. What steps would you take to identify the bottleneck in the query, and what techniques would you use to improve the query's performance (e.g. indexing, caching, rewriting the query)?",
+      "timestamp": "11:38:30"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:38:32"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "11:38:36"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:40",
+  "analysis_date": "2026-01-29 11:38:37"
+}

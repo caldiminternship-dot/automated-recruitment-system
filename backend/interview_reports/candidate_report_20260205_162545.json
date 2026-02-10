@@ -1,0 +1,503 @@
+{
+  "report_id": "INT20260205162545",
+  "timestamp": "2026-02-05T16:25:45.157235",
+  "display_date": "2026-02-05 16:25:45",
+  "candidate_profile": {
+    "skills": [
+      "Go",
+      "Data",
+      "AutoCAD",
+      "Structural Steel Detailing",
+      "Shop Drawings",
+      "GA Drawings",
+      "UI"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 7
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the primary purpose of using Go in software development?",
+      "answer": "What is the primary purpose of using Go in software development?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, clarity, or practicality, and does not provide any examples or insights into the primary purpose of using Go in software development.",
+          "Note: The answer is essentially empty and does not provide any value, resulting in the lowest possible scores across all categories. A good answer would discuss Go's concurrency features, simplicity, and performance, and how these characteristics make it a popular choice for building scalable and efficient software systems."
+        ]
+      },
+      "timestamp": "16:22:34"
+    },
+    {
+      "question": "What are the fundamental components of AutoCAD used in Structural Steel Detailing?",
+      "answer": "What are the fundamental components of AutoCAD used in Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in assessing the candidate's knowledge of AutoCAD in Structural Steel Detailing.",
+          "Note: The ideal answer should have included fundamental components of AutoCAD such as lines, arcs, circles, polygons, blocks, attributes, and possibly mentioned specific tools like the \"Steel\" or \"Structural\" toolsets, detailing components, and other relevant features. The answer should have been well-structured, clear, and concise, with a word count between 80-200 words."
+        ]
+      },
+      "timestamp": "16:22:45"
+    },
+    {
+      "question": "How do you define data in the context of Structural Steel Detailing?",
+      "answer": "How do you define data in the context of Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the topic. The response does not provide any meaningful information, technical terms, or examples related to Structural Steel Detailing.",
+          "Note: The answer does not demonstrate any knowledge or effort to define data in the context of Structural Steel Detailing, resulting in the lowest possible scores across all categories. A suitable answer would involve explaining what data means in this specific field, such as including information about the types of data used (e.g., geometric, material, connection details), how it is collected, managed, and utilized in the detailing process, and potentially referencing software or standards relevant to the field."
+        ]
+      },
+      "timestamp": "16:22:58"
+    },
+    {
+      "question": "What are GA Drawings, and what information do they typically contain?",
+      "answer": "What are GA Drawings, and what information do they typically contain?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided a definition of GA Drawings (likely General Assembly Drawings), explained the type of information they typically contain, such as overall dimensions, major components, and assembly instructions, and possibly included examples or real-world applications. The provided answer fails to meet all expectations in terms of technical content, structure, and overall quality."
+        ]
+      },
+      "timestamp": "16:23:03"
+    },
+    {
+      "question": "What is the difference between Shop Drawings and GA Drawings in Structural Steel Detailing?",
+      "answer": "What is the difference between Shop Drawings and GA Drawings in Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a complete lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insight into the difference between Shop Drawings and GA Drawings in Structural Steel Detailing.",
+          "Note: The ideal answer should provide a clear distinction between Shop Drawings (detailed drawings for fabrication) and GA Drawings (general arrangement drawings showing the overall layout and assembly of structural steel components), possibly including examples or applications in structural steel detailing projects."
+        ]
+      },
+      "timestamp": "16:23:10"
+    },
+    {
+      "question": "What are the basic data types in Go, and how are they used?",
+      "answer": "What are the basic data types in Go, and how are they used?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's knowledge of Go's basic data types."
+        ]
+      },
+      "timestamp": "16:23:17"
+    },
+    {
+      "question": "How do you create a basic user interface in AutoCAD for Structural Steel Detailing?",
+      "answer": "How do you create a basic user interface in AutoCAD for Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in addressing the question.",
+          "Note: The answer does not meet any of the expected criteria for a technical interview response, including technical accuracy, completeness, clarity, depth, or practicality. It is essentially a non-answer."
+        ]
+      },
+      "timestamp": "16:23:25"
+    },
+    {
+      "question": "What are the key elements of a Shop Drawing, and how are they created?",
+      "answer": "What are the key elements of a Shop Drawing, and how are they created?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The ideal answer should have provided key elements of a Shop Drawing, such as dimensions, materials, and fabrication details, and explained how they are created, including the use of software, collaboration with contractors, and review processes. The answer should have been well-structured, clear, and concise, with a word count between 80-200 words."
+        ]
+      },
+      "timestamp": "16:23:32"
+    },
+    {
+      "question": "What is the role of data management in Structural Steel Detailing using AutoCAD?",
+      "answer": "What is the role of data management in Structural Steel Detailing using AutoCAD?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a repetition of the question, indicating a lack of understanding or preparation to address the topic of data management in Structural Steel Detailing using AutoCAD. The response does not provide any meaningful information, technical terms, examples, or structure, making it entirely uninformative."
+        ]
+      },
+      "timestamp": "16:23:40"
+    },
+    {
+      "question": "How do you use Go to automate tasks in AutoCAD for Structural Steel Detailing?",
+      "answer": "How do you use Go to automate tasks in AutoCAD for Structural Steel Detailing?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, provide examples, or show a clear structure, making it uninformative and unhelpful.",
+          "Note: The ideal answer should have included information about using Go (also known as Golang) to create scripts or programs that interact with AutoCAD's API to automate tasks, such as generating reports, creating custom tools, or automating repetitive drafting tasks in structural steel detailing. It should have also included examples or real-world applications to demonstrate practicality."
+        ]
+      },
+      "timestamp": "16:23:47"
+    },
+    {
+      "question": "What are the benefits of using AutoCAD for creating GA Drawings and Shop Drawings?",
+      "answer": "What are the benefits of using AutoCAD for creating GA Drawings and Shop Drawings?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any knowledge of AutoCAD, GA Drawings, or Shop Drawings, and does not attempt to address the question in a meaningful way. A good answer would discuss the benefits of using AutoCAD, such as increased accuracy, improved collaboration, and enhanced productivity, and provide examples of how it can be used to create GA Drawings and Shop Drawings."
+        ]
+      },
+      "timestamp": "16:23:53"
+    },
+    {
+      "question": "How do you design a user-friendly UI for a Structural Steel Detailing application?",
+      "answer": "How do you design a user-friendly UI for a Structural Steel Detailing application?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's skills.",
+          "Note: The answer does not meet the minimum word count requirement and does not include any technical terms, examples, or structure, making it a non-responsive answer."
+        ]
+      },
+      "timestamp": "16:23:59"
+    },
+    {
+      "question": "What are the common data formats used in Structural Steel Detailing, and how are they imported into AutoCAD?",
+      "answer": "What are the common data formats used in Structural Steel Detailing, and how are they imported into AutoCAD?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insight into the common data formats used in Structural Steel Detailing or how they are imported into AutoCAD.",
+          "Note: The ideal answer should have provided information on common data formats such as DSTV, SDNF, or CIS/2, and explained how these formats can be imported into AutoCAD using various methods or plugins, showcasing a clear understanding of the technical aspects and their practical applications."
+        ]
+      },
+      "timestamp": "16:24:07"
+    },
+    {
+      "question": "Can you explain a situation where you had to troubleshoot an issue with a Shop Drawing created in AutoCAD, and how you resolved it?",
+      "answer": "In a recent project, I encountered an issue with a shop drawing in AutoCAD where the dimensions were not aligning correctly with the design specifications. After reviewing the drawing, I discovered that some layers were inadvertently turned off, causing critical information to be hidden. To resolve the issue, I first ensured all relevant layers were visible and then recalibrated the dimensions by using the dimensioning tools to accurately reflect the intended measurements. I also cross-referenced the drawing with the original design documents to ensure consistency. After making these adjustments, I conducted a thorough review with the team to confirm that all elements were correctly represented before finalizing the shop drawing for submission.",
+      "evaluation": {
+        "technical_accuracy": 9.5,
+        "completeness": 9.0,
+        "clarity": 9.0,
+        "depth": 7.0,
+        "practicality": 9.0,
+        "overall": 8.7,
+        "strengths": [
+          "The answer provides a clear and concise example of troubleshooting an issue with a Shop Drawing in AutoCAD, and it demonstrates a good understanding of the technical tools and processes involved. The use of technical terms such as \"layers\" and \"dimensioning tools\" is also appropriate."
+        ],
+        "weaknesses": [
+          "The answer could benefit from more specific details about the project and the issue, and it lacks a clear explanation of the root cause of the problem (e.g., why the layers were turned off in the first place). Additionally, the answer is slightly on the longer side, but it is still within the ideal word count range."
+        ]
+      },
+      "timestamp": "16:24:31"
+    },
+    {
+      "question": "Can you describe a project where you used Go to analyze data from Structural Steel Detailing, and what insights you gained from it?",
+      "answer": "Using Go for developing data-driven applications in the AEC (Architecture, Engineering, and Construction) industry offers several advantages. Its strong performance and efficiency make it ideal for processing large datasets, such as those generated in structural steel detailing. Go's concurrency model allows for handling multiple tasks simultaneously, which is beneficial for real-time data analysis and reporting. Additionally, its simplicity and readability facilitate collaboration among teams, enabling engineers and architects to quickly understand and modify the code. The robust standard library and support for JSON make it easy to integrate with various data sources and APIs, enhancing the application's ability to analyze and visualize data effectively. Overall, Go's performance, ease of use, and scalability make it a powerful choice for data-driven applications in the AEC sector.",
+      "evaluation": {
+        "technical_accuracy": 8.5,
+        "completeness": 3.0,
+        "clarity": 9.0,
+        "depth": 6.0,
+        "practicality": 2.0,
+        "overall": 5.7,
+        "strengths": [
+          "The answer demonstrates a good understanding of Go's technical capabilities and its potential applications in the AEC industry, and it is well-structured and easy to understand."
+        ],
+        "weaknesses": [
+          "The answer fails to provide a specific project example as requested by the question, and it lacks real-world examples or applications to support the claims made about Go's advantages in the AEC industry."
+        ]
+      },
+      "timestamp": "16:25:00"
+    },
+    {
+      "question": "How do you handle conflicting feedback from team members on a Structural Steel Detailing project?",
+      "answer": "How do you handle conflicting feedback from team members on a Structural Steel Detailing project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet any of the evaluation criteria, and its word count is significantly below the ideal range. It fails to demonstrate any technical knowledge, clarity, or practicality, and does not provide any structure or organization. A satisfactory answer would require a significant overhaul, including the provision of relevant technical terms, examples, and a well-organized response that addresses the question directly."
+        ]
+      },
+      "timestamp": "16:25:13"
+    },
+    {
+      "question": "Can you describe a time when you had to adapt to a new version of AutoCAD or a new Structural Steel Detailing workflow?",
+      "answer": "Can you describe a time when you had to adapt to a new version of AutoCAD or a new Structural Steel Detailing workflow?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The candidate failed to provide any technical information, examples, or insights, making it a completely uninformative answer.",
+          "Note: The answer does not demonstrate any knowledge or experience with AutoCAD or Structural Steel Detailing workflows, and it does not show any ability to think critically or provide a thoughtful response. A more effective answer would have included specific examples, technical details, and a clear explanation of how the candidate adapted to a new version of AutoCAD or a new workflow."
+        ]
+      },
+      "timestamp": "16:25:20"
+    },
+    {
+      "question": "How do you ensure effective communication with colleagues who are not familiar with Structural Steel Detailing terminology?",
+      "answer": "How do you ensure effective communication with colleagues who are not familiar with Structural Steel Detailing terminology?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, showing no understanding or attempt to address the topic, and lacks any technical terms, examples, or structure.",
+          "Note: The answer provided does not attempt to address the question in any way, making it impossible to evaluate based on the content. It seems like the candidate did not understand the question or chose not to answer it. A proper answer should include explanations, examples, and technical terms related to Structural Steel Detailing to demonstrate understanding and communication skills."
+        ]
+      },
+      "timestamp": "16:25:28"
+    },
+    {
+      "question": "How do you prioritize tasks when working on multiple Shop Drawings and GA Drawings simultaneously?",
+      "answer": "How do you prioritize tasks when working on multiple Shop Drawings and GA Drawings simultaneously?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The candidate failed to provide any relevant technical information, examples, or structure to address the question.",
+          "Note: The answer does not provide any value or insight into the candidate's ability to prioritize tasks when working on multiple Shop Drawings and GA Drawings simultaneously. A good answer should have included a clear explanation of the prioritization process, technical terms related to the field, and possibly examples of how they have handled similar situations in the past."
+        ]
+      },
+      "timestamp": "16:25:39"
+    },
+    {
+      "question": "Can you tell me about a project where you took ownership of a technical issue, and how you resolved it?",
+      "answer": "an you tell me about a project where you took ownership of a technical issue, and how you resolved it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer appears to be a repetition of the question, indicating a lack of understanding or preparation to address the prompt. The response does not provide any meaningful information, technical terms, or examples, and lacks structure and organization.",
+          "Note: The answer provided does not constitute a valid response to the question, as it simply repeats the question itself. A proper evaluation of technical skills and experience cannot be conducted based on this response."
+        ]
+      },
+      "timestamp": "16:25:45"
+    }
+  ],
+  "questions_asked": [
+    "What is the primary purpose of using Go in software development?",
+    "What are the fundamental components of AutoCAD used in Structural Steel Detailing?",
+    "How do you define data in the context of Structural Steel Detailing?",
+    "What are GA Drawings, and what information do they typically contain?",
+    "What is the difference between Shop Drawings and GA Drawings in Structural Steel Detailing?",
+    "What are the basic data types in Go, and how are they used?",
+    "How do you create a basic user interface in AutoCAD for Structural Steel Detailing?",
+    "What are the key elements of a Shop Drawing, and how are they created?",
+    "What is the role of data management in Structural Steel Detailing using AutoCAD?",
+    "How do you use Go to automate tasks in AutoCAD for Structural Steel Detailing?",
+    "What are the benefits of using AutoCAD for creating GA Drawings and Shop Drawings?",
+    "How do you design a user-friendly UI for a Structural Steel Detailing application?",
+    "What are the common data formats used in Structural Steel Detailing, and how are they imported into AutoCAD?",
+    "Can you explain a situation where you had to troubleshoot an issue with a Shop Drawing created in AutoCAD, and how you resolved it?",
+    "Can you describe a project where you used Go to analyze data from Structural Steel Detailing, and what insights you gained from it?",
+    "How do you handle conflicting feedback from team members on a Structural Steel Detailing project?",
+    "Can you describe a time when you had to adapt to a new version of AutoCAD or a new Structural Steel Detailing workflow?",
+    "How do you ensure effective communication with colleagues who are not familiar with Structural Steel Detailing terminology?",
+    "How do you prioritize tasks when working on multiple Shop Drawings and GA Drawings simultaneously?",
+    "Can you tell me about a project where you took ownership of a technical issue, and how you resolved it?"
+  ],
+  "overall_score": 1.545,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 20,
+  "total_questions": 20,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Go, Data, AutoCAD, Structural Steel Detailing, Shop Drawings, GA Drawings, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "16:22:22"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the primary purpose of using Go in software development?",
+      "timestamp": "16:22:33"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:22:34"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the fundamental components of AutoCAD used in Structural Steel Detailing?",
+      "timestamp": "16:22:44"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:22:45"
+    },
+    {
+      "role": "candidate",
+      "content": "How do you define data in the context of Structural Steel Detailing?",
+      "timestamp": "16:22:57"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:22:58"
+    },
+    {
+      "role": "candidate",
+      "content": "What are GA Drawings, and what information do they typically contain?",
+      "timestamp": "16:23:02"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:23:03"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the difference between Shop Drawings and GA Drawings in Structural Steel Detailing?",
+      "timestamp": "16:23:09"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:03:22",
+  "analysis_date": "2026-02-05 16:25:45"
+}

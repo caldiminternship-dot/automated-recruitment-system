@@ -1,0 +1,68 @@
+{
+  "report_id": "INT20260130141038",
+  "timestamp": "2026-01-30T14:10:38.815713",
+  "display_date": "2026-01-30 14:10:38",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats, and how do they support the collaboration and data management in AEC projects?",
+      "answer": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats, and how do they support the collaboration and data management in AEC projects?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a repetition of the question, indicating a lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any knowledge of IFC or COBie, and it fails to provide any meaningful content. A good answer should have provided an overview of the differences between IFC and COBie, their applications, and how they support collaboration and data management in AEC projects."
+        ]
+      },
+      "timestamp": "14:10:38"
+    }
+  ],
+  "questions_asked": [
+    "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats, and how do they support the collaboration and data management in AEC projects?"
+  ],
+  "overall_score": 0.2,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 1,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "14:10:34"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats, and how do they support the collaboration and data management in AEC projects?",
+      "timestamp": "14:10:37"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:10:38"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 1,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:04",
+  "analysis_date": "2026-01-30 14:10:38"
+}

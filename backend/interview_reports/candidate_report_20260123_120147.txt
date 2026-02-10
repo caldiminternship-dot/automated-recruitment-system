@@ -1,0 +1,89 @@
+============================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+============================================================
+
+Report Generated: 2026-01-23T12:01:47.845161
+Interview Type: AI Adaptive
+Total Questions Answered: 4
+Overall Score: 1.00/10
+Final Score: 0.00/10
+
+CANDIDATE PROFILE
+----------------------------------------
+Experience Level: mid
+Primary Skill: mobile
+Confidence: medium
+Communication: adequate
+Introduction Score: 5/10
+Skills Detected: flutter, android, ios
+
+QUESTION ANALYSIS
+----------------------------------------
+
+Question 1: Explain a core concept in mobile.
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - None. The answer appears to be random keystrokes or "gibberish" and contains no discernible technical content.
+  Areas for Improvement:
+    - Fails to address the question entirely. The response is incoherent, lacks any technical terms, examples, or structure, and is far below the ideal word count.
+----------------------------------------
+
+Question 2: Describe a real-world problem you solved using mobile.
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - None. The answer is completely unintelligible and fails to address the prompt in any meaningful way.
+  Areas for Improvement:
+    - The response consists of random characters and words, providing zero technical content, context, or structure. It does not describe a problem, a solution, or the use of mobile technology.
+----------------------------------------
+
+Question 3: What challenges do you face when working in mobile?
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - The answer is extremely concise.
+  Areas for Improvement:
+    - The answer is completely incoherent and contains no technical content, examples, or structure. It fails to address the question in any meaningful way.
+----------------------------------------
+
+Question 4: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - None. The response is entirely nonsensical and does not contain any English words or meaningful data.
+  Areas for Improvement:
+    - The answer fails to address the behavioral question in any capacity. It contains no structure, no examples, and no technical content. It appears to be random keystrokes or gibberish.
+----------------------------------------
+
+SUMMARY STATISTICS
+----------------------------------------
+Average Score: 1.00/10
+Highest Score: 1.0/10
+Lowest Score: 1.0/10
+Score Range: 0.00
+
+RECOMMENDATION
+----------------------------------------
+❌ NOT RECOMMENDED - Requires Significant Improvement
+Candidate needs to strengthen technical fundamentals and communication.
+
+============================================================
+END OF REPORT
+============================================================

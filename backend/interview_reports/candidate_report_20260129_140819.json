@@ -1,0 +1,191 @@
+{
+  "report_id": "INT20260129140819",
+  "timestamp": "2026-01-29T14:08:19.145859",
+  "display_date": "2026-01-29 14:08:19",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "Node.js",
+      "Go",
+      "JavaScript",
+      "React",
+      "Data",
+      "SQL",
+      "TensorFlow"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "backend",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 9
+  },
+  "question_evaluations": [
+    {
+      "question": "**Async/Await in Backend Development**: Can you explain the concept of asynchronous programming in backend development, and how it differs between Python (using asyncio) and Node.js (using async/await)? How would you decide which one to use in a given project?",
+      "answer": "Asynchronous programming means running parallel programming. Synchronous programming is running sequentially. Async / Await key word enables asynchronous programming. Based on requirements I would select language.",
+      "evaluation": {
+        "technical_accuracy": 2.0,
+        "completeness": 1,
+        "clarity": 3.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.6,
+        "strengths": [
+          "The answer attempts to define asynchronous programming and acknowledges the existence of async/await keywords."
+        ],
+        "weaknesses": [
+          "The answer lacks technical accuracy, is extremely brief, and fails to provide any meaningful comparison between Python and Node.js, or discuss how to decide which one to use in a given project, which are the core components of the question."
+        ]
+      },
+      "timestamp": "14:02:42"
+    },
+    {
+      "question": "**Database Indexing**: What is database indexing, and how does it improve query performance? Can you describe the difference between B-Tree indexing and Hash indexing, and provide an example of when you would use each in a relational database like PostgreSQL or MySQL?",
+      "answer": "gjriesg erg swe etrh wseth weathg erg ew rge ewrg eqrga etrag",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely incomprehensible and lacks any relevant technical information, making it impossible to evaluate its technical merits. It does not address the question in any way, and its brevity and lack of coherence make it unsuitable for a technical interview.",
+          "Note: The answer provided does not contain any meaningful or relevant information regarding database indexing, B-Tree indexing, or Hash indexing, which are the key concepts the question is asking about. A good answer would define these terms, explain how they improve query performance, and provide examples of their use in a relational database."
+        ]
+      },
+      "timestamp": "14:03:07"
+    },
+    {
+      "question": "Explain a core concept in backend.",
+      "answer": "Database is used to store data and retrieve data effectively. It handles deduplication, indexing, better retrieval and as storage options. Examples include MySQL, Postgres SQL, mongoDB. I consider this as a core concept in backend.",
+      "evaluation": {
+        "technical_accuracy": 8.5,
+        "completeness": 2.0,
+        "clarity": 6.0,
+        "depth": 4.0,
+        "practicality": 8.0,
+        "overall": 5.7,
+        "strengths": [
+          "The answer provides some relevant technical terms and examples of databases, showing a basic understanding of the concept. The inclusion of specific database examples (MySQL, Postgres SQL, mongoDB) is a strength."
+        ],
+        "weaknesses": [
+          "The answer is too brief and lacks detail, failing to fully address the question. The structure and organization are also lacking, making it difficult to follow and understand the candidate's thought process. Additionally, the answer could benefit from more explanation of how databases handle deduplication, indexing, and retrieval, and how they are used in a backend context."
+        ]
+      },
+      "timestamp": "14:05:30"
+    },
+    {
+      "question": "Describe a real-world problem you solved using backend.",
+      "answer": "Ecommerce website where users can purchase and sell goods on internet. Some examples such as Amazon, flipkart, meesho, blinkit",
+      "evaluation": {
+        "technical_accuracy": 2.0,
+        "completeness": 1,
+        "clarity": 3.0,
+        "depth": 1.0,
+        "practicality": 5.0,
+        "overall": 2.4,
+        "strengths": [
+          "The answer provides some examples of real-world e-commerce websites, which shows some awareness of practical applications."
+        ],
+        "weaknesses": [
+          "The answer lacks technical detail, does not fully address the question, and is very brief, failing to provide a clear description of a problem solved using backend technology.",
+          "Note: The answer does not demonstrate any technical knowledge or problem-solving skills, and the word count is far below the ideal range. The structure and organization are also poor, with no clear explanation or description of a real-world problem solved."
+        ]
+      },
+      "timestamp": "14:06:51"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "During my teamwork of a particular project, I have faced a very complex deadline during the project. I have managed the time with collabration with the team mates and resolved this issue.",
+      "evaluation": {
+        "technical_accuracy": 6.0,
+        "completeness": 2.0,
+        "clarity": 5.0,
+        "depth": 3.0,
+        "practicality": 5.0,
+        "overall": 4.2,
+        "strengths": [
+          "The answer attempts to provide a real-world example, and it mentions collaboration with team members, which is a valuable skill in a work environment."
+        ],
+        "weaknesses": [
+          "The answer lacks specific details about the challenge, the actions taken, and the outcome, making it difficult to fully understand the situation and the candidate's problem-solving skills. The answer is also very brief and lacks proper structure and organization, which makes it hard to follow and evaluate."
+        ]
+      },
+      "timestamp": "14:08:19"
+    }
+  ],
+  "questions_asked": [
+    "**Async/Await in Backend Development**: Can you explain the concept of asynchronous programming in backend development, and how it differs between Python (using asyncio) and Node.js (using async/await)? How would you decide which one to use in a given project?",
+    "**Database Indexing**: What is database indexing, and how does it improve query performance? Can you describe the difference between B-Tree indexing and Hash indexing, and provide an example of when you would use each in a relational database like PostgreSQL or MySQL?",
+    "Explain a core concept in backend.",
+    "Describe a real-world problem you solved using backend.",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 2.98,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, Node.js, Go, JavaScript, React, Data, SQL, TensorFlow. Locking interview to: **BACKEND**.",
+      "timestamp": "13:59:50"
+    },
+    {
+      "role": "candidate",
+      "content": "Asynchronous programming means running parallel programming. Synchronous programming is running sequentially. Async / Await key word enables asynchronous programming. Based on requirements I would select language.",
+      "timestamp": "14:02:41"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:02:42"
+    },
+    {
+      "role": "candidate",
+      "content": "gjriesg erg swe etrh wseth weathg erg ew rge ewrg eqrga etrag",
+      "timestamp": "14:03:05"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:03:07"
+    },
+    {
+      "role": "candidate",
+      "content": "Database is used to store data and retrieve data effectively. It handles deduplication, indexing, better retrieval and as storage options. Examples include MySQL, Postgres SQL, mongoDB. I consider this as a core concept in backend.",
+      "timestamp": "14:05:29"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:05:30"
+    },
+    {
+      "role": "candidate",
+      "content": "Ecommerce website where users can purchase and sell goods on internet. Some examples such as Amazon, flipkart, meesho, blinkit",
+      "timestamp": "14:06:50"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:06:51"
+    },
+    {
+      "role": "candidate",
+      "content": "During my teamwork of a particular project, I have faced a very complex deadline during the project. I have managed the time with collabration with the team mates and resolved this issue.",
+      "timestamp": "14:08:17"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:08:29",
+  "analysis_date": "2026-01-29 14:08:19"
+}

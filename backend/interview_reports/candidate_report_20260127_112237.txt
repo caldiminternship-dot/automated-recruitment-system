@@ -1,0 +1,65 @@
+============================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+============================================================
+
+Report Generated: 2026-01-27T11:22:37.245557
+Interview Type: AI Adaptive
+Total Questions Answered: 2
+Overall Score: 1.00/10
+Final Score: 0.00/10
+
+CANDIDATE PROFILE
+----------------------------------------
+Experience Level: junior
+Primary Skill: aec_bim
+Confidence: medium
+Communication: adequate
+Introduction Score: 4/10
+Skills Detected: tekla, bim, aec_bim
+
+QUESTION ANALYSIS
+----------------------------------------
+
+Question 1: What is the primary difference between 2D drafting and 3D modeling in the context of AEC, and how does BIM (Building Information Modeling) fit into this paradigm?
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - None
+  Areas for Improvement:
+    - The answer lacks any coherent or relevant technical information, and the response appears to be a random collection of characters, indicating a complete failure to address the question.
+    - Note: The answer provided does not contain any meaningful content, making it impossible to evaluate based on technical merit or provide constructive feedback beyond recognizing the lack of effort or understanding demonstrated. A proper answer should include a clear explanation of the differences between 2D drafting and 3D modeling, how BIM integrates with these concepts, and potentially include examples or applications relevant to the AEC (Architecture, Engineering, and Construction) industry.
+----------------------------------------
+
+Question 2: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    - None
+  Areas for Improvement:
+    - The answer is completely incoherent and lacks any meaningful content, failing to address the question or provide any relevant information.
+    - Note: The answer "gewrg rgr r graqeg qr" appears to be a jumbled collection of letters and does not form a coherent sentence or phrase, making it impossible to evaluate in terms of technical accuracy, completeness, clarity, depth, or practicality. A proper answer should be at least 80-200 words, include relevant technical terms, provide examples, and demonstrate a clear structure and organization.
+----------------------------------------
+
+SUMMARY STATISTICS
+----------------------------------------
+Average Score: 1.00/10
+Highest Score: 1.0/10
+Lowest Score: 1.0/10
+Score Range: 0.00
+
+RECOMMENDATION
+----------------------------------------
+❌ NOT RECOMMENDED - Requires Significant Improvement
+Candidate needs to strengthen technical fundamentals and communication.
+
+============================================================
+END OF REPORT
+============================================================

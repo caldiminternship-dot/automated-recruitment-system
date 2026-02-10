@@ -1,0 +1,167 @@
+{
+  "report_id": "INT20260205114318",
+  "timestamp": "2026-02-05T11:43:18.266172",
+  "display_date": "2026-02-05 11:43:18",
+  "candidate_profile": {
+    "skills": [
+      "Go",
+      "Data",
+      "AutoCAD",
+      "Structural Steel Detailing",
+      "Shop Drawings",
+      "GA Drawings",
+      "UI"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 7
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the primary purpose of GA Drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+      "answer": "to detail the sub-materail  and send it to the fabricater in the from of gather sheet its make fabricater easy to read the drawing with the help of the gather sheet",
+      "evaluation": {
+        "technical_accuracy": 2.0,
+        "completeness": 1,
+        "clarity": 2.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.4,
+        "strengths": [
+          "The answer attempts to mention the concept of a \"gather sheet\", which is a relevant term in structural steel detailing."
+        ],
+        "weaknesses": [
+          "The answer lacks technical accuracy, clarity, and completeness, with poorly structured sentences, incorrect terminology (\"sub-materail\", \"GA Drawings\" not defined), and no clear explanation of how GA Drawings differ from Shop Drawings. The answer is also extremely brief and does not provide any real-world examples or applications."
+        ]
+      },
+      "timestamp": "11:24:28"
+    },
+    {
+      "question": "Can you give an example of the type of information typically included in a GA Drawing gather sheet?",
+      "answer": "1. x, y dimestion\n2.hole to hole running dimstion \n3.bent plate dimestion ( left or right dirction )_\n4. main thing we need to detail make fabricator easy when he saw ours detail sheet",
+      "evaluation": {
+        "technical_accuracy": 6.0,
+        "completeness": 2.0,
+        "clarity": 3.0,
+        "depth": 2.0,
+        "practicality": 5.0,
+        "overall": 3.6,
+        "strengths": [
+          "The answer attempts to provide some relevant technical terms, such as \"x, y dimension\" and \"bent plate dimension\", which shows some familiarity with the topic. The answer also mentions the importance of making the detail sheet easy for the fabricator to understand."
+        ],
+        "weaknesses": [
+          "The answer lacks clarity, completeness, and depth, with poorly structured sentences and insufficient explanation of the terms used. The word count is also very low, which makes it difficult to provide a comprehensive answer. Additionally, the answer could benefit from more specific examples and a clearer organization of the information."
+        ]
+      },
+      "timestamp": "11:29:01"
+    },
+    {
+      "question": "Can you provide a simple example of a bent plate dimension that would be included in a GA Drawing gather sheet?",
+      "answer": "bent plate it also include in gather sheet it help to attched the main members \n. bent plate to add dimenstion is \n1. x ,y dimnestion  lock \n2. take near side view to show the left or right leg dimention \n3. if holes is there means we need to give dimenstion for that also\nthis all make fabricator easy to analyse the bent  plate",
+      "evaluation": {
+        "technical_accuracy": 6.0,
+        "completeness": 4.0,
+        "clarity": 3.0,
+        "depth": 2.0,
+        "practicality": 5.0,
+        "overall": 4.0,
+        "strengths": [
+          "The answer attempts to provide some relevant technical terms and concepts, such as including dimensions for holes and considering the side view for leg dimensions. The answer also shows some awareness of the practical application of bent plate dimensions in a GA Drawing gather sheet."
+        ],
+        "weaknesses": [
+          "The answer lacks clarity and coherence, with poor sentence structure and grammar. The response is also incomplete, failing to fully address the question and provide a clear example of a bent plate dimension. Additionally, the answer could benefit from more technical detail and depth to demonstrate a stronger understanding of the topic."
+        ]
+      },
+      "timestamp": "11:39:59"
+    },
+    {
+      "question": "Can you give a specific example of a bent plate dimension, such as the \"x, y dimension lock\", that you would typically include in a GA Drawing gather sheet?",
+      "answer": "x =horizontal\ny = vertical",
+      "evaluation": {
+        "technical_accuracy": 6.0,
+        "completeness": 1,
+        "clarity": 8.0,
+        "depth": 2.0,
+        "practicality": 2.0,
+        "overall": 3.8,
+        "strengths": [
+          "The answer is clear and concise, and it attempts to define the terms \"x\" and \"y\" in the context of dimensions."
+        ],
+        "weaknesses": [
+          "The answer lacks completeness, depth, and practicality, as it does not provide a specific example of a bent plate dimension, nor does it explain how the \"x, y dimension lock\" would be included in a GA Drawing gather sheet, and the word count is extremely low."
+        ]
+      },
+      "timestamp": "11:41:35"
+    }
+  ],
+  "questions_asked": [
+    "What is the primary purpose of GA Drawings in Structural Steel Detailing, and how do they differ from Shop Drawings?",
+    "Can you give an example of the type of information typically included in a GA Drawing gather sheet?",
+    "Can you provide a simple example of a bent plate dimension that would be included in a GA Drawing gather sheet?",
+    "Can you give a specific example of a bent plate dimension, such as the \"x, y dimension lock\", that you would typically include in a GA Drawing gather sheet?"
+  ],
+  "overall_score": 3.2,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 4,
+  "total_questions": 8,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Go, Data, AutoCAD, Structural Steel Detailing, Shop Drawings, GA Drawings, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "11:15:43"
+    },
+    {
+      "role": "candidate",
+      "content": "to detail the sub-materail  and send it to the fabricater in the from of gather sheet its make fabricater easy to read the drawing with the help of the gather sheet",
+      "timestamp": "11:24:27"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you give an example of the type of information typically included in a GA Drawing gather sheet?",
+      "timestamp": "11:24:29"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:24:29"
+    },
+    {
+      "role": "candidate",
+      "content": "1. x, y dimestion\n2.hole to hole running dimstion \n3.bent plate dimestion ( left or right dirction )_\n4. main thing we need to detail make fabricator easy when he saw ours detail sheet",
+      "timestamp": "11:29:00"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you provide a simple example of a bent plate dimension that would be included in a GA Drawing gather sheet?",
+      "timestamp": "11:29:01"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:29:01"
+    },
+    {
+      "role": "candidate",
+      "content": "bent plate it also include in gather sheet it help to attched the main members \n. bent plate to add dimenstion is \n1. x ,y dimnestion  lock \n2. take near side view to show the left or right leg dimention \n3. if holes is there means we need to give dimenstion for that also\nthis all make fabricator easy to analyse the bent  plate",
+      "timestamp": "11:39:58"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you give a specific example of a bent plate dimension, such as the \"x, y dimension lock\", that you would typically include in a GA Drawing gather sheet?",
+      "timestamp": "11:40:00"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:40:00"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:25:52",
+  "analysis_date": "2026-02-05 11:43:18"
+}

@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260130134532",
+  "timestamp": "2026-01-30T13:45:32.885962",
+  "display_date": "2026-01-30 13:45:32",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "How do you think the integration of Artificial Intelligence (AI) and Machine Learning (ML) in Building Information Modeling (BIM) software, such as Tekla, will impact the structural steel detailing process, and what benefits or challenges do you foresee in this integration?",
+      "answer": "How do you think the integration of Artificial Intelligence (AI) and Machine Learning (ML) in Building Information Modeling (BIM) software, such as Tekla, will impact the structural steel detailing process, and what benefits or challenges do you foresee",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 1.0,
+        "overall": 0.4,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a complete lack of understanding or effort to address the topic. The response does not provide any technical information, examples, or insights into the integration of AI and ML in BIM software, such as Tekla, and its impact on the structural steel detailing process.",
+          "Note: The ideal response should have provided a clear and concise explanation of how AI and ML can enhance the structural steel detailing process in BIM software, including potential benefits such as automated design optimization, improved accuracy, and increased efficiency, as well as challenges like data quality issues, integration complexities, and the need for skilled professionals to work with these technologies."
+        ]
+      },
+      "timestamp": "13:45:05"
+    },
+    {
+      "question": "What is your understanding of the concept of \"Digital Twins\" in the AEC industry, and how do you think it can be applied to structural steel projects to improve collaboration, data management, and construction efficiency?",
+      "answer": "What is your understanding of the concept of \"Digital Twins\" in the AEC industry, and how do you think it can be applied to structural steel projects to improve collaboration, data management, and construction efficiency?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a complete lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insights into the concept of Digital Twins in the AEC industry, particularly in relation to structural steel projects.",
+          "Note: The ideal response should demonstrate a clear understanding of Digital Twins, its applications, benefits, and potential challenges in the context of structural steel projects, including aspects like collaboration, data management, and construction efficiency. This answer fails to meet any of these expectations."
+        ]
+      },
+      "timestamp": "13:45:09"
+    },
+    {
+      "question": "Can you walk me through your process for creating a custom steel connection in Tekla Structures, including how you would use the software's built-in tools and features to ensure accuracy and compliance with industry standards?",
+      "answer": "Can you walk me through your process for creating a custom steel connection in Tekla Structures, including how you would use the software's built-in tools and features to ensure accuracy and compliance with industry standards?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a complete lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, provide examples, or show any structure and organization.",
+          "Note: The answer provided does not meet the minimum expectations for a technical interview response. A good answer should provide a clear and concise explanation of the process for creating a custom steel connection in Tekla Structures, including the use of built-in tools and features to ensure accuracy and compliance with industry standards. It should also demonstrate a deep understanding of the software and its applications, and include real-world examples or scenarios to illustrate the concepts."
+        ]
+      },
+      "timestamp": "13:45:15"
+    },
+    {
+      "question": "How would you use AutoCAD to create a 2D detail drawing from a 3D BIM model, and what steps would you take to ensure that the drawing is properly annotated and dimensioned to meet the requirements of the construction team?",
+      "answer": "How would you use AutoCAD to create a 2D detail drawing from a 3D BIM model, and what steps would you take to ensure that the drawing is properly annotated and dimensioned to meet the requirements of the construction team?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's skills or knowledge.",
+          "Note: The answer does not meet any of the evaluation criteria, and the word count is significantly below the ideal range. The candidate failed to demonstrate any understanding of the topic or the software (AutoCAD) and did not provide any technical terms, examples, or structure to the response."
+        ]
+      },
+      "timestamp": "13:45:19"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to address the prompt. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any technical knowledge, and its brevity and lack of content make it impossible to evaluate its technical accuracy, completeness, clarity, depth, or practicality in a meaningful way. The response is essentially a non-answer."
+        ]
+      },
+      "timestamp": "13:45:32"
+    }
+  ],
+  "questions_asked": [
+    "How do you think the integration of Artificial Intelligence (AI) and Machine Learning (ML) in Building Information Modeling (BIM) software, such as Tekla, will impact the structural steel detailing process, and what benefits or challenges do you foresee in this integration?",
+    "What is your understanding of the concept of \"Digital Twins\" in the AEC industry, and how do you think it can be applied to structural steel projects to improve collaboration, data management, and construction efficiency?",
+    "Can you walk me through your process for creating a custom steel connection in Tekla Structures, including how you would use the software's built-in tools and features to ensure accuracy and compliance with industry standards?",
+    "How would you use AutoCAD to create a 2D detail drawing from a 3D BIM model, and what steps would you take to ensure that the drawing is properly annotated and dimensioned to meet the requirements of the construction team?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.5599999999999999,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "13:44:51"
+    },
+    {
+      "role": "candidate",
+      "content": "How do you think the integration of Artificial Intelligence (AI) and Machine Learning (ML) in Building Information Modeling (BIM) software, such as Tekla, will impact the structural steel detailing process, and what benefits or challenges do you foresee",
+      "timestamp": "13:45:03"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:45:05"
+    },
+    {
+      "role": "candidate",
+      "content": "What is your understanding of the concept of \"Digital Twins\" in the AEC industry, and how do you think it can be applied to structural steel projects to improve collaboration, data management, and construction efficiency?",
+      "timestamp": "13:45:08"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:45:09"
+    },
+    {
+      "role": "candidate",
+      "content": "Can you walk me through your process for creating a custom steel connection in Tekla Structures, including how you would use the software's built-in tools and features to ensure accuracy and compliance with industry standards?",
+      "timestamp": "13:45:13"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:45:15"
+    },
+    {
+      "role": "candidate",
+      "content": "How would you use AutoCAD to create a 2D detail drawing from a 3D BIM model, and what steps would you take to ensure that the drawing is properly annotated and dimensioned to meet the requirements of the construction team?",
+      "timestamp": "13:45:18"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:45:19"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "13:45:31"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 1,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:41",
+  "analysis_date": "2026-01-30 13:45:32"
+}

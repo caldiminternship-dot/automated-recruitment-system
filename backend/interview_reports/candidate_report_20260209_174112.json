@@ -1,0 +1,53 @@
+{
+  "report_id": "INT20260209174112",
+  "timestamp": "2026-02-09T17:41:12.367623",
+  "display_date": "2026-02-09 17:41:12",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "FastAPI"
+    ],
+    "primary_skill": "backend",
+    "experience": "mid",
+    "intro_score": 8
+  },
+  "question_evaluations": [
+    {
+      "question": "What is GIL?",
+      "answer": "Global Interpreter Lock",
+      "evaluation": {
+        "overall": 9,
+        "accuracy": 10
+      },
+      "score": 9,
+      "question_number": 1,
+      "question_type": "technical"
+    },
+    {
+      "question": "Explain Dependency Injection",
+      "answer": "Design pattern...",
+      "evaluation": {
+        "overall": 8,
+        "accuracy": 8
+      },
+      "score": 8,
+      "question_number": 2,
+      "question_type": "technical"
+    }
+  ],
+  "questions_asked": [
+    "What is GIL?",
+    "Explain Dependency Injection"
+  ],
+  "overall_score": 8.5,
+  "final_score": 8.5,
+  "introduction_analyzed": false,
+  "total_questions_answered": 2,
+  "total_questions": 2,
+  "messages": [],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-09 17:41:12"
+}

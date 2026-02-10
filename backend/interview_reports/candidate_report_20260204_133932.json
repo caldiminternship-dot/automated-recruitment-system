@@ -1,0 +1,208 @@
+{
+  "report_id": "INT20260204133932",
+  "timestamp": "2026-02-04T13:39:32.793195",
+  "display_date": "2026-02-04 13:39:32",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What are the key considerations for ensuring data security when collaborating on a BIM project with multiple stakeholders, and how do you maintain the integrity of the model?",
+      "answer": "What are the key considerations for ensuring data security when collaborating on a BIM project with multiple stakeholders, and how do you maintain the integrity of the model?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any knowledge of data security considerations or methods for maintaining model integrity in a BIM project, which are critical aspects of the question. A good answer would discuss topics such as access control, data encryption, version control, and collaboration protocols."
+        ]
+      },
+      "timestamp": "13:38:51"
+    },
+    {
+      "question": "Can you provide a specific example of a data security protocol you've implemented in a previous BIM project to protect sensitive information from unauthorized access?",
+      "answer": "Can you provide a specific example of a data security protocol you've implemented in a previous BIM project to protect sensitive information from unauthorized access?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or preparation to address the topic. The response does not provide any relevant information, technical terms, or examples, making it completely uninformative.",
+          "Note: The answer provided does not meet any of the expectations for a technical interview response, as it fails to demonstrate knowledge, understanding, or application of data security protocols in BIM projects. A suitable answer would describe a specific protocol, such as encryption, access controls, or secure data storage, and explain how it was implemented to protect sensitive information."
+        ]
+      },
+      "timestamp": "13:38:59"
+    },
+    {
+      "question": "What specific encryption methods or access controls did you use to safeguard the sensitive information in that BIM project?",
+      "answer": "What specific encryption methods or access controls did you use to safeguard the sensitive information in that BIM project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any meaningful information, technical terms, or examples, and its structure and organization are non-existent due to its nature of being a copied question.",
+          "Note: The answer does not demonstrate any knowledge or effort to provide a meaningful response, resulting in the lowest possible scores across all categories. A suitable answer should include specific encryption methods (e.g., AES, SSL/TLS), access controls (e.g., role-based access, multi-factor authentication), and possibly examples of their application in a BIM project."
+        ]
+      },
+      "timestamp": "13:39:05"
+    },
+    {
+      "question": "Can you provide an example of how you implemented encryption or access controls in a previous BIM project to protect sensitive information?",
+      "answer": "Can you provide an example of how you implemented encryption or access controls in a previous BIM project to protect sensitive information?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or preparation to address the topic. The response does not provide any technical information, examples, or insight into the implementation of encryption or access controls in a BIM project.",
+          "Note: The answer provided does not demonstrate any knowledge or effort to address the question, resulting in the lowest possible scores across all categories. A suitable answer would include specific examples of encryption methods (e.g., AES), access control techniques (e.g., role-based access control), and how they were applied in a BIM project to protect sensitive information."
+        ]
+      },
+      "timestamp": "13:39:13"
+    },
+    {
+      "question": "What specific encryption protocols or access control methods did you use to safeguard sensitive BIM data in that project?",
+      "answer": "What specific encryption protocols or access control methods did you use to safeguard sensitive BIM data in that project?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, provide examples, or show any structure and organization.",
+          "Note: The answer is essentially blank, as it simply repeats the question. This response would be unacceptable in a technical interview, as it does not provide any useful information or demonstrate any knowledge of the topic. A good answer would discuss specific encryption protocols (e.g. AES, TLS) or access control methods (e.g. role-based access control, multi-factor authentication) used to safeguard sensitive BIM data."
+        ]
+      },
+      "timestamp": "13:39:18"
+    },
+    {
+      "question": "Can you provide an example of how you implemented encryption protocols to protect BIM data during collaboration with external stakeholders?",
+      "answer": "Can you provide an example of how you implemented encryption protocols to protect BIM data during collaboration with external stakeholders?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or preparation to address the topic. The response does not provide any technical information, examples, or insights into implementing encryption protocols for protecting BIM data.",
+          "Note: The ideal answer should include specific encryption protocols (e.g., AES, TLS), methods of implementation (e.g., using specific software or tools), and examples of collaboration with external stakeholders. This answer falls significantly short of expectations due to its complete lack of relevant content."
+        ]
+      },
+      "timestamp": "13:39:27"
+    }
+  ],
+  "questions_asked": [
+    "What are the key considerations for ensuring data security when collaborating on a BIM project with multiple stakeholders, and how do you maintain the integrity of the model?",
+    "Can you provide a specific example of a data security protocol you've implemented in a previous BIM project to protect sensitive information from unauthorized access?",
+    "What specific encryption methods or access controls did you use to safeguard the sensitive information in that BIM project?",
+    "Can you provide an example of how you implemented encryption or access controls in a previous BIM project to protect sensitive information?",
+    "What specific encryption protocols or access control methods did you use to safeguard sensitive BIM data in that project?",
+    "Can you provide an example of how you implemented encryption protocols to protect BIM data during collaboration with external stakeholders?"
+  ],
+  "overall_score": 1.0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 6,
+  "total_questions": 11,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "13:38:34"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the key considerations for ensuring data security when collaborating on a BIM project with multiple stakeholders, and how do you maintain the integrity of the model?",
+      "timestamp": "13:38:50"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you provide a specific example of a data security protocol you've implemented in a previous BIM project to protect sensitive information from unauthorized access?",
+      "timestamp": "13:38:51"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:38:51"
+    },
+    {
+      "role": "candidate",
+      "content": "Can you provide a specific example of a data security protocol you've implemented in a previous BIM project to protect sensitive information from unauthorized access?",
+      "timestamp": "13:38:57"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: What specific encryption methods or access controls did you use to safeguard the sensitive information in that BIM project?",
+      "timestamp": "13:38:59"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:38:59"
+    },
+    {
+      "role": "candidate",
+      "content": "What specific encryption methods or access controls did you use to safeguard the sensitive information in that BIM project?",
+      "timestamp": "13:39:04"
+    },
+    {
+      "role": "system",
+      "content": "🔍 Follow-up question added: Can you provide an example of how you implemented encryption or access controls in a previous BIM project to protect sensitive information?",
+      "timestamp": "13:39:05"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "13:39:05"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:54",
+  "analysis_date": "2026-02-04 13:39:32"
+}

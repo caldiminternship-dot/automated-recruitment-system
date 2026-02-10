@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260130122007",
+  "timestamp": "2026-01-30T12:20:07.011721",
+  "display_date": "2026-01-30 12:20:07",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What are the key differences between a \"federated\" BIM model and an \"integrated\" BIM model, and how do these differences impact the performance of a project's design and construction phases?",
+      "answer": "What are the key differences between a \"federated\" BIM model and an \"integrated\" BIM model, and how do these differences impact the performance of a project's design and construction phases?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet the minimum expectations for a technical interview response, as it fails to provide any relevant information or demonstrate an understanding of the topic. A good answer should provide a clear and concise explanation of the differences between \"federated\" and \"integrated\" BIM models, along with examples and practical applications."
+        ]
+      },
+      "timestamp": "12:19:47"
+    },
+    {
+      "question": "How does the use of parametric modeling in AEC_BIM influence the optimization of structural steel detailing, and what benefits does it bring to the construction process?",
+      "answer": "How does the use of parametric modeling in AEC_BIM influence the optimization of structural steel detailing, and what benefits does it bring to the constru",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete and does not provide any technical information, it seems to be a repetition of the question itself. The candidate failed to provide any meaningful response, making it impossible to evaluate their understanding of the topic.",
+          "Note: The answer is extremely short (25 words) and lacks any substance, technical terms, examples, or structure, making it a very poor response to the question."
+        ]
+      },
+      "timestamp": "12:19:53"
+    },
+    {
+      "question": "Can you walk me through your process for creating a customized AutoCAD template for structural steel detailing, taking into account the specific requirements of the AEC_BIM project, such as layering, scaling, and annotation? How do you ensure that your template is optimized for performance and reuse across multiple projects?",
+      "answer": "an you walk me through your process for creating a customized AutoCAD template for structural steel detailing, taking into account the specific requirements of the AEC_BIM project, such as layering, scaling, and annotation? How do you ensure that your template is optimized for performance and reuse across multiple projects?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 1.0,
+        "overall": 0.4,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in evaluating the candidate's skills.",
+          "Note: The answer is essentially blank, as it only repeats the question. A good answer should provide a clear and concise explanation of the process for creating a customized AutoCAD template, including technical details and examples. This response does not meet any of the evaluation criteria."
+        ]
+      },
+      "timestamp": "12:19:58"
+    },
+    {
+      "question": "Explain a core concept in aec_bim.",
+      "answer": "Explain a core concept in aec_bim.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any meaningful content, technical terms, examples, and structure, making it completely uninformative and unsuccessful in addressing the question.",
+          "Note: The answer is essentially a repetition of the question, which does not provide any value or insight into the concept of aec_bim, resulting in the lowest possible scores across all categories."
+        ]
+      },
+      "timestamp": "12:20:02"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "ll me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical terms, and does not provide any examples or structure, indicating a lack of preparation and understanding of the question.",
+          "Note: The answer provided is actually a repetition of the question itself, which suggests that the candidate did not provide a meaningful response to the question. This is a major red flag in a technical interview."
+        ]
+      },
+      "timestamp": "12:20:06"
+    }
+  ],
+  "questions_asked": [
+    "What are the key differences between a \"federated\" BIM model and an \"integrated\" BIM model, and how do these differences impact the performance of a project's design and construction phases?",
+    "How does the use of parametric modeling in AEC_BIM influence the optimization of structural steel detailing, and what benefits does it bring to the construction process?",
+    "Can you walk me through your process for creating a customized AutoCAD template for structural steel detailing, taking into account the specific requirements of the AEC_BIM project, such as layering, scaling, and annotation? How do you ensure that your template is optimized for performance and reuse across multiple projects?",
+    "Explain a core concept in aec_bim.",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.9,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "12:19:39"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the key differences between a \"federated\" BIM model and an \"integrated\" BIM model, and how do these differences impact the performance of a project's design and construction phases?",
+      "timestamp": "12:19:45"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "12:19:47"
+    },
+    {
+      "role": "candidate",
+      "content": "How does the use of parametric modeling in AEC_BIM influence the optimization of structural steel detailing, and what benefits does it bring to the constru",
+      "timestamp": "12:19:51"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "12:19:53"
+    },
+    {
+      "role": "candidate",
+      "content": "an you walk me through your process for creating a customized AutoCAD template for structural steel detailing, taking into account the specific requirements of the AEC_BIM project, such as layering, scaling, and annotation? How do you ensure that your template is optimized for performance and reuse across multiple projects?",
+      "timestamp": "12:19:57"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "12:19:58"
+    },
+    {
+      "role": "candidate",
+      "content": "Explain a core concept in aec_bim.",
+      "timestamp": "12:20:01"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "12:20:02"
+    },
+    {
+      "role": "candidate",
+      "content": "ll me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "12:20:05"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:27",
+  "analysis_date": "2026-01-30 12:20:07"
+}

@@ -1,0 +1,117 @@
+/* Main styles */
+.stApp {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Header styling */
+.header-container {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #1a237e, #283593);
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat message styling */
+.chat-message {
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    border-left: 4px solid;
+}
+
+.interviewer-message {
+    background: rgba(66, 133, 244, 0.1);
+    border-color: #4285F4;
+}
+
+.candidate-message {
+    background: rgba(52, 168, 83, 0.1);
+    border-color: #34A853;
+}
+
+.feedback-message {
+    background: rgba(251, 188, 5, 0.1);
+    border-color: #FBBC05;
+}
+
+/* Score badges */
+.score-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.score-excellent {
+    background: #4CAF50;
+    color: white;
+}
+
+.score-good {
+    background: #8BC34A;
+    color: white;
+}
+
+.score-average {
+    background: #FF9800;
+    color: white;
+}
+
+.score-poor {
+    background: #F44336;
+    color: white;
+}
+
+/* Progress container */
+.progress-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Button styling */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text area styling */
+.stTextArea textarea {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.stTextArea textarea:focus {
+    border-color: #4285F4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0;
+    font-weight: 600;
+}

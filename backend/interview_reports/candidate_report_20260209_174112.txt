@@ -1,0 +1,61 @@
+======================================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+======================================================================
+
+Report ID: INT20260209174112
+Generated: 2026-02-09 17:41:12
+----------------------------------------------------------------------
+
+CANDIDATE SUMMARY
+----------------------------------------
+Experience Level: N/A
+Primary Skill Area: backend
+Confidence Level: N/A
+Communication: N/A
+Introduction Score: 8/10
+Skills Identified: Python, FastAPI
+Questions Answered: 2
+Overall Score: 8.50/10
+Final Score: 8.50/10
+
+DETAILED QUESTION ANALYSIS
+----------------------------------------
+
+QUESTION 1
+Question: What is GIL?
+Score: 9/10
+  Technical Accuracy: 0/10
+  Completeness: 0/10
+  Clarity: 0/10
+  Depth: 0/10
+  Practicality: 0/10
+
+----------------------------------------
+
+QUESTION 2
+Question: Explain Dependency Injection
+Score: 8/10
+  Technical Accuracy: 0/10
+  Completeness: 0/10
+  Clarity: 0/10
+  Depth: 0/10
+  Practicality: 0/10
+
+----------------------------------------
+
+STATISTICS
+----------------------------------------
+Average Score: 8.50/10
+Highest Score: 9/10
+Lowest Score: 8/10
+Score Range: 1.00
+
+RECOMMENDATION
+----------------------------------------
+✅ STRONGLY RECOMMEND
+The candidate demonstrates strong technical understanding,
+excellent communication skills, and shows good potential.
+
+======================================================================
+END OF REPORT
+======================================================================

@@ -1,0 +1,98 @@
+{
+  "report_id": "INT20260127_112237",
+  "timestamp": "2026-01-27T11:22:37.245557",
+  "display_date": "2026-01-27 11:22:37",
+  "candidate_profile": {
+    "skills": [
+      "tekla",
+      "bim",
+      "aec_bim"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 4
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the primary difference between 2D drafting and 3D modeling in the context of AEC, and how does BIM (Building Information Modeling) fit into this paradigm?",
+      "answer": "wf wegf aqwrgf aqrg arg aqrg aqrg rg",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any coherent or relevant technical information, and the response appears to be a random collection of characters, indicating a complete failure to address the question.",
+          "Note: The answer provided does not contain any meaningful content, making it impossible to evaluate based on technical merit or provide constructive feedback beyond recognizing the lack of effort or understanding demonstrated. A proper answer should include a clear explanation of the differences between 2D drafting and 3D modeling, how BIM integrates with these concepts, and potentially include examples or applications relevant to the AEC (Architecture, Engineering, and Construction) industry."
+        ]
+      },
+      "timestamp": "11:22:21"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "gewrg rgr r graqeg qr",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely incoherent and lacks any meaningful content, failing to address the question or provide any relevant information.",
+          "Note: The answer \"gewrg rgr r graqeg qr\" appears to be a jumbled collection of letters and does not form a coherent sentence or phrase, making it impossible to evaluate in terms of technical accuracy, completeness, clarity, depth, or practicality. A proper answer should be at least 80-200 words, include relevant technical terms, provide examples, and demonstrate a clear structure and organization."
+        ]
+      },
+      "timestamp": "11:22:30"
+    }
+  ],
+  "questions_asked": [
+    "What is the primary difference between 2D drafting and 3D modeling in the context of AEC, and how does BIM (Building Information Modeling) fit into this paradigm?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 2,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "candidate",
+      "content": "I am a BIM Modeler with experience in Tekla, shop drawings, clash detection",
+      "timestamp": "11:21:01"
+    },
+    {
+      "role": "system",
+      "content": "🔒 Skill locked: **AEC_BIM**. Interview questions fixed.",
+      "timestamp": "11:21:03"
+    },
+    {
+      "role": "candidate",
+      "content": "wf wegf aqwrgf aqrg arg aqrg aqrg rg",
+      "timestamp": "11:22:20"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:22:21"
+    },
+    {
+      "role": "candidate",
+      "content": "gewrg rgr r graqeg qr",
+      "timestamp": "11:22:29"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false
+}

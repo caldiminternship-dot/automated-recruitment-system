@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260203111005",
+  "timestamp": "2026-02-03T11:10:05.862954",
+  "display_date": "2026-02-03 11:10:05",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What are some common data security risks associated with collaborative BIM workflows, and how can they be mitigated to ensure the integrity of project data?",
+      "answer": "What are some common data security risks associated with collaborative BIM workflows, and how can they be mitigated to ensure the integrity of project data?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in addressing the question.",
+          "Note: The answer does not meet any of the expected criteria for a technical interview response, including technical accuracy, completeness, clarity, depth, or practicality. It is essentially a non-answer, suggesting that the candidate may not be prepared or knowledgeable about the topic."
+        ]
+      },
+      "timestamp": "11:09:38"
+    },
+    {
+      "question": "What are the key principles of a well-structured BIM content management system, and how can it be used to enforce best practices and standards across a project team?",
+      "answer": "What are the key principles of a well-structured BIM content management system, and how can it be used to enforce best practices and standards across a project team?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not demonstrate any technical knowledge, does not address the question, and lacks clarity, depth, and practicality.",
+          "Note: The answer does not provide any useful information and is essentially a non-response. A good answer should provide a clear and concise explanation of the key principles of a well-structured BIM content management system, including aspects such as data standardization, access control, versioning, and how these principles can be used to enforce best practices and standards across a project team."
+        ]
+      },
+      "timestamp": "11:09:45"
+    },
+    {
+      "question": "How would you handle a situation where a structural steel detailing model created in Tekla is not properly aligned with the architectural model created in AutoCAD, causing clashes and inconsistencies in the overall BIM model?",
+      "answer": "How would you handle a situation where a structural steel detailing model created in Tekla is not properly aligned with the architectural model created in AutoCAD, causing clashes and inconsistencies in the overall BIM model?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a repetition of the question and does not provide any technical information, solution, or insight into the problem, lacking any relevant content or structure.",
+          "Note: The answer does not meet the minimum requirements for a technical interview response, as it does not provide any meaningful information or attempt to address the question. A good answer should include a clear description of the steps to resolve the issue, technical terms used in context, and examples or real-world applications."
+        ]
+      },
+      "timestamp": "11:09:52"
+    },
+    {
+      "question": "What steps would you take to ensure that all BIM models and associated data are properly backed up and version-controlled, and how would you recover data in the event of a loss or corruption?",
+      "answer": "What steps would you take to ensure that all BIM models and associated data are properly backed up and version-controlled, and how would you recover data in the event of a loss or corruption?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is essentially a repetition of the question, indicating a complete lack of understanding or effort to address the query. The response does not provide any technical information, examples, or insights into how to ensure BIM models and associated data are properly backed up and version-controlled, or how to recover data in case of loss or corruption.",
+          "Note: The ideal answer should include specific steps for backup and version control, such as using cloud storage services, implementing regular backup schedules, utilizing version control systems like Git, and having a disaster recovery plan in place. It should also provide examples or real-world applications to demonstrate practical understanding."
+        ]
+      },
+      "timestamp": "11:09:58"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to address the prompt. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The provided answer does not meet the basic requirements of a technical interview response, as it fails to provide any meaningful content or address the question in a substantive manner. A typical response should include a specific example, technical details, and a clear explanation of how the challenge was resolved."
+        ]
+      },
+      "timestamp": "11:10:05"
+    }
+  ],
+  "questions_asked": [
+    "What are some common data security risks associated with collaborative BIM workflows, and how can they be mitigated to ensure the integrity of project data?",
+    "What are the key principles of a well-structured BIM content management system, and how can it be used to enforce best practices and standards across a project team?",
+    "How would you handle a situation where a structural steel detailing model created in Tekla is not properly aligned with the architectural model created in AutoCAD, causing clashes and inconsistencies in the overall BIM model?",
+    "What steps would you take to ensure that all BIM models and associated data are properly backed up and version-controlled, and how would you recover data in the event of a loss or corruption?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.86,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "11:09:22"
+    },
+    {
+      "role": "candidate",
+      "content": "What are some common data security risks associated with collaborative BIM workflows, and how can they be mitigated to ensure the integrity of project data?",
+      "timestamp": "11:09:37"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:09:38"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the key principles of a well-structured BIM content management system, and how can it be used to enforce best practices and standards across a project team?",
+      "timestamp": "11:09:44"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:09:45"
+    },
+    {
+      "role": "candidate",
+      "content": "How would you handle a situation where a structural steel detailing model created in Tekla is not properly aligned with the architectural model created in AutoCAD, causing clashes and inconsistencies in the overall BIM model?",
+      "timestamp": "11:09:51"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:09:52"
+    },
+    {
+      "role": "candidate",
+      "content": "What steps would you take to ensure that all BIM models and associated data are properly backed up and version-controlled, and how would you recover data in the event of a loss or corruption?",
+      "timestamp": "11:09:56"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "11:09:58"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "11:10:04"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:43",
+  "analysis_date": "2026-02-03 11:10:05"
+}

@@ -1,0 +1,42 @@
+{
+  "report_id": "INT20260203133409",
+  "timestamp": "2026-02-03T13:34:09.643166",
+  "display_date": "2026-02-03 13:34:09",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "Node.js",
+      "Go",
+      "JavaScript",
+      "React",
+      "Data",
+      "SQL",
+      "TensorFlow"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "backend",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 9
+  },
+  "question_evaluations": [],
+  "questions_asked": [],
+  "overall_score": 0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 0,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, Node.js, Go, JavaScript, React, Data, SQL, TensorFlow. Locking interview to: **BACKEND**.",
+      "timestamp": "13:32:24"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-03 13:34:09"
+}

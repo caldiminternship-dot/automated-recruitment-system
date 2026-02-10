@@ -1,0 +1,183 @@
+{
+  "report_id": "INT20260209175243",
+  "timestamp": "2026-02-09T17:52:43.890957",
+  "display_date": "2026-02-09 17:52:43",
+  "candidate_profile": {
+    "skills": [
+      "frontend"
+    ],
+    "primary_skill": "frontend",
+    "experience": "mid",
+    "intro_score": 0
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the difference between a \"controlled\" and \"uncontrolled\" component in React, and when would you use each?",
+      "answer": "controlled component in react means we can control the component\" and \"uncontrolled\" component in React, and i would use controlled component when i want to control the component and  i would use uncontrolled component when i dont want to control the component",
+      "evaluation": {
+        "technical_accuracy": 2.0,
+        "completeness": 1,
+        "clarity": 2.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.4,
+        "strengths": [
+          "The answer attempts to define the basic difference between controlled and uncontrolled components."
+        ],
+        "weaknesses": [
+          "The answer lacks technical accuracy, completeness, clarity, depth, and practicality, with poorly structured sentences, no examples provided, and failure to use technical terms appropriately, resulting in a very low-quality response."
+        ]
+      },
+      "score": 1.4,
+      "question_number": 1,
+      "question_type": "technical"
+    },
+    {
+      "question": "How does the browser's rendering engine handle CSS Grid versus Flexbox, and what are the key benefits of using each for layout management?",
+      "answer": "we can use grid layout when the structuring is important and we can use flexbox when we want the screen to be flexible ",
+      "evaluation": {
+        "technical_accuracy": 4.0,
+        "completeness": 1,
+        "clarity": 6.0,
+        "depth": 2.0,
+        "practicality": 2.0,
+        "overall": 3.0,
+        "strengths": [
+          "The answer attempts to differentiate between CSS Grid and Flexbox, showing some basic understanding of their purposes."
+        ],
+        "weaknesses": [
+          "The answer lacks technical detail, is too concise, and fails to provide examples or a clear explanation of the benefits and differences between CSS Grid and Flexbox, making it difficult to assess the candidate's true understanding of the topic."
+        ]
+      },
+      "score": 3.0,
+      "question_number": 2,
+      "question_type": "technical"
+    },
+    {
+      "question": "Write a JavaScript function that uses the `URL` and `URLSearchParams` APIs to extract query parameters from a given URL string, and then use those parameters to conditionally render a React component. For example, given the URL `https://example.com?name=John&age=30`, how would you extract the `name` and `age` parameters and display them in a React component?",
+      "answer": "sorry i dont know how to answer poda dei ",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any technical information, does not address the question, and shows no understanding of the topic. The response is also extremely brief and does not provide any examples or structure.",
+          "Note: The answer \"sorry i dont know how to answer poda dei\" does not demonstrate any knowledge or effort to address the question, resulting in the lowest possible scores across all categories. A more constructive response would be to ask for clarification or provide a partial answer, even if the candidate is unsure."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 3,
+      "question_type": "technical"
+    },
+    {
+      "question": "Using Angular, create a simple directive that applies a CSS class to an element when the user hovers over it, and then removes the class when the user stops hovering. How would you implement this directive, and what are the key considerations for accessibility and performance?",
+      "answer": "i dont know anything in angular js at all and why r u asking me this out of my resume?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 2.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "Lack of technical knowledge, unprofessional tone and response.",
+          "The answer does not provide any technical information, and the candidate admits to not knowing anything about Angular. The response is also unprofessional and defensive, which is not suitable for a technical interview. The ideal answer should provide a clear and concise explanation of how to create a directive in Angular, along with considerations for accessibility and performance."
+        ]
+      },
+      "score": 1.2,
+      "question_number": 4,
+      "question_type": "technical"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "i dont take ownership anywhere dont mess with me i will get angry ",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks professionalism, fails to address the question, and does not provide any relevant information or examples. It also contains a threatening tone, which is inappropriate in a professional setting.",
+          "Note: The answer does not meet any of the expected criteria for a technical interview response. It is unprofessional, incomplete, and lacks technical accuracy, clarity, depth, and practicality. A more suitable response would provide a specific example of an unexpected challenge, explain the steps taken to resolve it, and demonstrate a professional tone and language."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 5,
+      "question_type": "behavioral"
+    }
+  ],
+  "questions_asked": [
+    "What is the difference between a \"controlled\" and \"uncontrolled\" component in React, and when would you use each?",
+    "How does the browser's rendering engine handle CSS Grid versus Flexbox, and what are the key benefits of using each for layout management?",
+    "Write a JavaScript function that uses the `URL` and `URLSearchParams` APIs to extract query parameters from a given URL string, and then use those parameters to conditionally render a React component. For example, given the URL `https://example.com?name=John&age=30`, how would you extract the `name` and `age` parameters and display them in a React component?",
+    "Using Angular, create a simple directive that applies a CSS class to an element when the user hovers over it, and then removes the class when the user stops hovering. How would you implement this directive, and what are the key considerations for accessibility and performance?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.52,
+  "final_score": 1.52,
+  "introduction_analyzed": false,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interview initialized for Software Engineer",
+      "timestamp": "2026-02-09 12:13:38.243165"
+    },
+    {
+      "role": "system",
+      "content": "Question: What is the difference between a \"controlled\" and \"uncontrolled\" component in React, and when would you use each?"
+    },
+    {
+      "role": "candidate",
+      "content": "controlled component in react means we can control the component\" and \"uncontrolled\" component in React, and i would use controlled component when i want to control the component and  i would use uncontrolled component when i dont want to control the component"
+    },
+    {
+      "role": "system",
+      "content": "Question: How does the browser's rendering engine handle CSS Grid versus Flexbox, and what are the key benefits of using each for layout management?"
+    },
+    {
+      "role": "candidate",
+      "content": "we can use grid layout when the structuring is important and we can use flexbox when we want the screen to be flexible "
+    },
+    {
+      "role": "system",
+      "content": "Question: Write a JavaScript function that uses the `URL` and `URLSearchParams` APIs to extract query parameters from a given URL string, and then use those parameters to conditionally render a React component. For example, given the URL `https://example.com?name=John&age=30`, how would you extract the `name` and `age` parameters and display them in a React component?"
+    },
+    {
+      "role": "candidate",
+      "content": "sorry i dont know how to answer poda dei "
+    },
+    {
+      "role": "system",
+      "content": "Question: Using Angular, create a simple directive that applies a CSS class to an element when the user hovers over it, and then removes the class when the user stops hovering. How would you implement this directive, and what are the key considerations for accessibility and performance?"
+    },
+    {
+      "role": "candidate",
+      "content": "i dont know anything in angular js at all and why r u asking me this out of my resume?"
+    },
+    {
+      "role": "system",
+      "content": "Question: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-09 17:52:43"
+}

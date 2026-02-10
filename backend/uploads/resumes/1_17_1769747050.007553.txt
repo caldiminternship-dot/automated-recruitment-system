@@ -1,0 +1,16 @@
+
+    JOHN DOE - SENIOR SOFTWARE ENGINEER
+    
+    EXPERIENCE:
+    - 6 years of Python development
+    - Expert in FastAPI, Django, Flask
+    - 4 years React and TypeScript
+    - AWS deployment and DevOps
+    - PostgreSQL, MongoDB, Redis
+    
+    EDUCATION:
+    - BS Computer Science, MIT
+    
+    SKILLS:
+    Python, FastAPI, React, PostgreSQL, AWS, Docker, Kubernetes
+    

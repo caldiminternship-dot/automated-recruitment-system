@@ -1,0 +1,200 @@
+{
+  "report_id": "INT20260129104702",
+  "timestamp": "2026-01-29T10:47:02.213185",
+  "display_date": "2026-01-29 10:47:02",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "React",
+      "HTML",
+      "CSS",
+      "Data",
+      "Data Science",
+      "SQL",
+      "Machine Learning",
+      "HR",
+      "UI",
+      "UX",
+      "UI/UX",
+      "Figma",
+      "Security"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "data",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 8
+  },
+  "question_evaluations": [
+    {
+      "question": "What is data lineage, and how does it impact the design of a data architecture? Can you explain the concept of data provenance and its importance in a data engineering context?",
+      "answer": "at is data lineage, and how does it impact the design of a data architecture? Can you explain the concept of data pr",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer appears to be incomplete and does not provide any meaningful information, lacking technical terms, examples, and a clear structure.",
+          "Note: The provided answer seems to be a repetition of the question itself and does not contain any substantial content to evaluate. A proper answer should include a clear definition of data lineage and data provenance, their impact on data architecture, and possibly some examples or practical applications."
+        ]
+      },
+      "timestamp": "10:46:39"
+    },
+    {
+      "question": "How do you approach data normalization, and what are the trade-offs between normalized and denormalized data structures in a relational database management system? Can you provide an example of when you would choose one over the other?",
+      "answer": "do you approach data normalization, and what are the trade-offs between normalized and denormalized data structures in a relational database management system? Can you provide an example of when you would choose one over the other?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not demonstrate any knowledge of data normalization, denormalized data structures, or relational database management systems. It fails to provide a coherent response, let alone a well-structured one with technical terms, examples, or real-world applications. The ideal answer should have a word count between 80-200 words, but in this case, the response is extremely brief and unhelpful."
+        ]
+      },
+      "timestamp": "10:46:47"
+    },
+    {
+      "question": "Suppose you have a large dataset with 100 million rows, and you need to perform aggregations on a specific column. How would you design a data processing pipeline in Python to efficiently handle this task, considering factors like data partitioning, parallel processing, and memory usage?",
+      "answer": "Suppose you have a large dataset with 100 million rows, and you need to perform aggregations on a specific column. How would you design a data processing pipeline in Python to efficiently handle this task, considering factors like data partitioning, parallel processing, and memory usage",
+      "evaluation": {
+        "technical_accuracy": 0.5,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 1.0,
+        "overall": 0.5,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical information, and does not address the question. It appears to be a copy of the question itself, rather than a response.",
+          "Note: The answer does not provide any meaningful information, and it seems like the candidate did not attempt to solve the problem. A good answer should include technical details, such as using libraries like Pandas, Dask, or Apache Spark for data processing, and discussing strategies for data partitioning, parallel processing, and memory management."
+        ]
+      },
+      "timestamp": "10:46:52"
+    },
+    {
+      "question": "You are tasked with designing a data warehouse schema to store customer transaction data. How would you structure the schema to support queries like \"what are the top 10 products by sales revenue\" and \"what is the average order value by region\"? Would you use a star or snowflake schema, and why?",
+      "answer": "are tasked with designing a data warehouse schema to store customer transaction data. How would you structure the schema to support queries like \"what are the top 10 products by sales revenue\" and \"what is the average order value by region\"? Would you use a star or snowflake schema, and why",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1.0,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 2.0,
+        "overall": 1.3,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical terms, and does not provide any examples or structure. It appears to be a repetition of the question rather than a response.",
+          "Note: The answer does not provide any meaningful information, and it seems like the candidate did not attempt to address the question. A good answer should include a description of the schema design, explanation of the choice between star and snowflake schema, and examples of how the schema supports the given queries."
+        ]
+      },
+      "timestamp": "10:46:57"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and reso",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical terms, and does not provide any examples or structure, indicating a lack of preparation or understanding of the question.",
+          "Note: The answer provided is essentially a repetition of the question, which does not demonstrate any technical knowledge, problem-solving skills, or ability to communicate effectively. A good answer should provide a specific example, explain the challenge, and describe the steps taken to resolve it, showcasing technical accuracy, completeness, clarity, depth, and practicality."
+        ]
+      },
+      "timestamp": "10:47:02"
+    }
+  ],
+  "questions_asked": [
+    "What is data lineage, and how does it impact the design of a data architecture? Can you explain the concept of data provenance and its importance in a data engineering context?",
+    "How do you approach data normalization, and what are the trade-offs between normalized and denormalized data structures in a relational database management system? Can you provide an example of when you would choose one over the other?",
+    "Suppose you have a large dataset with 100 million rows, and you need to perform aggregations on a specific column. How would you design a data processing pipeline in Python to efficiently handle this task, considering factors like data partitioning, parallel processing, and memory usage?",
+    "You are tasked with designing a data warehouse schema to store customer transaction data. How would you structure the schema to support queries like \"what are the top 10 products by sales revenue\" and \"what is the average order value by region\"? Would you use a star or snowflake schema, and why?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.0,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, React, HTML, CSS, Data, Data Science, SQL, Machine Learning, HR, UI, UX, UI/UX, Figma, Security. Locking interview to: **DATA**.",
+      "timestamp": "10:46:33"
+    },
+    {
+      "role": "candidate",
+      "content": "at is data lineage, and how does it impact the design of a data architecture? Can you explain the concept of data pr",
+      "timestamp": "10:46:38"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "10:46:39"
+    },
+    {
+      "role": "candidate",
+      "content": "do you approach data normalization, and what are the trade-offs between normalized and denormalized data structures in a relational database management system? Can you provide an example of when you would choose one over the other?",
+      "timestamp": "10:46:46"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "10:46:47"
+    },
+    {
+      "role": "candidate",
+      "content": "Suppose you have a large dataset with 100 million rows, and you need to perform aggregations on a specific column. How would you design a data processing pipeline in Python to efficiently handle this task, considering factors like data partitioning, parallel processing, and memory usage",
+      "timestamp": "10:46:51"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "10:46:52"
+    },
+    {
+      "role": "candidate",
+      "content": "are tasked with designing a data warehouse schema to store customer transaction data. How would you structure the schema to support queries like \"what are the top 10 products by sales revenue\" and \"what is the average order value by region\"? Would you use a star or snowflake schema, and why",
+      "timestamp": "10:46:56"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "10:46:57"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and reso",
+      "timestamp": "10:47:01"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:29",
+  "analysis_date": "2026-01-29 10:47:02"
+}

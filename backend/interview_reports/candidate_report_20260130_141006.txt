@@ -1,0 +1,55 @@
+======================================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+======================================================================
+
+Report ID: INT20260130141006
+Generated: 2026-01-30 14:10:06
+----------------------------------------------------------------------
+
+CANDIDATE SUMMARY
+----------------------------------------
+Experience Level: junior
+Primary Skill Area: backend
+Confidence Level: medium
+Communication: adequate
+Introduction Score: 9/10
+Skills Identified: Python, Java, Node.js, Go, JavaScript, React, Data, SQL, TensorFlow
+Questions Answered: 1
+Overall Score: 1.20/10
+Final Score: 0.00/10
+
+DETAILED QUESTION ANALYSIS
+----------------------------------------
+
+QUESTION 1
+Question: **Encryption in Backend Development**: Can you explain the difference between symmetric and asymmetric encryption methods? How would you decide which method to use in a backend application for securing sensitive data, such as user passwords or financial information?
+Score: 1.2/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 2.0/10
+  Strengths:
+    • None
+  Areas for Improvement:
+    • The answer is completely empty and does not provide any technical information, examples, or explanations. It simply repeats the question, indicating a lack of understanding or effort to address the topic.
+    • Note: The answer does not meet the minimum requirements for a technical interview response, as it does not provide any meaningful information or demonstrate any knowledge of the subject matter. A good answer should provide a clear explanation of symmetric and asymmetric encryption methods, their differences, and scenarios where each would be appropriate, along with examples or real-world applications.
+
+----------------------------------------
+
+STATISTICS
+----------------------------------------
+Average Score: 1.20/10
+Highest Score: 1.2/10
+Lowest Score: 1.2/10
+Score Range: 0.00
+
+RECOMMENDATION
+----------------------------------------
+❌ NOT RECOMMENDED
+The candidate needs significant improvement in technical
+knowledge and communication skills.
+
+======================================================================
+END OF REPORT
+======================================================================

@@ -1,0 +1,194 @@
+{
+  "report_id": "INT20260130141304",
+  "timestamp": "2026-01-30T14:13:04.832693",
+  "display_date": "2026-01-30 14:13:04",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "Node.js",
+      "Go",
+      "JavaScript",
+      "React",
+      "Data",
+      "SQL",
+      "TensorFlow"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "backend",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 9
+  },
+  "question_evaluations": [
+    {
+      "question": "What is the difference between a deadlock and a livelock in a database transaction, and how would you prevent them in a Python application using MySQL?",
+      "answer": "What is the difference between a deadlock and a livelock in a database transaction, and how would you prevent them in a Python application using MySQL?",
+      "evaluation": {
+        "technical_accuracy": 1.5,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.1,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely lacking in content, failing to provide any technical information, examples, or explanations, and instead simply repeats the question.",
+          "Note: The answer does not provide any meaningful response to the question, resulting in the lowest possible scores across all categories. A good answer should provide a clear definition of deadlock and livelock, explain how they occur in database transactions, and offer practical advice on prevention in a Python application using MySQL, including code examples or technical strategies."
+        ]
+      },
+      "timestamp": "14:12:44"
+    },
+    {
+      "question": "Explain a core concept in backend.",
+      "answer": "plain a core concept in backend.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any meaningful content, technical terms, examples, and structure, making it completely uninformative and unhelpful in understanding the candidate's knowledge of backend concepts.",
+          "Note: The answer \"plain a core concept in backend\" seems to be a typo or a nonsensical response, and does not provide any value or insight into the candidate's understanding of backend concepts. A typical answer should include a clear explanation of a core concept, such as RESTful APIs, database modeling, or server-side rendering, along with relevant technical terms, examples, and applications."
+        ]
+      },
+      "timestamp": "14:12:51"
+    },
+    {
+      "question": "Describe a real-world problem you solved using backend.",
+      "answer": "Describe a real-world problem you solved using backend.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer should include a specific example of a real-world problem solved using backend technologies, along with technical details and explanations.",
+          "Note: The provided answer does not meet the basic requirements of a technical interview answer, as it does not demonstrate any technical knowledge, problem-solving skills, or ability to communicate effectively. A good answer should include a clear description of the problem, the technologies used, and the solution implemented, along with any challenges faced and lessons learned."
+        ]
+      },
+      "timestamp": "14:12:55"
+    },
+    {
+      "question": "What challenges do you face when working in backend?",
+      "answer": "What challenges do you face when working in backend?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a repetition of the question, indicating a lack of understanding or preparation to address the topic. The response does not provide any meaningful information, technical terms, or examples, and lacks structure and organization.",
+          "Note: The answer provided does not demonstrate any technical knowledge or attempt to address the question, resulting in the lowest possible scores across all categories. A suitable answer should discuss actual challenges faced in backend development, such as scalability, security, database management, or API integration, and provide relevant examples or experiences."
+        ]
+      },
+      "timestamp": "14:12:59"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "ell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is incomplete, lacks technical terms, and does not provide any examples or structure, indicating a lack of preparation and understanding of the question.",
+          "Note: The answer provided is actually a repetition of the question itself, which does not demonstrate any technical knowledge, problem-solving skills, or ability to communicate effectively. A good answer should provide a specific example, explain the challenge, and describe the steps taken to resolve it, showcasing technical skills and experience."
+        ]
+      },
+      "timestamp": "14:13:04"
+    }
+  ],
+  "questions_asked": [
+    "What is the difference between a deadlock and a livelock in a database transaction, and how would you prevent them in a Python application using MySQL?",
+    "Explain a core concept in backend.",
+    "Describe a real-world problem you solved using backend.",
+    "What challenges do you face when working in backend?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.02,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, Node.js, Go, JavaScript, React, Data, SQL, TensorFlow. Locking interview to: **BACKEND**.",
+      "timestamp": "14:12:39"
+    },
+    {
+      "role": "candidate",
+      "content": "What is the difference between a deadlock and a livelock in a database transaction, and how would you prevent them in a Python application using MySQL?",
+      "timestamp": "14:12:43"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:12:44"
+    },
+    {
+      "role": "candidate",
+      "content": "plain a core concept in backend.",
+      "timestamp": "14:12:50"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:12:51"
+    },
+    {
+      "role": "candidate",
+      "content": "Describe a real-world problem you solved using backend.",
+      "timestamp": "14:12:54"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:12:55"
+    },
+    {
+      "role": "candidate",
+      "content": "What challenges do you face when working in backend?",
+      "timestamp": "14:12:58"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:12:59"
+    },
+    {
+      "role": "candidate",
+      "content": "ell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "14:13:03"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:25",
+  "analysis_date": "2026-01-30 14:13:04"
+}

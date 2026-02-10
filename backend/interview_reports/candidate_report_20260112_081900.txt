@@ -1,0 +1,91 @@
+============================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+============================================================
+
+Report Generated: 2026-01-12T08:19:00.757475
+Interview Type: AI Adaptive
+Total Questions Answered: 4
+Overall Score: 9.33/10
+Final Score: 0.00/10
+
+CANDIDATE PROFILE
+----------------------------------------
+Experience Level: junior
+Primary Skill: devops
+Confidence: medium
+Communication: adequate
+Introduction Score: 4/10
+Skills Detected: aws, docker, kubernetes
+
+QUESTION ANALYSIS
+----------------------------------------
+
+Question 1: Explain a core concept in devops.
+Score: 8.9/10
+  Technical Accuracy: 9.5/10
+  Completeness: 8.0/10
+  Clarity: 9.0/10
+  Depth: 8.0/10
+  Practicality: 10.0/10
+  Strengths:
+    - - **Practicality**: The answer is grounded in a realistic, high-stakes scenario (impending client demo) that demonstrates genuine operational experience.
+    - - **Clarity**: The narrative follows a logical, chronological flow (problem → action → resolution → prevention) that is easy to follow.
+  Areas for Improvement:
+    - - **Completeness**: The answer is a narrative about *incident management* rather than an *explanation* of a core DevOps concept (like CI/CD, IaC, or observability). While the concepts are implied, the answer doesn't explicitly define or explain them.
+    - - **Depth**: It lacks specific technical details (e.g., the specific database technology, the exact query optimization technique, or the specific monitoring tools used), which would have elevated the technical credibility.
+----------------------------------------
+
+Question 2: Describe a real-world problem you solved using devops.
+Score: 8.8/10
+  Technical Accuracy: 10/10
+  Completeness: 9.0/10
+  Clarity: 9.0/10
+  Depth: 7.0/10
+  Practicality: 9.0/10
+  Strengths:
+    - Excellent structure using the STAR method (Situation, Task, Action, Result) and strong command of technical terms (rollback, indexing, monitoring alerts). It demonstrates a mature, production-first mindset.
+  Areas for Improvement:
+    - While the answer mentions "DevOps," it leans heavily toward SRE/Operations. To improve, the candidate could briefly mention the CI/CD pipeline aspect (e.g., "added a query linting step to the pipeline") to show a more holistic DevOps approach.
+----------------------------------------
+
+Question 3: What challenges do you face when working in devops?
+Score: 9.8/10
+  Technical Accuracy: 10/10
+  Completeness: 10/10
+  Clarity: 10.0/10
+  Depth: 9.0/10
+  Practicality: 10.0/10
+  Strengths:
+    - Excellent use of the STAR method (Situation, Task, Action, Result) to structure the answer; demonstrates a complete incident response lifecycle from detection to post-mortem.
+  Areas for Improvement:
+    - Could briefly mention specific tools used (e.g., "using Datadog" or "via Jenkins") to add more concrete context; the answer is slightly generic (database query issues are very common), though well-explained.
+----------------------------------------
+
+Question 4: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?
+Score: 9.8/10
+  Technical Accuracy: 10/10
+  Completeness: 10/10
+  Clarity: 10.0/10
+  Depth: 9.0/10
+  Practicality: 10.0/10
+  Strengths:
+    - Excellent structure (STAR method) and use of relevant technical terms (indexing, logs, metrics, monitoring). It demonstrates a complete and logical troubleshooting workflow.
+  Areas for Improvement:
+    - Could briefly mention the specific impact (e.g., "latency increased by 200ms") to add more quantitative context, though the qualitative description is strong.
+----------------------------------------
+
+SUMMARY STATISTICS
+----------------------------------------
+Average Score: 9.33/10
+Highest Score: 9.8/10
+Lowest Score: 8.8/10
+Score Range: 1.00
+
+RECOMMENDATION
+----------------------------------------
+✅ STRONGLY RECOMMEND - Proceed to Next Round
+Candidate demonstrates strong technical understanding and communication skills.
+
+============================================================
+END OF REPORT
+============================================================

@@ -1,0 +1,187 @@
+{
+  "report_id": "INT20260203163338",
+  "timestamp": "2026-02-03T16:33:38.714841",
+  "display_date": "2026-02-03 16:33:38",
+  "candidate_profile": {
+    "skills": [
+      "BIM",
+      "UI"
+    ],
+    "experience_level": "mid",
+    "primary_skill": "aec_bim",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 6
+  },
+  "question_evaluations": [
+    {
+      "question": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats in the context of AEC_BIM, and how do they impact the debugging and troubleshooting process when working with BIM models?",
+      "answer": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats in the context of AEC_BIM, and how do they impact the debugging and troubleshooting process when working with BIM models?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct copy of the question, indicating a complete lack of understanding or attempt to address the topic. The response does not provide any technical information, examples, or insights, making it unhelpful and uninformative.",
+          "Note: The answer does not demonstrate any knowledge of IFC, COBie, or their differences and implications in the context of AEC_BIM. A proper answer should discuss how IFC is an open-standard data model for representing building information, while COBie is a specification for the exchange of building information related to operations and maintenance. It should also explain how these formats impact debugging and troubleshooting processes when working with BIM models."
+        ]
+      },
+      "timestamp": "16:33:08"
+    },
+    {
+      "question": "How does the concept of \"Level of Development\" (LOD) in BIM models affect the level of detail and accuracy in structural steel detailing, and what are the common challenges that arise during the debugging and troubleshooting process when working with different LODs?",
+      "answer": "How does the concept of \"Level of Development\" (LOD) in BIM models affect the level of detail and accuracy in structural steel detailing, and what are the common challenges that arise during the debugging and troubleshooting process when working with different LODs?",
+      "evaluation": {
+        "technical_accuracy": 0.0,
+        "completeness": 1,
+        "clarity": 0.0,
+        "depth": 0.0,
+        "practicality": 0.0,
+        "overall": 0.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely unhelpful in assessing the candidate's knowledge or skills.",
+          "Note: The ideal answer should provide a clear explanation of how LOD affects the level of detail and accuracy in structural steel detailing, common challenges during debugging and troubleshooting, and possibly include examples or real-world applications. This answer fails to meet all the criteria, resulting in a score of 0 across all categories."
+        ]
+      },
+      "timestamp": "16:33:13"
+    },
+    {
+      "question": "Explain a core concept in aec_bim.",
+      "answer": "Explain a core concept in aec_bim.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any meaningful content, technical terms, examples, and structure, making it uninformative and unhelpful in understanding the core concept in aec_bim.",
+          "Note: The answer is essentially a repetition of the question, which does not demonstrate any knowledge or understanding of the topic. A good answer should provide a clear explanation of a core concept in aec_bim, such as the importance of data exchange standards like IFC, the role of BIM in facilitating collaboration among stakeholders, or the application of aec_bim in construction projects."
+        ]
+      },
+      "timestamp": "16:33:18"
+    },
+    {
+      "question": "Describe a real-world problem you solved using aec_bim.",
+      "answer": "Describe a real-world problem you solved using aec_bim.",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet the minimum requirements for a technical interview response, as it does not demonstrate any knowledge or experience with aec_bim or provide a real-world example of a problem solved using the technology. A more effective response would include a specific example, technical details, and an explanation of the solution and its impact."
+        ]
+      },
+      "timestamp": "16:33:23"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is a direct repetition of the question, indicating a lack of understanding or effort to provide a meaningful response. The answer does not provide any technical information, examples, or insights, making it completely uninformative.",
+          "Note: The answer does not meet the minimum expectations for a technical interview response, as it does not address the question, provide any technical information, or demonstrate problem-solving skills. A good answer should provide a specific example, explain the challenge, and describe the steps taken to resolve it, showcasing technical knowledge, critical thinking, and communication skills."
+        ]
+      },
+      "timestamp": "16:33:38"
+    }
+  ],
+  "questions_asked": [
+    "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats in the context of AEC_BIM, and how do they impact the debugging and troubleshooting process when working with BIM models?",
+    "How does the concept of \"Level of Development\" (LOD) in BIM models affect the level of detail and accuracy in structural steel detailing, and what are the common challenges that arise during the debugging and troubleshooting process when working with different LODs?",
+    "Explain a core concept in aec_bim.",
+    "Describe a real-world problem you solved using aec_bim.",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 0.6799999999999999,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 5,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: BIM, UI. Locking interview to: **AEC_BIM**.",
+      "timestamp": "16:32:59"
+    },
+    {
+      "role": "candidate",
+      "content": "What are the key differences between the IFC (Industry Foundation Classes) and COBie (Construction Operations Building Information Exchange) data exchange formats in the context of AEC_BIM, and how do they impact the debugging and troubleshooting process when working with BIM models?",
+      "timestamp": "16:33:05"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:33:08"
+    },
+    {
+      "role": "candidate",
+      "content": "How does the concept of \"Level of Development\" (LOD) in BIM models affect the level of detail and accuracy in structural steel detailing, and what are the common challenges that arise during the debugging and troubleshooting process when working with different LODs?",
+      "timestamp": "16:33:12"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:33:13"
+    },
+    {
+      "role": "candidate",
+      "content": "Explain a core concept in aec_bim.",
+      "timestamp": "16:33:17"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:33:18"
+    },
+    {
+      "role": "candidate",
+      "content": "Describe a real-world problem you solved using aec_bim.",
+      "timestamp": "16:33:22"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "16:33:23"
+    },
+    {
+      "role": "candidate",
+      "content": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "timestamp": "16:33:37"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:39",
+  "analysis_date": "2026-02-03 16:33:38"
+}

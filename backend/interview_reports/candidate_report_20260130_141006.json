@@ -1,0 +1,75 @@
+{
+  "report_id": "INT20260130141006",
+  "timestamp": "2026-01-30T14:10:06.732912",
+  "display_date": "2026-01-30 14:10:06",
+  "candidate_profile": {
+    "skills": [
+      "Python",
+      "Java",
+      "Node.js",
+      "Go",
+      "JavaScript",
+      "React",
+      "Data",
+      "SQL",
+      "TensorFlow"
+    ],
+    "experience_level": "junior",
+    "primary_skill": "backend",
+    "confidence": "medium",
+    "communication": "adequate",
+    "intro_score": 9
+  },
+  "question_evaluations": [
+    {
+      "question": "**Encryption in Backend Development**: Can you explain the difference between symmetric and asymmetric encryption methods? How would you decide which method to use in a backend application for securing sensitive data, such as user passwords or financial information?",
+      "answer": "**Encryption in Backend Development**: Can you explain the difference between symmetric and asymmetric encryption methods? How would you decide which method to use in a backend application for securing sensitive data, such as user passwords or financial information",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 2.0,
+        "overall": 1.2,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely empty and does not provide any technical information, examples, or explanations. It simply repeats the question, indicating a lack of understanding or effort to address the topic.",
+          "Note: The answer does not meet the minimum requirements for a technical interview response, as it does not provide any meaningful information or demonstrate any knowledge of the subject matter. A good answer should provide a clear explanation of symmetric and asymmetric encryption methods, their differences, and scenarios where each would be appropriate, along with examples or real-world applications."
+        ]
+      },
+      "timestamp": "14:10:06"
+    }
+  ],
+  "questions_asked": [
+    "**Encryption in Backend Development**: Can you explain the difference between symmetric and asymmetric encryption methods? How would you decide which method to use in a backend application for securing sensitive data, such as user passwords or financial information?"
+  ],
+  "overall_score": 1.2,
+  "final_score": 0,
+  "introduction_analyzed": true,
+  "total_questions_answered": 1,
+  "total_questions": 5,
+  "messages": [
+    {
+      "role": "system",
+      "content": "📄 Resume analyzed. Skills detected: Python, Java, Node.js, Go, JavaScript, React, Data, SQL, TensorFlow. Locking interview to: **BACKEND**.",
+      "timestamp": "14:09:50"
+    },
+    {
+      "role": "candidate",
+      "content": "**Encryption in Backend Development**: Can you explain the difference between symmetric and asymmetric encryption methods? How would you decide which method to use in a backend application for securing sensitive data, such as user passwords or financial information",
+      "timestamp": "14:10:05"
+    },
+    {
+      "role": "system",
+      "content": "✅ Answer recorded.",
+      "timestamp": "14:10:06"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": "0:00:16",
+  "analysis_date": "2026-01-30 14:10:06"
+}

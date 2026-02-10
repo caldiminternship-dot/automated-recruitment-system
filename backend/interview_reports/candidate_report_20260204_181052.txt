@@ -1,0 +1,115 @@
+======================================================================
+VIRTUAL HR INTERVIEWER - CANDIDATE REPORT
+======================================================================
+
+Report ID: INT20260204181052
+Generated: 2026-02-04 18:10:52
+----------------------------------------------------------------------
+
+CANDIDATE SUMMARY
+----------------------------------------
+Experience Level: junior
+Primary Skill Area: aec_bim
+Confidence Level: medium
+Communication: adequate
+Introduction Score: 8/10
+Skills Identified: Data, BIM, Tekla, Shop Drawings, Erection Drawings, Fabrication Drawings, GA Drawings, UI
+Questions Answered: 5
+Overall Score: 1.56/10
+Final Score: 0.00/10
+
+DETAILED QUESTION ANALYSIS
+----------------------------------------
+
+QUESTION 1
+Question: What is the primary purpose of creating Shop Drawings in the AEC industry, and how do they differ from GA Drawings?
+Score: 1.0/10
+  Technical Accuracy: 1.0/10
+  Completeness: 1/10
+  Clarity: 1.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    • None
+  Areas for Improvement:
+    • The answer is a direct repetition of the question, indicating a lack of understanding or attempt to address the query. The response does not provide any technical information, examples, or insights into the topic of Shop Drawings and GA Drawings in the AEC industry.
+    • Note: The answer does not meet the minimum expectations for a technical interview response, as it fails to provide any meaningful content or demonstrate knowledge of the subject matter. A suitable answer would typically include a definition of Shop Drawings, their purpose, and how they differ from GA Drawings, along with relevant examples or applications in the AEC industry.
+
+----------------------------------------
+
+QUESTION 2
+Question: Can you provide a simple example of a project where Shop Drawings would be necessary?
+Score: 1.4/10
+  Technical Accuracy: 2.0/10
+  Completeness: 1/10
+  Clarity: 2.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    • The answer attempts to relate to the context of the AEC industry, showing some awareness of the field.
+  Areas for Improvement:
+    • The answer completely fails to address the question, instead asking another question, and lacks any technical content, examples, or structure, making it an unsatisfactory response.
+
+----------------------------------------
+
+QUESTION 3
+Question: Can you provide a basic example of a construction project that would typically require Shop Drawings?
+Score: 1.4/10
+  Technical Accuracy: 2.0/10
+  Completeness: 1/10
+  Clarity: 2.0/10
+  Depth: 1.0/10
+  Practicality: 1.0/10
+  Strengths:
+    • The answer attempts to relate to the AEC industry, showing some awareness of the context.
+  Areas for Improvement:
+    • The response completely fails to address the question, lacks any relevant technical information, and does not provide a real-world example of a construction project that would require Shop Drawings, making it unclear and impractical.
+
+----------------------------------------
+
+QUESTION 4
+Question: Can you provide a simple example of a construction project that typically requires Shop Drawings, such as a building or bridge component?
+Score: 2.0/10
+  Technical Accuracy: 2.0/10
+  Completeness: 1/10
+  Clarity: 4.0/10
+  Depth: 2.0/10
+  Practicality: 1.0/10
+  Strengths:
+    • The answer attempts to relate to the context of the AEC industry, showing some awareness of the topic.
+  Areas for Improvement:
+    • The answer completely fails to address the question, instead asking a new question, and lacks any real-world examples, technical details, or coherent structure, making it unclear and unhelpful.
+
+----------------------------------------
+
+QUESTION 5
+Question: Can you provide a basic example of a building component that would typically have a Shop Drawing created for it?
+Score: 2.0/10
+  Technical Accuracy: 2.0/10
+  Completeness: 1/10
+  Clarity: 4.0/10
+  Depth: 2.0/10
+  Practicality: 1.0/10
+  Strengths:
+    • The answer attempts to relate to the context of the AEC industry, showing some awareness of the topic.
+  Areas for Improvement:
+    • The answer completely fails to address the question, instead asking a new question, and lacks any real-world examples, technical terms, or practical applications, making it unclear and incomplete.
+
+----------------------------------------
+
+STATISTICS
+----------------------------------------
+Average Score: 1.56/10
+Highest Score: 2.0/10
+Lowest Score: 1.0/10
+Score Range: 1.00
+
+RECOMMENDATION
+----------------------------------------
+❌ NOT RECOMMENDED
+The candidate needs significant improvement in technical
+knowledge and communication skills.
+
+======================================================================
+END OF REPORT
+======================================================================
