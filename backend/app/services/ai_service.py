@@ -156,31 +156,40 @@ async def parse_resume_with_ai(resume_text: str, required_skills: str, job_id: i
     Parse resume using direct OpenAI call.
     """
     prompt = f"""
-    Analyze this resume and extract:
+    Analyze this document. First, determine if it is a Resume or CV.
+    
+    If it is NOT a resume (e.g., it is a research paper, article, assignment, invoice, or irrelevant text), return JSON with "is_resume": false and "summary": "Document identified as [type] instead of resume.".
+    
+    If it IS a resume, extract:
     - List of skills (technical and soft skills)
     - Years of experience (numeric)
+    - Experience Level (Intern, Junior, Mid-Level, Senior, Lead / Manager) based on the analysis
     - Education (list of degrees/certifications)
     - Previous job roles (list of job titles)
     - A professional 2-3 sentence summary of the candidate's profile
     
-    Resume: {resume_text[:3000]}
-    Required skills for the job: {required_skills}
+    Resume content: {resume_text[:4000]}
+    Required skills: {required_skills}
     
     Return JSON with this exact structure:
     {{
+        "is_resume": true,
         "skills": ["skill1", "skill2"],
         "experience": 3,
+        "experience_level": "Mid-Level",
         "education": ["degree1", "degree2"],
         "roles": ["role1", "role2"],
-        "summary": "Professional summary here...",
+        "summary": "Professional summary...",
         "score": 5,
         "match_percentage": 50
     }}
     """
     
     result = {
+         "is_resume": True, # Default to True to give benefit of doubt if AI fails to toggle
          "skills": [], 
          "experience": 0, 
+         "experience_level": "Unknown",
          "education": [], 
          "roles": [], 
          "summary": "No summary available.",

@@ -31,15 +31,24 @@ async def apply_for_job(
         )
     
     # Check if already applied
+    # Check if already applied
     existing_app = db.query(Application).filter(
         Application.job_id == job_id,
         Application.candidate_id == current_user.id
     ).first()
+    
     if existing_app:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="You have already applied for this job"
-        )
+        # If the previous application was rejected, allow re-application by deleting the old one
+        if existing_app.status == "rejected":
+            # Start fresh - delete the old application tree (cascades should handle relations)
+            db.delete(existing_app)
+            db.commit()
+            # Loop continues to create new app
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="You have already applied for this job"
+            )
     
     MAX_FILE_SIZE = 5 * 1024 * 1024 # 5MB
     ALLOWED_TYPES = ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "text/plain"]
@@ -139,20 +148,71 @@ async def apply_for_job(
             years_of_experience=extraction_data.get("experience"),
             education=json.dumps(extraction_data.get("education") or []),
             previous_roles=json.dumps(extraction_data.get("roles") or []),
+            experience_level=extraction_data.get("experience_level"),
             resume_score=extraction_data.get("score", 0),
             skill_match_percentage=extraction_data.get("match_percentage", 0)
         )
         db.add(resume_extraction)
+        
+        # --- Validation Logic ---
+        rejection_reasons = []
+        
+        # 0. Check if it's a resume
+        if extraction_data.get("is_resume") is False:
+             rejection_reasons.append("uploaded document is not a resume")
+        
+        # 1. Check for parsing failure
+        # Heuristic: If skills are empty or extracted text indicates failure
+        if not extraction_data.get("skills") and extraction_data.get("experience") == 0:
+             rejection_reasons.append("resume parsing failed")
+             
+        # 2. Check for experience level mismatch
+        # Normalize levels for comparison
+        job_level = job.experience_level.lower().strip() if job.experience_level else ""
+        candidate_level = str(extraction_data.get("experience_level", "")).lower().strip()
+        
+        # Define hierarchy
+        levels = {
+            "intern": 0,
+            "junior": 1,
+            "mid": 2, "mid-level": 2,
+            "senior": 3,
+            "lead": 4, "manager": 4, "lead / manager": 4
+        }
+        
+        job_level_rank = levels.get(job_level, -1)
+        candidate_level_rank = levels.get(candidate_level, -1)
+        
+        # If both levels are recognized, check if candidate is lower than required
+        if job_level_rank != -1 and candidate_level_rank != -1:
+            if candidate_level_rank < job_level_rank:
+                 rejection_reasons.append("experience level mismatch")
+        
+        # If rejected, update status
+        if rejection_reasons:
+            new_application.status = "rejected"
+            new_application.hr_notes = f"Auto-rejected based on: {', '.join(rejection_reasons)}"
+            
         db.commit()
 
-        # Send notification to HR
+        # Send notification to HR (only if not rejected? Or always? User didn't specify, but usually HR wants to know)
+        # If rejected, maybe we don't notify or notify as auto-rejected. Let's notify as usual for now or maybe skip to avoid noise.
+        # User goal is to reject. Let's send notification but maybe indicate rejection?
+        # For now, keeping existing notification logic but maybe updating message if rejected.
+        
         from app.models import Notification
         try:
+            notification_type = "new_application"
+            message = f"{current_user.full_name} has applied for the {job.title} position."
+            
+            if new_application.status == "rejected":
+                message += f" (Auto-rejected: {', '.join(rejection_reasons)})"
+            
             notification = Notification(
                 user_id=job.hr_id,
-                notification_type="new_application",
+                notification_type=notification_type,
                 title=f"New Application: {current_user.full_name}",
-                message=f"{current_user.full_name} has applied for the {job.title} position.",
+                message=message,
                 related_application_id=new_application.id
             )
             db.add(notification)

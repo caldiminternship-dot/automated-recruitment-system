@@ -156,7 +156,7 @@ export default function HRApplicationsPage() {
                                             {app.resume_extraction && (
                                                 <>
                                                     <span className="text-green-600 font-bold bg-green-50 px-2 py-0.5 rounded text-xs border border-green-100">Match: {app.resume_extraction.skill_match_percentage}%</span>
-                                                    <span className="text-blue-600 font-bold bg-blue-50 px-2 py-0.5 rounded text-xs border border-blue-100">Score: {app.resume_extraction.resume_score}</span>
+
                                                 </>
                                             )}
                                         </div>

@@ -6,9 +6,10 @@ import { Button } from '@/components/ui/button'
 import { APIClient } from '@/lib/api-client'
 import { useRouter } from 'next/navigation'
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog"
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Clock } from 'lucide-react'
+import { Clock, AlertCircle } from 'lucide-react'
 
     interface Job {
     id: number
@@ -32,6 +33,7 @@ export default function CandidateJobsPage() {
     // Application Form State
     const [isApplying, setIsApplying] = useState(false)
     const [resumeFile, setResumeFile] = useState<File | null>(null)
+    const [rejectionError, setRejectionError] = useState<string | null>(null)
 
     useEffect(() => {
         fetchJobs()
@@ -75,15 +77,21 @@ export default function CandidateJobsPage() {
 
         setIsApplying(true)
         setError('')
+        setRejectionError(null)
 
         try {
             const formData = new FormData()
             formData.append('resume_file', resumeFile)
 
-            await APIClient.postMultipart(`/api/applications/apply?job_id=${selectedJobId}`, formData)
+            const response = await APIClient.postMultipart<any>(`/api/applications/apply?job_id=${selectedJobId}`, formData)
 
-            alert('Application submitted successfully! Redirecting to applications...')
-            router.push('/dashboard/candidate/applications')
+            if (response.status === 'rejected') {
+                setSelectedJobId(null) // Close application form
+                setRejectionError("Resume rejected based on one/some of the following reasons: \n- experience level \n- resume parsing failed")
+            } else {
+                alert('Application submitted successfully! Redirecting to applications...')
+                router.push('/dashboard/candidate/applications')
+            }
         } catch (err) {
             setError(err instanceof Error ? err.message : 'Failed to submit application')
         } finally {

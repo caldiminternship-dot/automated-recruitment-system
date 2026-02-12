@@ -72,6 +72,7 @@ class ResumeExtraction(Base):
     years_of_experience = Column(Float)
     education = Column(Text)  # JSON array
     previous_roles = Column(Text)  # JSON array
+    experience_level = Column(String(50))  # 'Intern', 'Junior', 'Mid-Level', 'Senior', 'Lead'
     resume_score = Column(Float, default=0)  # Out of 10
     skill_match_percentage = Column(Float, default=0)  # Out of 100
     created_at = Column(DateTime, default=datetime.utcnow)

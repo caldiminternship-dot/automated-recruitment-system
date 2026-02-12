@@ -41,13 +41,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-slate-50">
-      
-      {/* Dynamic Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[100px] animate-pulse" />
-        <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px] animate-pulse delay-700" />
-      </div>
+
 
       <Card className="w-full max-w-md shadow-2xl relative z-10 bg-white/70 backdrop-blur-xl border-white/40">
         <CardContent className="p-8">
@@ -143,7 +137,6 @@ export default function LoginPage() {
           </div>
 
         </CardContent>
-      </Card>
-    </div>
+    </Card>
   )
 }

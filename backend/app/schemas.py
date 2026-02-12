@@ -105,6 +105,7 @@ class ResumeExtractionResponse(BaseModel):
     years_of_experience: Optional[float]
     education: Optional[str]
     previous_roles: Optional[str]
+    experience_level: Optional[str]
     resume_score: float
     skill_match_percentage: float
     created_at: datetime

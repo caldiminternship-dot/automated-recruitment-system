@@ -14,7 +14,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'HR Recruitment System',
+  title: 'Caldim Ai',
   description: 'AI-powered automated recruitment platform for seamless hiring',
   generator: 'v0.app',
 

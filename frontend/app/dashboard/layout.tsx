@@ -51,7 +51,7 @@ export default function DashboardLayout({
             <div className="flex items-center gap-2">
               <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
               <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">
-                Dashboard
+                Caldim Recruitment Portal
               </h1>
             </div>
             <div className="flex items-center gap-4">

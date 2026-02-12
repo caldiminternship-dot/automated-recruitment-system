@@ -1,0 +1,158 @@
+{
+  "report_id": "INT20260212140507",
+  "timestamp": "2026-02-12T14:05:07.353013",
+  "display_date": "2026-02-12 14:05:07",
+  "candidate_profile": {
+    "skills": [
+      "data"
+    ],
+    "primary_skill": "data",
+    "experience": "mid",
+    "intro_score": 0
+  },
+  "question_evaluations": [
+    {
+      "question": "What are some common data validation techniques used to ensure data quality, and how do you implement them in a Python script?",
+      "answer": "klsd fjep jwefjewopwepofj poeo wpeoopoewpowe poewoeop oewo poe w we",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely incomprehensible and lacks any technical content, making it impossible to evaluate its technical merits. It also fails to provide any relevant information or examples to address the question.",
+          "Note: The answer appears to be a jumbled collection of random characters and does not resemble a coherent response to the question. A good answer would provide specific data validation techniques, such as checking for null or duplicate values, data type validation, and range checks, and explain how to implement them in a Python script using relevant libraries and functions."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 1,
+      "question_type": "technical"
+    },
+    {
+      "question": "How do you handle sensitive data, such as personally identifiable information (PII), in a dataset, and what measures do you take to protect it from unauthorized access?",
+      "answer": "po repwrpre prp prokropkrokeo rkeqokwpkwppwpp  pw ppwpw p pwpw www ",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer is completely incomprehensible and lacks any relevant technical information, making it impossible to evaluate the candidate's knowledge or understanding of handling sensitive data.",
+          "Note: The answer provided does not contain any meaningful or coherent text, making it impossible to assess the candidate's technical skills or knowledge. A typical answer to this question would involve discussing methods such as encryption, access controls, anonymization, and compliance with relevant regulations like GDPR or HIPAA."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 2,
+      "question_type": "technical"
+    },
+    {
+      "question": "You are tasked with designing a database schema for a data warehouse that stores sales data. How would you design the schema to ensure data consistency, reduce data redundancy, and improve query performance, considering the principles of data normalization and denormalization?",
+      "answer": "oie wowweoppoew opwpow epop owe poewp oew poewp owe poe poewpowe ",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer lacks any coherent or relevant technical information, and does not address the question in any meaningful way. The response appears to be a jumbled collection of random characters, rather than a thoughtful and well-structured answer.",
+          "Note: The answer does not demonstrate any understanding of database schema design, data normalization, or denormalization, and does not provide any examples or technical terms relevant to the question. The word count is also significantly below the ideal range, and the structure and organization are non-existent."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 3,
+      "question_type": "technical"
+    },
+    {
+      "question": "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?",
+      "answer": " we pow oweo we powep oew poewpo ewpo ewpowepoew opewj oew jofwe jpoejpo e",
+      "evaluation": {
+        "technical_accuracy": 1.0,
+        "completeness": 1,
+        "clarity": 1.0,
+        "depth": 1.0,
+        "practicality": 1.0,
+        "overall": 1.0,
+        "strengths": [
+          "None"
+        ],
+        "weaknesses": [
+          "The answer appears to be gibberish and lacks any coherent or meaningful content, indicating a complete failure to address the question or provide any relevant information.",
+          "Note: The answer does not contain any technical terms, examples, or structured response, making it impossible to evaluate based on the given criteria. The word count is also significantly below the ideal range, and the response does not demonstrate any understanding of the question or the topic."
+        ]
+      },
+      "score": 1.0,
+      "question_number": 4,
+      "question_type": "behavioral"
+    }
+  ],
+  "questions_asked": [
+    "What are some common data validation techniques used to ensure data quality, and how do you implement them in a Python script?",
+    "How do you handle sensitive data, such as personally identifiable information (PII), in a dataset, and what measures do you take to protect it from unauthorized access?",
+    "You are tasked with designing a database schema for a data warehouse that stores sales data. How would you design the schema to ensure data consistency, reduce data redundancy, and improve query performance, considering the principles of data normalization and denormalization?",
+    "Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+  ],
+  "overall_score": 1.0,
+  "final_score": 1.0,
+  "introduction_analyzed": false,
+  "total_questions_answered": 4,
+  "total_questions": 4,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interview initialized for Senior Backend Developer",
+      "timestamp": "2026-02-12 08:33:31.868143"
+    },
+    {
+      "role": "system",
+      "content": "Question: What are some common data validation techniques used to ensure data quality, and how do you implement them in a Python script?"
+    },
+    {
+      "role": "candidate",
+      "content": "klsd fjep jwefjewopwepofj poeo wpeoopoewpowe poewoeop oewo poe w we"
+    },
+    {
+      "role": "system",
+      "content": "Question: How do you handle sensitive data, such as personally identifiable information (PII), in a dataset, and what measures do you take to protect it from unauthorized access?"
+    },
+    {
+      "role": "candidate",
+      "content": "po repwrpre prp prokropkrokeo rkeqokwpkwppwpp  pw ppwpw p pwpw www "
+    },
+    {
+      "role": "system",
+      "content": "Question: You are tasked with designing a database schema for a data warehouse that stores sales data. How would you design the schema to ensure data consistency, reduce data redundancy, and improve query performance, considering the principles of data normalization and denormalization?"
+    },
+    {
+      "role": "candidate",
+      "content": "oie wowweoppoew opwpow epop owe poewp oew poewp owe poe poewpowe "
+    },
+    {
+      "role": "system",
+      "content": "Question: Tell me about a time when you faced an unexpected challenge at work. How did you take ownership of the situation and resolve it?"
+    },
+    {
+      "role": "candidate",
+      "content": " we pow oweo we powep oew poewpo ewpo ewpowepoew opewj oew jofwe jpoejpo e"
+    }
+  ],
+  "adaptive_interview": true,
+  "tab_switch_count": 0,
+  "terminated_by_tab_switch": false,
+  "interview_duration": null,
+  "analysis_date": "2026-02-12 14:05:07"
+}
