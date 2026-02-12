@@ -223,8 +223,27 @@ export default function ReportsPage() {
         return text
     }
 
-    const downloadFile = (content: string, filename: string, type: 'json' | 'txt') => {
-        const blob = new Blob([content], { type: type === 'json' ? 'application/json' : 'text/plain' })
+    const downloadCSV = () => {
+        const headers = ['Candidate,Date,Primary Skill,Experience,Score,Status']
+        const rows = filteredReports.map(r => [
+            `"${r.filename.replace('.json', '')}"`,
+            `"${r.display_date_short}"`,
+            `"${r.candidate_profile.primary_skill || 'N/A'}"`,
+            `"${r.candidate_profile.experience_level || 'N/A'}"`,
+            `"${r.overall_score.toFixed(2)}"`,
+            `"${r.status}"`
+        ].join(','))
+
+        const csvContent = [headers, ...rows].join('\n')
+        downloadFile(csvContent, `interview_reports_${new Date().toISOString().split('T')[0]}.csv`, 'csv')
+    }
+
+    const downloadFile = (content: string, filename: string, type: 'json' | 'txt' | 'csv') => {
+        let mimeType = 'text/plain'
+        if (type === 'json') mimeType = 'application/json'
+        if (type === 'csv') mimeType = 'text/csv'
+
+        const blob = new Blob([content], { type: mimeType })
         const url = URL.createObjectURL(blob)
         const a = document.createElement('a')
         a.href = url
@@ -247,10 +266,10 @@ export default function ReportsPage() {
 
     // Helper for Category Score Cards
     const CategoryScoreCard = ({ title, score }: { title: string, score?: number }) => (
-        <Card className="h-28 bg-white border shadow-sm">
+        <Card className="h-28 bg-card border shadow-sm">
             <CardContent className="h-full flex flex-col justify-center p-4">
-                <div className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">{title}</div>
-                <div className="text-3xl font-bold text-gray-900">{score ? score.toFixed(1) : 'N/A'}<span className="text-base font-normal text-gray-400 ml-1">/10</span></div>
+                <div className="text-xs text-muted-foreground font-bold uppercase tracking-wider mb-2">{title}</div>
+                <div className="text-3xl font-bold text-foreground">{score ? score.toFixed(1) : 'N/A'}<span className="text-base font-normal text-muted-foreground ml-1">/10</span></div>
             </CardContent>
         </Card>
     )
@@ -299,8 +318,8 @@ export default function ReportsPage() {
 
     if (isLoading) {
         return (
-            <div className="flex justify-center items-center h-screen">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+            <div className="flex justify-center items-center h-screen bg-background">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
             </div>
         )
     }
@@ -330,10 +349,10 @@ export default function ReportsPage() {
             {/* Header - Fixed at the top of the component */}
             <div className="flex-none flex justify-between items-center">
                 <div>
-                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700">
+                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-400 dark:to-indigo-400">
                         Interview Reports
                     </h1>
-                    <p className="text-gray-500 mt-1">
+                    <p className="text-muted-foreground mt-1">
                         Analytics and detailed reports for {reports.length} candidates
                     </p>
                 </div>
@@ -341,7 +360,7 @@ export default function ReportsPage() {
 
             {/* Question Detail Modal */}
             <Dialog open={!!selectedQuestion} onOpenChange={(open) => !open && setSelectedQuestion(null)}>
-                <DialogContent className="w-full md:!max-w-[35vw] md:!w-[35vw] max-h-[90vh] overflow-y-auto bg-gray-50/95 p-6">
+                <DialogContent className="w-full md:!max-w-[35vw] md:!w-[35vw] max-h-[90vh] overflow-y-auto bg-background/95 p-6">
                     <DialogHeader>
                         <DialogTitle className="text-2xl font-bold">Detailed Question Analysis</DialogTitle>
                         <DialogDescription>In-depth review of the candidate's response.</DialogDescription>
@@ -351,23 +370,23 @@ export default function ReportsPage() {
                         <div className="space-y-8 mt-4">
                             {/* Row 1: Question */}
                             <div className="space-y-2">
-                                <h4 className="text-lg font-bold text-gray-900">Question:</h4>
-                                <p className="text-lg text-gray-800 bg-white p-6 rounded-xl border shadow-sm leading-relaxed">
+                                <h4 className="text-lg font-bold text-foreground">Question:</h4>
+                                <p className="text-lg text-foreground bg-card p-6 rounded-xl border shadow-sm leading-relaxed">
                                     {selectedQuestion.question}
                                 </p>
                             </div>
 
                             {/* Row 2: Answer */}
                             <div className="space-y-2">
-                                <h4 className="text-lg font-bold text-gray-900">Answer:</h4>
-                                <p className="text-base text-gray-700 bg-white p-6 rounded-xl border shadow-sm leading-relaxed whitespace-pre-wrap">
+                                <h4 className="text-lg font-bold text-foreground">Answer:</h4>
+                                <p className="text-base text-foreground bg-card p-6 rounded-xl border shadow-sm leading-relaxed whitespace-pre-wrap">
                                     {selectedQuestion.answer}
                                 </p>
                             </div>
 
                             {/* Row 3: Category Scores */}
                             <div>
-                                <h4 className="text-lg font-bold text-gray-900 mb-3">Category Scores:</h4>
+                                <h4 className="text-lg font-bold text-foreground mb-3">Category Scores:</h4>
                                 <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                     <CategoryScoreCard title="Technical Accuracy" score={selectedQuestion.evaluation.technical_accuracy} />
                                     <CategoryScoreCard title="Entirety" score={selectedQuestion.evaluation.completeness} />
@@ -379,14 +398,14 @@ export default function ReportsPage() {
 
                             {/* Row 4: Overall Score */}
                             <div className="flex flex-col items-center">
-                                <Card className="w-full h-28  border-blue-100 shadow-md transform hover:scale-[1.01] transition-transform duration-200">
+                                <Card className="w-full h-28 border-blue-100 dark:border-blue-900 shadow-md transform hover:scale-[1.01] transition-transform duration-200">
                                     <CardContent className="h-full flex flex-col items-center justify-center text-center p-2">
                                         <div className="text-xs font-bold uppercase tracking-widest mb-1">Overall Score</div>
                                         <div className="flex items-baseline gap-2">
-                                            <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 drop-shadow-sm">
+                                            <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 dark:from-blue-400 dark:to-indigo-300 drop-shadow-sm">
                                                 {selectedQuestion.evaluation.overall.toFixed(1)}
                                             </span>
-                                            <span className="text-2xl text-gray-400 font-medium font-sans">/ 10</span>
+                                            <span className="text-2xl text-muted-foreground font-medium font-sans">/ 10</span>
                                         </div>
                                     </CardContent>
                                 </Card>
@@ -397,38 +416,38 @@ export default function ReportsPage() {
 
                             {/* Strengths */}
                             <div>
-                                <h4 className="text-lg font-bold text-gray-900 mb-3">Strengths:</h4>
-                                <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-6 h-full shadow-sm">
+                                <h4 className="text-lg font-bold text-foreground mb-3">Strengths:</h4>
+                                <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900 rounded-xl p-6 h-full shadow-sm">
                                     {selectedQuestion.evaluation.strengths && selectedQuestion.evaluation.strengths.length > 0 ? (
                                         <ul className="space-y-3">
                                             {selectedQuestion.evaluation.strengths.map((s, idx) => (
-                                                <li key={idx} className="flex gap-3 text-base text-emerald-800 leading-relaxed">
-                                                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5 text-emerald-600" />
+                                                <li key={idx} className="flex gap-3 text-base text-emerald-800 dark:text-emerald-300 leading-relaxed">
+                                                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5 text-emerald-600 dark:text-emerald-500" />
                                                     <span>{s}</span>
                                                 </li>
                                             ))}
                                         </ul>
                                     ) : (
-                                        <p className="text-gray-500 italic">No specific strengths noted.</p>
+                                        <p className="text-muted-foreground italic">No specific strengths noted.</p>
                                     )}
                                 </div>
                             </div>
 
                             {/* Weaknesses */}
                             <div>
-                                <h4 className="text-lg font-bold text-gray-900 mb-3">Areas for Improvement:</h4>
-                                <div className="bg-red-50 border border-red-100 rounded-xl p-6 h-full shadow-sm">
+                                <h4 className="text-lg font-bold text-foreground mb-3">Areas for Improvement:</h4>
+                                <div className="bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900 rounded-xl p-6 h-full shadow-sm">
                                     {selectedQuestion.evaluation.weaknesses && selectedQuestion.evaluation.weaknesses.length > 0 ? (
                                         <ul className="space-y-3">
                                             {selectedQuestion.evaluation.weaknesses.map((w, idx) => (
-                                                <li key={idx} className="flex gap-3 text-base text-red-800 leading-relaxed">
-                                                    <XCircle className="h-5 w-5 shrink-0 mt-0.5 text-red-600" />
+                                                <li key={idx} className="flex gap-3 text-base text-red-800 dark:text-red-300 leading-relaxed">
+                                                    <XCircle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-500" />
                                                     <span>{w}</span>
                                                 </li>
                                             ))}
                                         </ul>
                                     ) : (
-                                        <p className="text-gray-500 italic">No specific improvements noted.</p>
+                                        <p className="text-muted-foreground italic">No specific improvements noted.</p>
                                     )}
                                 </div>
                             </div>
@@ -452,7 +471,7 @@ export default function ReportsPage() {
                   - It stays "sticky"/fixed effectively because the container doesn't scroll, 
                     only the content inside this Card (if needed) and the Right Component.
                 */}
-                <div className="lg:col-span-1 h-full">
+                <div className="lg:col-span-1 h-full animate-in fade-in slide-in-from-left-8 duration-700 ease-out fill-mode-both">
                     <Card className="h-full flex flex-col shadow-md border-slate-200 !py-0 !gap-0">
                         <CardHeader className="p-3 !pb-0 shrink-0">
                             <div className="flex items-center justify-between">
@@ -462,7 +481,7 @@ export default function ReportsPage() {
                                 <Button 
                                     variant="ghost" 
                                     size="icon" 
-                                    className="h-8 w-8 text-gray-400 hover:text-red-500" 
+                                    className="h-8 w-8 text-muted-foreground hover:text-red-500" 
                                     onClick={clearAllFilters}
                                     title="Clear all filters"
                                 >
@@ -543,7 +562,7 @@ export default function ReportsPage() {
                             <div className="space-y-2">
                                 <div className="flex justify-between">
                                     <Label>Score Range</Label>
-                                    <span className="text-sm text-gray-500">{scoreRange[0]} - {scoreRange[1]}</span>
+                                    <span className="text-sm text-muted-foreground">{scoreRange[0]} - {scoreRange[1]}</span>
                                 </div>
                                 <Slider
                                     defaultValue={[0, 10]}
@@ -561,7 +580,7 @@ export default function ReportsPage() {
                             {/* Calendar */}
                             <div className="space-y-2">
                                 <Label>Interview Dates</Label>
-                                <div className="flex justify-center bg-blue-50/50 rounded-xl p-2 border border-blue-100 h-[350px] items-start">
+                                <div className="flex justify-center bg-blue-50/50 dark:bg-slate-900/50 rounded-xl p-2 border border-blue-100 dark:border-slate-800 h-[350px] items-start">
                             <Calendar
                                         mode="single"
                                         selected={dateFilter}
@@ -601,7 +620,7 @@ export default function ReportsPage() {
                 */}
                 <div className="lg:col-span-3 h-full overflow-y-auto pr-2 pb-2 space-y-6">
                     {/* Metrics Cards */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-in fade-in slide-in-from-top-8 duration-700 ease-out fill-mode-both delay-100">
                         <Card>
                             <CardHeader className="pb-2">
                                 <CardDescription>Total Reports</CardDescription>
@@ -631,18 +650,18 @@ export default function ReportsPage() {
                     </div>
 
                     {/* Status Stats */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="bg-white p-4 rounded-lg border border-l-4 border-l-emerald-500 shadow-sm">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-in fade-in slide-in-from-top-8 duration-700 ease-out fill-mode-both delay-200">
+                        <div className="bg-card p-4 rounded-lg border border-l-4 border-l-emerald-500 shadow-sm">
                             <div className="text-emerald-500 font-bold text-2xl">{metrics.selected}</div>
-                            <div className="text-gray-500 text-sm">Selected</div>
+                            <div className="text-muted-foreground text-sm">Selected</div>
                         </div>
-                        <div className="bg-white p-4 rounded-lg border border-l-4 border-l-amber-500 shadow-sm">
+                        <div className="bg-card p-4 rounded-lg border border-l-4 border-l-amber-500 shadow-sm">
                             <div className="text-amber-500 font-bold text-2xl">{metrics.conditional}</div>
-                            <div className="text-gray-500 text-sm">Conditional</div>
+                            <div className="text-muted-foreground text-sm">Conditional</div>
                         </div>
-                        <div className="bg-white p-4 rounded-lg border border-l-4 border-l-red-500 shadow-sm">
+                        <div className="bg-card p-4 rounded-lg border border-l-4 border-l-red-500 shadow-sm">
                             <div className="text-red-500 font-bold text-2xl">{metrics.rejected}</div>
-                            <div className="text-gray-500 text-sm">Rejected</div>
+                            <div className="text-muted-foreground text-sm">Rejected</div>
                         </div>
                     </div>
 
@@ -654,20 +673,20 @@ export default function ReportsPage() {
                                 <TabsTrigger value="table">Table View</TabsTrigger>
                                 <TabsTrigger value="analytics">Summary Analytics</TabsTrigger>
                             </TabsList>
-                            <span className="text-sm text-gray-500">Showing {filteredReports.length} reports</span>
+                            <span className="text-sm text-muted-foreground">Showing {filteredReports.length} reports</span>
                         </div>
 
-                        <TabsContent value="detailed" className="space-y-4 animate-in fade-in zoom-in-95 duration-300">
+                        <TabsContent value="detailed" className="space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both delay-300">
                             {filteredReports.length === 0 ? (
-                                <div className="text-center py-12 bg-white rounded-lg border">
-                                    <p className="text-gray-500">No reports match your filters.</p>
+                                <div className="text-center py-12 bg-card rounded-lg border">
+                                    <p className="text-muted-foreground">No reports match your filters.</p>
                                     <Button variant="link" onClick={clearAllFilters}>Clear Filters</Button>
                                 </div>
                             ) : (
 
                                 <Accordion type="single" collapsible className="space-y-4">
                                     {filteredReports.map((report, idx) => (
-                                        <AccordionItem value={`item-${idx}`} key={idx} className="bg-white border rounded-lg px-4 shadow-sm hover:shadow-md transition-shadow border-0">
+                                        <AccordionItem value={`item-${idx}`} key={idx} className="bg-card border rounded-lg px-4 shadow-sm hover:shadow-md transition-shadow border-0">
                                             <AccordionTrigger className="hover:no-underline py-4">
                                                 <div className="flex flex-col md:flex-row md:items-center justify-between w-full pr-4 gap-4">
                                                     <div className="flex flex-col items-start gap-1">
@@ -677,16 +696,16 @@ export default function ReportsPage() {
                                                             {report.status === 'Conditional' && <AlertCircle className="h-5 w-5 text-amber-500" />}
                                                             {report.status === 'Rejected' && <XCircle className="h-5 w-5 text-red-500" />}
                                                         </div>
-                                                        <div className="text-sm text-gray-500">{report.filename}</div>
+                                                        <div className="text-sm text-muted-foreground">{report.filename}</div>
                                                     </div>
 
                                                     <div className="flex gap-4 items-center">
                                                         <div className="text-right w-16">
-                                                            <div className="text-xs text-gray-500 uppercase">Score</div>
+                                                            <div className="text-xs text-muted-foreground uppercase">Score</div>
                                                             <div className="font-bold text-xl">{report.overall_score.toFixed(1)}</div>
                                                         </div>
                                                         <div className="text-right border-l pl-4 w-24">
-                                                            <div className="text-xs text-gray-500 uppercase">Exp</div>
+                                                            <div className="text-xs text-muted-foreground uppercase">Exp</div>
                                                             <div className="font-medium truncate" title={report.candidate_profile.experience_level || 'N/A'}>
                                                                 {report.candidate_profile.experience_level || 'N/A'}
                                                             </div>
@@ -707,7 +726,7 @@ export default function ReportsPage() {
                                                 <Separator className="my-4" />
 
                                                 {/* Profile Grid */}
-                                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 bg-gray-50 p-4 rounded-lg">
+                                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 bg-muted/50 p-4 rounded-lg">
                                                     <div>
                                                         <div className="text-sm text-gray-500">Primary Skill</div>
                                                         <div className="font-medium">{report.candidate_profile.primary_skill || 'N/A'}</div>
@@ -736,16 +755,16 @@ export default function ReportsPage() {
                                                                 {report.question_evaluations.map((q, i) => (
                                                                     <div
                                                                         key={i}
-                                                                        className="bg-gray-50 p-3 rounded-lg border cursor-pointer hover:bg-blue-50 hover:border-blue-200 transition-colors group"
+                                                                        className="bg-muted/30 p-3 rounded-lg border cursor-pointer hover:bg-muted/70 hover:border-blue-200 transition-colors group"
                                                                         onClick={() => setSelectedQuestion(q)}
                                                                     >
                                                                         <div className="flex justify-between items-start mb-2">
-                                                                            <span className="font-small text-xs uppercase text-gray-500 group-hover:text-blue-600">Q{i + 1}</span>
+                                                                            <span className="font-small text-xs uppercase text-muted-foreground group-hover:text-primary">Q{i + 1}</span>
                                                                             <Badge variant="secondary" className="group-hover:bg-blue-100 group-hover:text-blue-700">{q.evaluation.overall}/10</Badge>
                                                                         </div>
                                                                         <p className="text-sm font-medium mb-1 line-clamp-2">{q.question}</p>
 
-                                                                        <div className="mt-2 text-xs text-gray-400 group-hover:text-blue-500 flex items-center justify-end">
+                                                                        <div className="mt-2 text-xs text-muted-foreground group-hover:text-primary flex items-center justify-end">
                                                                             View Analysis <ChevronDown className="h-3 w-3 ml-1 -rotate-90" />
                                                                         </div>
                                                                     </div>
@@ -778,6 +797,11 @@ export default function ReportsPage() {
                         </TabsContent>
 
                         <TabsContent value="table" className="animate-in fade-in zoom-in-95 duration-300">
+                            <div className="flex justify-end mb-4">
+                                <Button onClick={downloadCSV} variant="outline" className="gap-2 bg-background hover:bg-emerald-50 dark:hover:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800 hover:border-emerald-300 dark:hover:border-emerald-700 shadow-sm">
+                                    <FileText className="h-4 w-4" /> Export to Excel
+                                </Button>
+                            </div>
                             <Card>
                                 <CardContent className="p-0">
                                     <Table>
@@ -839,23 +863,23 @@ export default function ReportsPage() {
                                         </div>
                                         
                                         <div className="w-full lg:w-1/3 grid grid-cols-2 gap-4">
-                                            <div className="bg-gray-50 p-4 rounded-xl border text-center flex flex-col justify-center">
-                                                <div className="text-3xl font-bold text-gray-900">{metrics.avgScore}</div>
-                                                <div className="text-sm text-gray-500">Average Overall Score</div>
+                                            <div className="bg-muted/30 p-4 rounded-xl border text-center flex flex-col justify-center">
+                                                <div className="text-3xl font-bold text-foreground">{metrics.avgScore}</div>
+                                                <div className="text-sm text-muted-foreground">Average Overall Score</div>
                                             </div>
-                                            <div className="bg-gray-50 p-4 rounded-xl border text-center flex flex-col justify-center">
-                                                <div className="text-3xl font-bold text-gray-900">{metrics.total}</div>
-                                                <div className="text-sm text-gray-500">Total Interviews</div>
+                                            <div className="bg-muted/30 p-4 rounded-xl border text-center flex flex-col justify-center">
+                                                <div className="text-3xl font-bold text-foreground">{metrics.total}</div>
+                                                <div className="text-sm text-muted-foreground">Total Interviews</div>
                                             </div>
-                                            <div className="bg-gray-50 p-4 rounded-xl border text-center flex flex-col justify-center">
-                                                <div className="text-3xl font-bold text-gray-900">{metrics.avgQuestions}</div>
-                                                <div className="text-sm text-gray-500">Avg Questions Answered</div>
+                                            <div className="bg-muted/30 p-4 rounded-xl border text-center flex flex-col justify-center">
+                                                <div className="text-3xl font-bold text-foreground">{metrics.avgQuestions}</div>
+                                                <div className="text-sm text-muted-foreground">Avg Questions Answered</div>
                                             </div>
-                                            <div className="bg-gray-50 p-4 rounded-xl border text-center flex flex-col justify-center">
-                                                <div className="text-3xl font-bold text-gray-900">
+                                            <div className="bg-muted/30 p-4 rounded-xl border text-center flex flex-col justify-center">
+                                                <div className="text-3xl font-bold text-foreground">
                                                     {metrics.total > 0 ? Math.round((metrics.selected / metrics.total) * 100) : 0}%
                                                 </div>
-                                                <div className="text-sm text-gray-500">Selection Rate</div>
+                                                <div className="text-sm text-muted-foreground">Selection Rate</div>
                                             </div>
                                         </div>
                                     </div>

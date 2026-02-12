@@ -87,6 +87,40 @@ async def get_dashboard_analytics(
         "recent_interviews": recent_interviews_data
     }
 
+@router.get("/candidate/dashboard")
+async def get_candidate_dashboard_stats(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get analytics for Candidate dashboard.
+    """
+    if current_user.role != "candidate":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN, 
+            detail="Access denied"
+        )
+
+    # 1. Total Applications by this candidate
+    applications_count = db.query(Application).filter(
+        Application.candidate_id == current_user.id
+    ).count()
+
+    # 2. Interviews for this candidate
+    # Join with Application to filter by candidate_id
+    interviews_count = db.query(Interview).join(Application).filter(
+        Application.candidate_id == current_user.id
+    ).count()
+
+    # 3. Available Opportunities (Open Jobs)
+    opportunities_count = db.query(Job).filter(Job.status == "open").count()
+
+    return {
+        "applications": applications_count,
+        "interviews": interviews_count,
+        "opportunities": opportunities_count
+    }
+
 @router.get("/reports")
 async def get_interview_reports(
     current_user: User = Depends(get_current_user),

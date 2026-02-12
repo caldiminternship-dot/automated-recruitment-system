@@ -6,9 +6,10 @@ import { useAuth } from '@/lib/auth-context'
 import { useRouter, usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { SidebarProvider, SidebarTrigger } from '@/components/animate-ui/components/radix/sidebar'
 import { AppSidebar } from '@/components/app-sidebar'
 import { UserNav } from '@/components/user-nav'
+import { ModeToggle } from '@/components/mode-toggle'
 
 export default function DashboardLayout({
   children,
@@ -31,10 +32,10 @@ export default function DashboardLayout({
 
   if (!isMounted || isLoading || !isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
         </div>
       </div>
     )
@@ -42,18 +43,25 @@ export default function DashboardLayout({
 
   return (
     <SidebarProvider>
-      <AppSidebar />
-      <div className="flex-1 flex flex-col min-h-screen">
-        <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b px-6 bg-white shadow-sm">
-          <div className="flex items-center gap-2">
-            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700">
-              Dashboard
-            </h1>
+      <div className="flex min-h-screen w-full bg-transparent relative overflow-hidden">
+        
+        <AppSidebar />
+        <div className="flex-1 flex flex-col min-h-screen relative z-10 transition-all duration-300">
+          <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b border-border px-6 bg-background/60 backdrop-blur-md sticky top-0 z-20 shadow-sm transition-colors duration-300">
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+              <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">
+                Dashboard
+              </h1>
+            </div>
+            <div className="flex items-center gap-4">
+              <ModeToggle />
+              <UserNav />
+            </div>
+          </header>
+          <div className="flex-1 p-6 md:p-8 overflow-auto scrollbar-thin scrollbar-thumb-muted scrollbar-track-transparent">
+            {children}
           </div>
-          <UserNav />
-        </header>
-        <div className="flex-1 p-6 md:p-8 overflow-auto bg-gray-50/50">
-          {children}
         </div>
       </div>
     </SidebarProvider>

@@ -201,10 +201,10 @@ export default function InterviewPage() {
 
     if (isLoading || interviewStatus === 'loading') {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <div className="min-h-screen flex items-center justify-center bg-background">
                 <div className="text-center">
-                    <Loader2 className="h-16 w-16 text-blue-600 animate-spin mx-auto mb-4" />
-                    <p className="text-gray-600 text-lg">AI is preparing your interview...</p>
+                    <Loader2 className="h-16 w-16 text-primary animate-spin mx-auto mb-4" />
+                    <p className="text-muted-foreground text-lg">AI is preparing your interview...</p>
                 </div>
             </div>
         )
@@ -212,19 +212,19 @@ export default function InterviewPage() {
 
     if (interviewStatus === 'completed') {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
-                <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+            <div className="min-h-screen flex items-center justify-center bg-background p-4">
+                <div className="max-w-md w-full bg-card rounded-2xl shadow-xl p-8 text-center border border-border">
                     <div className="mb-6 text-green-500">
                         <svg className="w-20 h-20 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h1 className="text-3xl font-bold text-gray-900 mb-4">Interview Completed</h1>
-                    <p className="text-gray-600 mb-8">
+                    <h1 className="text-3xl font-bold text-foreground mb-4">Interview Completed</h1>
+                    <p className="text-muted-foreground mb-8">
                         Thank you for completing the interview. Your responses have been submitted for AI analysis. HR will review your results shortly.
                     </p>
                     <Button
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                         onClick={() => router.push('/dashboard/candidate')}
                     >
                         Return to Dashboard
@@ -235,23 +235,23 @@ export default function InterviewPage() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+        <div className="min-h-screen bg-background flex flex-col font-sans">
             {/* Header */}
-            <div className="bg-white/80 backdrop-blur-md shadow-sm border-b px-8 py-4 flex justify-between items-center sticky top-0 z-10">
+            <div className="bg-background/80 backdrop-blur-md shadow-sm border-b border-border px-8 py-4 flex justify-between items-center sticky top-0 z-10">
                 <div className="flex items-center gap-4">
-                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent">
                         AI Interview Assistant
                     </h1>
                     {interviewData?.locked_skill && (
-                        <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full">
-                            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Locked Skill:</span>
-                            <span className="text-sm font-bold text-slate-800 uppercase">{interviewData.locked_skill}</span>
-                            <span className="text-xs text-slate-400">🔒</span>
+                        <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-muted border border-border rounded-full">
+                            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Locked Skill:</span>
+                            <span className="text-sm font-bold text-foreground uppercase">{interviewData.locked_skill}</span>
+                            <span className="text-xs text-muted-foreground">🔒</span>
                         </div>
                     )}
                 </div>
                 <div className="flex items-center gap-4">
-                    <div className="text-sm font-medium text-slate-600 bg-slate-50 px-3 py-1 rounded-lg border border-slate-100">
+                    <div className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-lg border border-border">
                         Question {question?.question_number}
                     </div>
                 </div>
@@ -261,35 +261,36 @@ export default function InterviewPage() {
             <div className="flex-1 max-w-4xl w-full mx-auto p-6 md:p-8 flex flex-col gap-6">
 
                 {/* AI Question Section */}
-                <div className="bg-white rounded-2xl shadow-lg shadow-blue-900/5 border border-blue-100 p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                <div className="bg-card rounded-2xl shadow-lg shadow-blue-900/5 border border-border p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 animate-in fade-in slide-in-from-left-8 duration-700 ease-out fill-mode-both">
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-blue-500 to-blue-700"></div>
                     <div className="absolute top-0 right-0 p-4 opacity-5">
-                        <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" /></svg>
+                        <svg className="w-32 h-32 text-foreground" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" /></svg>
                     </div>
 
-                    <p className="text-xs font-bold text-blue-600 mb-3 uppercase tracking-widest flex items-center gap-2">
+
+                    <p className="text-xs font-bold text-blue-600 dark:text-blue-400 mb-3 uppercase tracking-widest flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
                         Current Question
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-medium text-slate-800 leading-relaxed relative z-10">
+                    <h2 className="text-2xl md:text-3xl font-medium text-foreground leading-relaxed relative z-10">
                         {question?.question_text}
                     </h2>
                 </div>
 
                 {/* Answer Section */}
-                <div className="flex-1 bg-white rounded-2xl shadow-md border border-slate-200 p-8 flex flex-col relative">
+                <div className="flex-1 bg-card rounded-2xl shadow-md border border-border p-8 flex flex-col relative animate-in fade-in slide-in-from-right-8 duration-700 ease-out fill-mode-both delay-200">
                     {lastSubmissionStatus === 'success' && (
-                        <div className="absolute inset-0 bg-white/90 backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-2xl animate-in fade-in duration-300">
+                        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-2xl animate-in fade-in duration-300">
                             <div className="bg-green-100 text-green-700 p-4 rounded-full mb-4">
                                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800">Answer Recorded</h3>
-                            <p className="text-gray-500">Preparing next question...</p>
+                            <h3 className="text-xl font-bold text-foreground">Answer Recorded</h3>
+                            <p className="text-muted-foreground">Preparing next question...</p>
                         </div>
                     )}
 
                     <div className="flex justify-between items-center mb-4">
-                        <label htmlFor="answer" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+                        <label htmlFor="answer" className="text-sm font-semibold text-foreground flex items-center gap-2">
                             Your Response
                         </label>
                         <Button
@@ -298,7 +299,7 @@ export default function InterviewPage() {
                             onClick={toggleListening}
                             className={`flex items-center gap-2 transition-all duration-300 ${isListening
                                 ? 'bg-red-50 text-red-600 border-red-200 hover:bg-red-100 hover:text-red-700 ring-2 ring-red-100'
-                                : 'text-slate-600 hover:text-blue-600 hover:bg-blue-50 hover:border-blue-200'
+                                : 'text-muted-foreground hover:text-primary hover:bg-primary/10 hover:border-primary/20'
                                 }`}
                         >
                             {isListening ? (
@@ -322,14 +323,14 @@ export default function InterviewPage() {
                         id="answer"
                         value={answer}
                         onChange={(e) => setAnswer(e.target.value)}
-                        className={`flex-1 w-full p-5 border rounded-xl focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 resize-none text-lg leading-relaxed transition-all shadow-inner bg-slate-50 focus:bg-white ${isListening ? 'border-red-300 bg-red-50/10' : 'border-slate-200'
+                        className={`flex-1 w-full p-5 border rounded-xl focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 resize-none text-lg leading-relaxed transition-all shadow-inner bg-muted/30 focus:bg-background text-foreground ${isListening ? 'border-red-300 bg-red-50/10' : 'border-input'
                             }`}
                         placeholder={isListening ? "Listening... Speak clearly." : "Type your answer here..."}
                         autoFocus
                     />
 
-                    <div className="mt-8 flex justify-between items-center pt-6 border-t border-slate-100">
-                        <p className="text-sm text-slate-400 font-medium">
+                    <div className="mt-8 flex justify-between items-center pt-6 border-t border-border">
+                        <p className="text-sm text-muted-foreground font-medium">
                             {isListening ?
                                 <span className="text-red-500 animate-pulse">● Recording active</span>
                                 : 'Press Enter to submit (if configured) or click button'}

@@ -86,7 +86,7 @@ export default function HRApplicationsPage() {
             <p className="text-gray-600 mb-8">Review and manage candidate applications.</p>
 
             {/* Filters Toolbar */}
-            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between">
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
                         <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -138,29 +138,39 @@ export default function HRApplicationsPage() {
                     <p className="text-gray-500">No applications match your filtering criteria.</p>
                 </div>
             ) : (
-                <div className="space-y-4">
-                    {filteredApplications.map((app) => (
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                    {filteredApplications.map((app, index) => (
                         <Link href={`/dashboard/hr/applications/${app.id}`} key={app.id}>
-                            <Card className="hover:shadow-md transition-shadow cursor-pointer">
+                            <Card style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-purple-50/30 border-purple-100/50 backdrop-blur-sm cursor-pointer group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                                 <CardContent className="p-6 flex items-center justify-between">
                                     <div>
-                                        <h3 className="text-lg font-bold text-gray-900">{app.candidate.full_name}</h3>
-                                        <p className="text-gray-600">Applied for <span className="font-medium text-gray-900">{app.job.title}</span></p>
-                                        <div className="flex gap-4 mt-2 text-sm text-gray-500">
-                                            <span>{new Date(app.applied_at).toLocaleDateString()}</span>
+                                        <h3 className="text-lg font-bold text-slate-800 group-hover:text-purple-700 transition-colors">{app.candidate.full_name}</h3>
+                                        <p className="text-slate-600">Applied for <span className="font-medium text-slate-900">{app.job.title}</span></p>
+                                        <div className="flex gap-4 mt-2 text-sm text-slate-500">
+                                            <span className="flex items-center gap-1">
+                                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                </svg>
+                                                {new Date(app.applied_at).toLocaleDateString()}
+                                            </span>
                                             {app.resume_extraction && (
                                                 <>
-                                                    <span className="text-green-600 font-medium">Match: {app.resume_extraction.skill_match_percentage}%</span>
-                                                    <span className="text-blue-600 font-medium">Score: {app.resume_extraction.resume_score}</span>
+                                                    <span className="text-green-600 font-bold bg-green-50 px-2 py-0.5 rounded text-xs border border-green-100">Match: {app.resume_extraction.skill_match_percentage}%</span>
+                                                    <span className="text-blue-600 font-bold bg-blue-50 px-2 py-0.5 rounded text-xs border border-blue-100">Score: {app.resume_extraction.resume_score}</span>
                                                 </>
                                             )}
                                         </div>
                                     </div>
                                     <div className="flex flex-col items-end gap-2">
-                                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(app.status)}`}>
+                                        <span className={`px-3 py-1 rounded-full text-xs font-medium shadow-sm ${getStatusColor(app.status)}`}>
                                             {app.status.replace(/_/g, ' ').toUpperCase()}
                                         </span>
-                                        <span className="text-blue-600 text-sm hover:underline">View Details →</span>
+                                        <span className="text-purple-600 text-sm font-medium group-hover:underline flex items-center gap-1">
+                                            View Details 
+                                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
                                     </div>
                                 </CardContent>
                             </Card>

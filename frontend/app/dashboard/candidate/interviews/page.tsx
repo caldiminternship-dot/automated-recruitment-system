@@ -56,29 +56,29 @@ export default function CandidateInterviewsPage() {
 
     const getStatusColor = (status: string) => {
         switch (status) {
-            case 'pending': return 'bg-yellow-100 text-yellow-800'
-            case 'completed': return 'bg-purple-100 text-purple-800'
-            case 'in_progress': return 'bg-blue-100 text-blue-800'
-            default: return 'bg-gray-100 text-gray-800'
+            case 'pending': return 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300'
+            case 'completed': return 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300'
+            case 'in_progress': return 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300'
+            default: return 'bg-muted text-muted-foreground'
         }
     }
 
     return (
         <div className="p-8 max-w-7xl mx-auto">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">My Interviews</h1>
-            <p className="text-gray-600 mb-8">Manage and review your AI interviews.</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">My Interviews</h1>
+            <p className="text-muted-foreground mb-8">Manage and review your AI interviews.</p>
 
             {/* Filter Toolbar */}
-            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between">
+            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
-                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                         <input
                             type="text"
                             placeholder="Search by job title..."
-                            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-sm"
+                            className="w-full pl-10 pr-4 py-2 border border-input rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm bg-background text-foreground"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -87,7 +87,7 @@ export default function CandidateInterviewsPage() {
 
                 <div className="flex gap-4">
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none bg-background text-foreground"
                         value={statusFilter}
                         onChange={(e) => setStatusFilter(e.target.value)}
                     >
@@ -98,7 +98,7 @@ export default function CandidateInterviewsPage() {
                     </select>
 
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none bg-background text-foreground"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                     >
@@ -114,32 +114,32 @@ export default function CandidateInterviewsPage() {
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
                 </div>
             ) : filteredInterviews.length === 0 ? (
-                <div className="text-center py-16 bg-white rounded-xl border border-gray-200">
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">No interviews found</h3>
-                    <p className="text-gray-500 mb-6">Your scheduled or completed interviews will appear here.</p>
+                <div className="text-center py-16 bg-card rounded-xl border border-border">
+                    <h3 className="text-lg font-medium text-foreground mb-2">No interviews found</h3>
+                    <p className="text-muted-foreground mb-6">Your scheduled or completed interviews will appear here.</p>
                 </div>
             ) : (
-                <div className="grid gap-6">
-                    {filteredInterviews.map((interview) => (
-                        <Card key={interview.id} className="hover:shadow-md transition-shadow">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                    {filteredInterviews.map((interview, index) => (
+                        <Card key={interview.id} style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-card to-blue-50/30 dark:to-blue-900/10 border-border backdrop-blur-sm group animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader className="flex flex-row items-center justify-between pb-2">
                                 <div>
-                                    <CardTitle className="text-xl">{interview.job_title}</CardTitle>
-                                    <CardDescription>
+                                    <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">{interview.job_title}</CardTitle>
+                                    <CardDescription className="text-muted-foreground">
                                         Date: {new Date(interview.created_at).toLocaleDateString()}
                                     </CardDescription>
                                 </div>
-                                <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(interview.status)}`}>
+                                <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(interview.status)} shadow-sm`}>
                                     {interview.status.replace(/_/g, ' ').toUpperCase()}
                                 </span>
                             </CardHeader>
                             <CardContent>
-                                <div className="flex justify-between items-center text-sm text-gray-600 mb-4">
+                                <div className="flex justify-between items-center text-sm text-muted-foreground mb-4 bg-muted/50 p-3 rounded-lg border border-border">
                                     <div>
-                                        <span className="font-semibold">Locked Skill:</span> {interview.locked_skill}
+                                        <span className="font-semibold text-foreground">Locked Skill:</span> {interview.locked_skill}
                                     </div>
                                     {interview.score !== null && (
-                                        <div className="text-blue-600 font-medium">
+                                        <div className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">
                                             Score: {interview.score}/10
                                         </div>
                                     )}
@@ -148,13 +148,13 @@ export default function CandidateInterviewsPage() {
                                 <div className="flex gap-4">
                                     {interview.status === 'pending' || interview.status === 'in_progress' ? (
                                         <Button
-                                            className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                                            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
                                             onClick={() => router.push(`/interview/${interview.id}`)}
                                         >
                                             {interview.status === 'pending' ? 'Start Interview' : 'Resume Interview'}
                                         </Button>
                                     ) : (
-                                        <div className="w-full bg-gray-50 border border-gray-200 rounded-md p-3 text-center text-sm text-gray-500">
+                                        <div className="w-full bg-muted border border-border rounded-md p-3 text-center text-sm text-muted-foreground font-medium">
                                             Interview Completed
                                         </div>
                                     )}

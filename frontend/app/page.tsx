@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { ArrowRight, CheckCircle2, ChevronRight, PlayCircle, Star, Users, Zap } from 'lucide-react'
 
 export default function Home() {
   const { isAuthenticated, user, isLoading } = useAuth()
@@ -22,167 +23,216 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+          <p className="text-slate-500 text-sm font-medium animate-pulse">Loading experience...</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between p-6 max-w-7xl mx-auto">
-        <div className="text-2xl font-bold text-blue-600">Caldim Recruitment Portal</div>
-        <div className="flex gap-4">
-          {!isAuthenticated ? (
-            <>
-              <Link href="/auth/login">
-                <Button variant="outline">Login</Button>
-              </Link>
-              <Link href="/auth/register">
-                <Button className="bg-blue-600 hover:bg-blue-700">Sign Up</Button>
-              </Link>
-            </>
-          ) : (
-            <div className="text-gray-700">
-              Welcome, <span className="font-semibold">{user?.full_name}</span>
-            </div>
-          )}
+    <div className="min-h-screen bg-background font-sans selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900 dark:selection:text-indigo-100">
+      
+      {/* Navigation - Glassmorphism */}
+      <nav className="fixed w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <img src="/logo.png" alt="Caldim.ai Logo" className="h-10 w-auto" />
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">
+              Caldim<span className="font-light text-slate-500 dark:text-slate-400">.ai</span>
+            </span>
+          </div>
+          
+          <div className="flex gap-4 items-center">
+            {!isAuthenticated ? (
+              <>
+                <Link href="/auth/login">
+                  <Button variant="ghost" className="text-muted-foreground hover:text-primary hover:bg-primary/10 font-medium transition-colors">
+                    Log in
+                  </Button>
+                </Link>
+                <Link href="/auth/register">
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/30 rounded-full px-6">
+                    Get Started <ChevronRight className="ml-1 h-4 w-4" />
+                  </Button>
+                </Link>
+              </>
+            ) : (
+              <div className="flex items-center gap-3 bg-secondary px-4 py-2 rounded-full border border-border">
+                <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span className="text-sm font-medium text-foreground">
+                  Welcome back, {user?.full_name?.split(' ')[0]}
+                </span>
+              </div>
+            )}
+          </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">
-            AI-Powered Recruitment Platform
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 text-balance max-w-2xl mx-auto">
-            Streamline your hiring process with intelligent interviews, automated resume screening, and data-driven decisions.
-          </p>
-          <div className="flex gap-4 justify-center">
-            {!isAuthenticated && (
-              <>
-                <Link href="/auth/register?role=candidate">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                    Apply as Candidate
-                  </Button>
-                </Link>
+      <div className="relative pt-32 pb-20 overflow-hidden">
+        {/* Abstract Background Orbs */}
+        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[500px] h-[500px] bg-violet-500/10 rounded-full blur-3xl"></div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-8 shadow-sm">
+              <Star className="h-3 w-3 fill-indigo-700" />
+              Next Gen Recruitment
+            </div>
+            
+            <div className="mb-8">
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
+                &ldquo;Great vision without great people is <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">irrelevant</span>.&rdquo;
+              </h1>
+              <p className="mt-4 text-2xl md:text-3xl font-medium text-muted-foreground">
+                - Jim Collins
+              </p>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto font-light">
+              Experience the future of talent acquisition with AI-driven interviews, instant resume parsing, and unbiased automated scoring.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              {!isAuthenticated && (
+                <>
+                  <Link href="/auth/register?role=candidate">
+                    <Button size="lg" className="h-14 px-8 text-lg bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-xl hover:shadow-indigo-500/40 transition-all duration-300">
+                      I'm a Candidate
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                  <Link href="/auth/login?role=hr">
+                    <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-2 border-border text-foreground hover:border-primary hover:text-primary bg-transparent rounded-full transition-all duration-300">
+                      I'm Hiring
+                    </Button>
+                  </Link>
+                </>
+              )}
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      {/* Features Grid */}
+      <div className="py-24 bg-background relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            <FeatureCard 
+              icon={<Zap className="h-8 w-8 text-amber-500" />}
+              title="AI Interviews"
+              desc="Adaptive conversational AI that interviews candidates in real-time, asking follow-up questions tailored to their expertise."
+            />
+            <FeatureCard 
+              icon={<CheckCircle2 className="h-8 w-8 text-emerald-500" />}
+              title="Smart Screening"
+              desc="Automatically parse resumes and match skills against job descriptions accurately."
+            />
+            <FeatureCard 
+              icon={<Users className="h-8 w-8 text-indigo-500" />}
+              title="Unbiased Scoring"
+              desc="Data-driven evaluation reports that highlight technical strengths and soft skills without human bias."
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Dual Audience Section */}
+      <div className="py-24 bg-secondary/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16">
+            
+            {/* Candidate Card */}
+            <div className="group relative bg-card rounded-3xl p-10 shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Users className="h-40 w-40 text-indigo-600" />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-6">For Candidates</h3>
+              <ul className="space-y-4 mb-8">
+                <ListItem text="Apply with one click" />
+                <ListItem text="Practice with AI interviews" />
+                <ListItem text="Get instant feedback & learning" />
+                <ListItem text="Track real-time status" />
+              </ul>
+              <Link href="/auth/register?role=candidate">
+                 <Button variant="link" className="text-indigo-600 hover:text-indigo-800 p-0 text-lg font-semibold">
+                   Join as Talent &rarr;
+                 </Button>
+              </Link>
+            </div>
+
+            {/* HR Card */}
+            <div className="group relative bg-slate-900 rounded-3xl p-10 shadow-xl overflow-hidden hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold text-white mb-6">For HR Teams</h3>
+                <ul className="space-y-4 mb-8">
+                  <ListItem text="Post jobs in seconds" dark={true} />
+                  <ListItem text="Automate initial screening" dark={true} />
+                  <ListItem text="View detailed candidate analytics" dark={true} />
+                  <ListItem text="Reduce time-to-hire by 50%" dark={true} />
+                </ul>
                 <Link href="/auth/login?role=hr">
-                  <Button variant="outline" className="px-8 py-3 bg-transparent">
-                    Access HR Portal
+                  <Button className="bg-foreground text-background hover:bg-muted rounded-full px-8 py-6 text-lg font-bold">
+                    Start Hiring Now
                   </Button>
                 </Link>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 my-20">
-          <div className="p-8 bg-white rounded-lg shadow-sm border border-gray-200">
-            <div className="text-3xl mb-4">🤖</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Interviews</h3>
-            <p className="text-gray-600">
-              Intelligent, adaptive interviews that adjust questions based on candidate responses, saving time and ensuring fairness.
-            </p>
-          </div>
-
-          <div className="p-8 bg-white rounded-lg shadow-sm border border-gray-200">
-            <div className="text-3xl mb-4">📄</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Resume Screening</h3>
-            <p className="text-gray-600">
-              Automatic resume parsing and skill matching against job requirements, identifying the best candidates instantly.
-            </p>
-          </div>
-
-          <div className="p-8 bg-white rounded-lg shadow-sm border border-gray-200">
-            <div className="text-3xl mb-4">📊</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Data-Driven Decisions</h3>
-            <p className="text-gray-600">
-              Comprehensive interview reports with skill assessments and recommendations to support your hiring decisions.
-            </p>
-          </div>
-        </div>
-
-        {/* For Candidates */}
-        <div className="bg-white rounded-lg shadow-md p-12 mb-12 border border-gray-200">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">For Candidates</h2>
-              <ul className="space-y-4 text-gray-700">
-                <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  Browse and apply for exciting opportunities
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  Participate in fair, AI-powered interviews
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  Get instant feedback on your performance
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  Track your application status in real-time
-                </li>
-              </ul>
-            </div>
-            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg h-64 flex items-center justify-center text-white">
-              <div className="text-center">
-                <div className="text-5xl mb-2">💼</div>
-                <p className="text-lg font-semibold">Ready to grow your career?</p>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* For HR */}
-        <div className="bg-white rounded-lg shadow-md p-12 border border-gray-200">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg h-64 flex items-center justify-center text-white">
-              <div className="text-center">
-                <div className="text-5xl mb-2">👥</div>
-                <p className="text-lg font-semibold">Hire faster, smarter</p>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">For HR Teams</h2>
-              <ul className="space-y-4 text-gray-700">
-                <li className="flex gap-3">
-                  <span className="text-purple-600 font-bold">✓</span>
-                  Create and manage job postings effortlessly
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-purple-600 font-bold">✓</span>
-                  Automated resume screening and skill matching
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-purple-600 font-bold">✓</span>
-                  AI conducts interviews while you focus on strategy
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-purple-600 font-bold">✓</span>
-                  Detailed analytics and hiring recommendations
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 mt-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-gray-400">
-            © 2026 Caldim Engineering. AI-powered recruitment platform for modern teams.
+      <footer className="bg-background border-t border-border py-12">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center gap-2">
+            <img src="/logo.png" alt="Caldim.ai Logo" className="h-8 w-auto" />
+            <span className="text-lg font-bold text-foreground">Caldim.ai</span>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            © 2026 Caldim Engineering. Built for the future of work.
           </p>
+          <div className="flex gap-6">
+            <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Privacy</a>
+            <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Terms</a>
+            <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Twitter</a>
+          </div>
         </div>
       </footer>
     </div>
+  )
+}
+
+// Sub-components for cleanliness
+function FeatureCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+  return (
+    <div className="p-8 rounded-2xl bg-card border border-border hover:border-primary/20 hover:bg-accent/5 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group">
+      <div className="mb-6 p-3 bg-background rounded-xl shadow-sm inline-block group-hover:scale-110 transition-transform duration-300">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
+      <p className="text-muted-foreground leading-relaxed text-sm lg:text-base">
+        {desc}
+      </p>
+    </div>
+  )
+}
+
+function ListItem({ text, dark = false }: { text: string, dark?: boolean }) {
+  return (
+    <li className={`flex gap-3 items-center ${dark ? 'text-slate-300' : 'text-foreground'}`}>
+      <div className={`p-1 rounded-full ${dark ? 'bg-indigo-500/20 text-indigo-400' : 'bg-primary/10 text-primary'}`}>
+        <CheckCircle2 className="h-4 w-4" />
+      </div>
+      {text}
+    </li>
   )
 }

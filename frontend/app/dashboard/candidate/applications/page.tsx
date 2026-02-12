@@ -86,20 +86,20 @@ export default function CandidateApplicationsPage() {
 
     return (
         <div className="p-8 max-w-7xl mx-auto">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">My Applications</h1>
-            <p className="text-gray-600 mb-8">Track your status and take interviews.</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">My Applications</h1>
+            <p className="text-muted-foreground mb-8">Track your status and take interviews.</p>
 
             {/* Filter Toolbar */}
-            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between">
+            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
-                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                         <input
                             type="text"
                             placeholder="Search by job title..."
-                            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-sm"
+                            className="w-full pl-10 pr-4 py-2 border border-input rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm bg-background text-foreground"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -108,7 +108,7 @@ export default function CandidateApplicationsPage() {
 
                 <div className="flex gap-4">
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none bg-background text-foreground"
                         value={statusFilter}
                         onChange={(e) => setStatusFilter(e.target.value)}
                     >
@@ -121,7 +121,7 @@ export default function CandidateApplicationsPage() {
                     </select>
 
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none bg-background text-foreground"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                     >
@@ -136,17 +136,17 @@ export default function CandidateApplicationsPage() {
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
                 </div>
             ) : filteredApplications.length === 0 ? (
-                <div className="text-center py-16 bg-white rounded-xl border border-gray-200">
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">No applications match your filtering criteria</h3>
-                    <p className="text-gray-500 mb-6">Start applying for jobs to see them here.</p>
+                <div className="text-center py-16 bg-card rounded-xl border border-border">
+                    <h3 className="text-lg font-medium text-foreground mb-2">No applications match your filtering criteria</h3>
+                    <p className="text-muted-foreground mb-6">Start applying for jobs to see them here.</p>
                     <Link href="/dashboard/candidate/jobs">
                         <Button>Browse Jobs</Button>
                     </Link>
                 </div>
             ) : (
-                <div className="grid gap-6">
-                    {filteredApplications.map((app) => (
-                        <Card key={app.id}>
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                    {filteredApplications.map((app, index) => (
+                        <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="bg-gradient-to-br from-card to-purple-50/20 dark:to-purple-900/10 border-border hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader>
                                 <CardTitle>{app.job.title}</CardTitle>
                                 <CardDescription>Applied on {new Date(app.applied_at).toLocaleDateString()}</CardDescription>
@@ -155,7 +155,7 @@ export default function CandidateApplicationsPage() {
                                 <div className="space-y-4">
                                     {/* Job Closed Warning */}
                                     {app.job.status === 'closed' && (
-                                        <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded mb-4">
+                                        <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 p-4 rounded mb-4">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -163,10 +163,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-orange-800">
+                                                    <p className="text-sm font-medium text-orange-800 dark:text-orange-300">
                                                         ⚠️ Job Posting Closed
                                                     </p>
-                                                    <p className="mt-1 text-xs text-orange-700">
+                                                    <p className="mt-1 text-xs text-orange-700 dark:text-orange-400">
                                                         This job posting has been closed by the employer. No further action can be taken on this application.
                                                     </p>
                                                 </div>
@@ -176,11 +176,11 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Status Badge */}
                                     <div>
-                                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${app.status === 'approved_for_interview' ? 'bg-green-100 text-green-800' :
-                                            app.status === 'rejected' ? 'bg-red-100 text-red-800' :
-                                                app.status === 'hired' ? 'bg-blue-100 text-blue-800' :
-                                                    app.status === 'rejected_post_interview' ? 'bg-red-100 text-red-800' :
-                                                        'bg-yellow-100 text-yellow-800'
+                                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${app.status === 'approved_for_interview' ? 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300' :
+                                            app.status === 'rejected' ? 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300' :
+                                                app.status === 'hired' ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300' :
+                                                    app.status === 'rejected_post_interview' ? 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300' :
+                                                        'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300'
                                             }`}>
                                             {app.status.replace(/_/g, ' ').toUpperCase()}
                                         </span>
@@ -188,7 +188,7 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Contextual Messages & Actions */}
                                     {app.status === 'submitted' && (
-                                        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                                        <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-blue-500 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -197,10 +197,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-blue-800">
+                                                    <p className="text-sm font-medium text-blue-800 dark:text-blue-300">
                                                         Your application is being analyzed by HR
                                                     </p>
-                                                    <p className="mt-1 text-xs text-blue-700">
+                                                    <p className="mt-1 text-xs text-blue-700 dark:text-blue-400">
                                                         You'll be notified once HR reviews your application.
                                                     </p>
                                                 </div>
@@ -210,7 +210,7 @@ export default function CandidateApplicationsPage() {
 
                                     {app.status === 'approved_for_interview' && (
                                         <div className="space-y-3">
-                                            <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                                            <div className="bg-green-50 dark:bg-green-950/30 border-l-4 border-green-500 p-4 rounded">
                                                 <div className="flex items-start">
                                                     <div className="flex-shrink-0">
                                                         <svg className="h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -218,10 +218,10 @@ export default function CandidateApplicationsPage() {
                                                         </svg>
                                                     </div>
                                                     <div className="ml-3">
-                                                        <p className="text-sm font-medium text-green-800">
+                                                        <p className="text-sm font-medium text-green-800 dark:text-green-300">
                                                             Congratulations! You're approved for the AI interview
                                                         </p>
-                                                        <p className="mt-1 text-xs text-green-700">
+                                                        <p className="mt-1 text-xs text-green-700 dark:text-green-400">
                                                             Click the button below to start your interview.
                                                         </p>
                                                     </div>
@@ -238,7 +238,7 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'hired' && (
-                                        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                                        <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -247,10 +247,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-blue-800">
+                                                    <p className="text-sm font-medium text-blue-800 dark:text-blue-300">
                                                         🎉 Congratulations! You've been hired!
                                                     </p>
-                                                    <p className="mt-1 text-xs text-blue-700">
+                                                    <p className="mt-1 text-xs text-blue-700 dark:text-blue-400">
                                                         HR will contact you soon with next steps.
                                                     </p>
                                                 </div>
@@ -259,7 +259,7 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'rejected' && (
-                                        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                                        <div className="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -267,10 +267,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-red-800">
+                                                    <p className="text-sm font-medium text-red-800 dark:text-red-300">
                                                         Application not selected
                                                     </p>
-                                                    <p className="mt-1 text-xs text-red-700">
+                                                    <p className="mt-1 text-xs text-red-700 dark:text-red-400">
                                                         Thank you for your interest. We encourage you to apply for other positions.
                                                     </p>
                                                 </div>
@@ -279,7 +279,7 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'rejected_post_interview' && (
-                                        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                                        <div className="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -287,10 +287,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-red-800">
+                                                    <p className="text-sm font-medium text-red-800 dark:text-red-300">
                                                         Not selected after interview
                                                     </p>
-                                                    <p className="mt-1 text-xs text-red-700">
+                                                    <p className="mt-1 text-xs text-red-700 dark:text-red-400">
                                                         Thank you for completing the interview. We'll keep your profile for future opportunities.
                                                     </p>
                                                 </div>
@@ -300,7 +300,7 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Default message for other statuses (e.g., interview in progress or completed awaiting decision) */}
                                     {!['submitted', 'approved_for_interview', 'hired', 'rejected', 'rejected_post_interview'].includes(app.status) && (
-                                        <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                                        <div className="bg-purple-50 dark:bg-purple-950/30 border-l-4 border-purple-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
                                                     <svg className="h-5 w-5 text-purple-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -308,10 +308,10 @@ export default function CandidateApplicationsPage() {
                                                     </svg>
                                                 </div>
                                                 <div className="ml-3">
-                                                    <p className="text-sm font-medium text-purple-800">
+                                                    <p className="text-sm font-medium text-purple-800 dark:text-purple-300">
                                                         Interview completed! Results will be out soon.
                                                     </p>
-                                                    <p className="mt-1 text-xs text-purple-700">
+                                                    <p className="mt-1 text-xs text-purple-700 dark:text-purple-400">
                                                         HR is reviewing your interview performance. You'll be notified once a decision is made.
                                                     </p>
                                                 </div>

@@ -41,10 +41,10 @@ export function UserNav() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-10 w-10 rounded-full hover:bg-gray-100">
-                    <Avatar className="h-10 w-10 border border-gray-200">
+                <Button variant="ghost" className="relative h-10 w-10 rounded-full hover:bg-accent">
+                    <Avatar className="h-10 w-10 border border-border">
                         <AvatarImage src="/avatars/01.png" alt={user?.full_name} />
-                        <AvatarFallback className="bg-blue-100 text-blue-700 font-bold">{initials}</AvatarFallback>
+                        <AvatarFallback className="bg-primary/10 text-primary font-bold">{initials}</AvatarFallback>
                     </Avatar>
                 </Button>
             </DropdownMenuTrigger>
@@ -69,7 +69,7 @@ export function UserNav() {
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={handleLogout} className="text-red-600 focus:text-red-600 cursor-pointer">
+                <DropdownMenuItem onClick={handleLogout} className="text-destructive focus:text-destructive cursor-pointer">
                     <LogOut className="mr-2 h-4 w-4" />
                     <span>Log out</span>
                 </DropdownMenuItem>
