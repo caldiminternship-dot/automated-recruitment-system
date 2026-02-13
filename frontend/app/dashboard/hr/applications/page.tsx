@@ -70,32 +70,32 @@ export default function HRApplicationsPage() {
 
     const getStatusColor = (status: string) => {
         switch (status) {
-            case 'submitted': return 'bg-blue-100 text-blue-800'
-            case 'approved_for_interview': return 'bg-indigo-100 text-indigo-800'
-            case 'interview_completed': return 'bg-purple-100 text-purple-800'
-            case 'hired': return 'bg-green-100 text-green-800'
+            case 'submitted': return 'bg-blue-500/10 text-blue-700 dark:text-blue-400'
+            case 'approved_for_interview': return 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400'
+            case 'interview_completed': return 'bg-purple-500/10 text-purple-700 dark:text-purple-400'
+            case 'hired': return 'bg-green-500/10 text-green-700 dark:text-green-400'
             case 'rejected':
-            case 'rejected_post_interview': return 'bg-gray-100 text-gray-800'
-            default: return 'bg-gray-100 text-gray-800'
+            case 'rejected_post_interview': return 'bg-gray-500/10 text-gray-700 dark:text-gray-400'
+            default: return 'bg-gray-500/10 text-gray-700 dark:text-gray-400'
         }
     }
 
     return (
         <div className="p-8 max-w-7xl mx-auto">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Applications</h1>
-            <p className="text-gray-600 mb-8">Review and manage candidate applications.</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Applications</h1>
+            <p className="text-muted-foreground mb-8">Review and manage candidate applications.</p>
 
             {/* Filters Toolbar */}
-            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
+            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
-                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                         <input
                             type="text"
                             placeholder="Search candidate or job..."
-                            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-sm"
+                            className="w-full pl-10 pr-4 py-2 bg-background border border-input rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-muted-foreground text-foreground"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -104,7 +104,7 @@ export default function HRApplicationsPage() {
 
                 <div className="flex gap-4">
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 bg-background border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none text-foreground"
                         value={statusFilter}
                         onChange={(e) => setStatusFilter(e.target.value)}
                     >
@@ -117,7 +117,7 @@ export default function HRApplicationsPage() {
                     </select>
 
                     <select
-                        className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                        className="px-3 py-2 bg-background border border-input rounded-md text-sm focus:ring-2 focus:ring-primary outline-none text-foreground"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                     >
@@ -141,12 +141,12 @@ export default function HRApplicationsPage() {
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     {filteredApplications.map((app, index) => (
                         <Link href={`/dashboard/hr/applications/${app.id}`} key={app.id}>
-                            <Card style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-purple-50/30 border-purple-100/50 backdrop-blur-sm cursor-pointer group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                            <Card style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-card to-purple-500/5 border-purple-500/20 backdrop-blur-sm cursor-pointer group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                                 <CardContent className="p-6 flex items-center justify-between">
                                     <div>
-                                        <h3 className="text-lg font-bold text-slate-800 group-hover:text-purple-700 transition-colors">{app.candidate.full_name}</h3>
-                                        <p className="text-slate-600">Applied for <span className="font-medium text-slate-900">{app.job.title}</span></p>
-                                        <div className="flex gap-4 mt-2 text-sm text-slate-500">
+                                        <h3 className="text-lg font-bold text-foreground group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">{app.candidate.full_name}</h3>
+                                        <p className="text-muted-foreground">Applied for <span className="font-medium text-foreground">{app.job.title}</span></p>
+                                        <div className="flex gap-4 mt-2 text-sm text-muted-foreground">
                                             <span className="flex items-center gap-1">
                                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -155,7 +155,7 @@ export default function HRApplicationsPage() {
                                             </span>
                                             {app.resume_extraction && (
                                                 <>
-                                                    <span className="text-green-600 font-bold bg-green-50 px-2 py-0.5 rounded text-xs border border-green-100">Match: {app.resume_extraction.skill_match_percentage}%</span>
+                                                    <span className="text-green-700 dark:text-green-400 font-bold bg-green-500/10 px-2 py-0.5 rounded text-xs border border-green-500/20">Match: {app.resume_extraction.skill_match_percentage}%</span>
 
                                                 </>
                                             )}
@@ -165,7 +165,7 @@ export default function HRApplicationsPage() {
                                         <span className={`px-3 py-1 rounded-full text-xs font-medium shadow-sm ${getStatusColor(app.status)}`}>
                                             {app.status.replace(/_/g, ' ').toUpperCase()}
                                         </span>
-                                        <span className="text-purple-600 text-sm font-medium group-hover:underline flex items-center gap-1">
+                                        <span className="text-purple-600 dark:text-purple-400 text-sm font-medium group-hover:underline flex items-center gap-1">
                                             View Details 
                                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -110,7 +110,7 @@ export default function HRDashboard() {
             value={stats.open_jobs}
             icon={Briefcase}
             color="text-blue-600 dark:text-blue-400"
-            bg="bg-blue-50 dark:bg-blue-950/30"
+            bg="bg-blue-500/10"
             />
         </div>
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-100 fill-mode-both">
@@ -119,7 +119,7 @@ export default function HRDashboard() {
             value={stats.pending_review}
             icon={Users}
             color="text-orange-600 dark:text-orange-400"
-            bg="bg-orange-50 dark:bg-orange-950/30"
+            bg="bg-orange-500/10"
             />
         </div>
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-200 fill-mode-both">
@@ -128,7 +128,7 @@ export default function HRDashboard() {
             value={stats.active_interviews}
             icon={Calendar}
             color="text-purple-600 dark:text-purple-400"
-            bg="bg-purple-50 dark:bg-purple-950/30"
+            bg="bg-purple-500/10"
             />
         </div>
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-300 fill-mode-both">
@@ -137,7 +137,7 @@ export default function HRDashboard() {
             value={stats.offers_made}
             icon={CheckCircle}
             color="text-green-600 dark:text-green-400"
-            bg="bg-green-50 dark:bg-green-950/30"
+            bg="bg-green-500/10"
             />
         </div>
       </div>
@@ -154,8 +154,8 @@ export default function HRDashboard() {
                   <CardTitle className="text-foreground">Application Pipeline</CardTitle>
                   <CardDescription className="text-muted-foreground">Distribution of candidates by status</CardDescription>
                 </div>
-                <div className="p-2 bg-indigo-50 dark:bg-indigo-950/30 rounded-full">
-                  <TrendingUp className="h-5 w-5 text-indigo-500 dark:text-indigo-400" />
+                <div className="p-2 bg-indigo-500/10 rounded-full">
+                  <TrendingUp className="h-5 w-5 text-indigo-500" />
                 </div>
               </div>
             </CardHeader>
@@ -179,7 +179,7 @@ export default function HRDashboard() {
                         axisLine={false}
                       />
                       <Tooltip
-                        cursor={{ fill: 'hsl(var(--muted)/0.2)' }}
+                        cursor={{ fill: 'hsla(var(--primary), 0.1)' }}
                         contentStyle={{ borderRadius: '12px', border: '1px solid hsl(var(--border))', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', backgroundColor: 'hsl(var(--card))', color: 'hsl(var(--foreground))' }}
                       />
                       <Bar dataKey="value" radius={[6, 6, 0, 0]} barSize={40} activeBar={false}>
@@ -269,14 +269,14 @@ export default function HRDashboard() {
                         interview.status === 'completed' ? 'default' :
                           interview.status === 'scheduled' ? 'secondary' : 'outline'
                       } className={
-                        interview.status === 'completed' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-900/50' :
-                          interview.status === 'scheduled' ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-900/50' : ''
+                        interview.status === 'completed' ? 'bg-green-500/10 text-green-700 dark:text-green-400 hover:bg-green-500/20 ' :
+                          interview.status === 'scheduled' ? 'bg-blue-500/10 text-blue-700 dark:text-blue-400 hover:bg-blue-500/20 ' : ''
                       }>
                         {interview.status}
                       </Badge>
                     </TableCell>
                     <TableCell className="text-right">
-                      <Link href={`/dashboard/hr/applications`} className="text-blue-600 hover:underline text-sm font-medium">
+                      <Link href={`/dashboard/hr/applications`} className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium">
                         View Details
                       </Link>
                     </TableCell>

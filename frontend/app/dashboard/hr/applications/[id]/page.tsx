@@ -28,12 +28,12 @@ export default function HRApplicationDetailPage() {
 
     const getStatusColor = (status: string) => {
         switch (status) {
-            case 'hired': return 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 border-green-200 dark:border-green-800'
-            case 'rejected': return 'bg-red-50 dark:bg-red-900/30 text-red-800 dark:text-red-300 border-red-200 dark:border-red-800'
+            case 'hired': return 'bg-green-100 text-green-800 border-green-200 '
+            case 'rejected': return 'bg-red-50 text-red-800 border-red-200 '
             case 'interview_scheduled':
-            case 'approved_for_interview': return 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800'
-            case 'interview_completed': return 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800'
-            default: return 'bg-gray-100 dark:bg-secondary text-gray-800 dark:text-foreground border-gray-200 dark:border-border'
+            case 'approved_for_interview': return 'bg-purple-100 text-purple-800 border-purple-200 '
+            case 'interview_completed': return 'bg-blue-100 text-blue-800 border-blue-200 '
+            default: return 'bg-gray-100 text-gray-800 border-gray-200 '
         }
     }
 
@@ -171,7 +171,7 @@ export default function HRApplicationDetailPage() {
                             <>
                                 <div className="flex justify-between text-sm border-b border-border pb-2">
                                     <span className="text-muted-foreground">Match Score</span>
-                                    <span className="font-bold text-blue-600 dark:text-blue-400">{application.resume_extraction.skill_match_percentage}%</span>
+                                    <span className="font-bold text-blue-600 ">{application.resume_extraction.skill_match_percentage}%</span>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-sm mb-1">Extracted Skills</h4>
@@ -226,7 +226,7 @@ export default function HRApplicationDetailPage() {
                                 </a>
                             </div>
                         ) : (
-                            <div className="pt-4 flex items-center gap-2 text-amber-600 bg-amber-50 dark:bg-amber-900/20 dark:text-amber-400 p-3 rounded-md">
+                            <div className="pt-4 flex items-center gap-2 text-amber-600 bg-amber-50 p-3 rounded-md">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
                                 <span className="text-sm font-medium">No resume file found for this application.</span>
                             </div>
@@ -260,7 +260,7 @@ export default function HRApplicationDetailPage() {
 
                                 <div>
                                     <h4 className="font-semibold text-sm mb-1">Recommendation</h4>
-                                    <div className={`text-sm font-bold uppercase ${interviewReport.recommendation.includes('hire') ? 'text-green-600 dark:text-green-400' : 'text-orange-600 dark:text-orange-400'
+                                    <div className={`text-sm font-bold uppercase ${interviewReport.recommendation.includes('hire') ? 'text-green-600 ' : 'text-orange-600 '
                                         }`}>
                                         {interviewReport.recommendation.replace(/_/g, ' ')}
                                     </div>

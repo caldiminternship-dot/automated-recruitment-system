@@ -146,7 +146,7 @@ export default function CandidateApplicationsPage() {
             ) : (
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     {filteredApplications.map((app, index) => (
-                        <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="bg-gradient-to-br from-card to-purple-50/20 dark:to-purple-900/10 border-border hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                        <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="bg-card border-border hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader>
                                 <CardTitle>{app.job.title}</CardTitle>
                                 <CardDescription>Applied on {new Date(app.applied_at).toLocaleDateString()}</CardDescription>
@@ -155,10 +155,10 @@ export default function CandidateApplicationsPage() {
                                 <div className="space-y-4">
                                     {/* Job Closed Warning */}
                                     {app.job.status === 'closed' && (
-                                        <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 p-4 rounded mb-4">
+                                        <div className="bg-orange-500/10 border-l-4 border-orange-500 p-4 rounded mb-4">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <svg className="h-5 w-5 text-orange-600 dark:text-orange-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                                                     </svg>
                                                 </div>
@@ -176,11 +176,11 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Status Badge */}
                                     <div>
-                                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${app.status === 'approved_for_interview' ? 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300' :
-                                            app.status === 'rejected' ? 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300' :
-                                                app.status === 'hired' ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300' :
-                                                    app.status === 'rejected_post_interview' ? 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300' :
-                                                        'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300'
+                                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${app.status === 'approved_for_interview' ? 'bg-green-500/10 text-green-700 dark:text-green-400' :
+                                            app.status === 'rejected' ? 'bg-red-500/10 text-red-700 dark:text-red-400' :
+                                                app.status === 'hired' ? 'bg-blue-500/10 text-blue-700 dark:text-blue-400' :
+                                                    app.status === 'rejected_post_interview' ? 'bg-red-500/10 text-red-700 dark:text-red-400' :
+                                                        'bg-yellow-500/10 text-yellow-700 dark:text-yellow-400'
                                             }`}>
                                             {app.status.replace(/_/g, ' ').toUpperCase()}
                                         </span>
@@ -188,10 +188,10 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Contextual Messages & Actions */}
                                     {app.status === 'submitted' && (
-                                        <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded">
+                                        <div className="bg-blue-500/10 border-l-4 border-blue-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-blue-500 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                    <svg className="h-5 w-5 text-blue-600 dark:text-blue-400 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                                     </svg>
@@ -210,10 +210,10 @@ export default function CandidateApplicationsPage() {
 
                                     {app.status === 'approved_for_interview' && (
                                         <div className="space-y-3">
-                                            <div className="bg-green-50 dark:bg-green-950/30 border-l-4 border-green-500 p-4 rounded">
+                                            <div className="bg-green-500/10 border-l-4 border-green-500 p-4 rounded">
                                                 <div className="flex items-start">
                                                     <div className="flex-shrink-0">
-                                                        <svg className="h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                        <svg className="h-5 w-5 text-green-600 dark:text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                                         </svg>
                                                     </div>
@@ -238,10 +238,10 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'hired' && (
-                                        <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded">
+                                        <div className="bg-blue-500/10 border-l-4 border-blue-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <svg className="h-5 w-5 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                                                         <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                                     </svg>
@@ -259,10 +259,10 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'rejected' && (
-                                        <div className="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-4 rounded">
+                                        <div className="bg-red-500/10 border-l-4 border-red-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <svg className="h-5 w-5 text-red-600 dark:text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                                                     </svg>
                                                 </div>
@@ -279,10 +279,10 @@ export default function CandidateApplicationsPage() {
                                     )}
 
                                     {app.status === 'rejected_post_interview' && (
-                                        <div className="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-4 rounded">
+                                        <div className="bg-red-500/10 border-l-4 border-red-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <svg className="h-5 w-5 text-red-600 dark:text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                                                     </svg>
                                                 </div>
@@ -300,10 +300,10 @@ export default function CandidateApplicationsPage() {
 
                                     {/* Default message for other statuses (e.g., interview in progress or completed awaiting decision) */}
                                     {!['submitted', 'approved_for_interview', 'hired', 'rejected', 'rejected_post_interview'].includes(app.status) && (
-                                        <div className="bg-purple-50 dark:bg-purple-950/30 border-l-4 border-purple-500 p-4 rounded">
+                                        <div className="bg-purple-500/10 border-l-4 border-purple-500 p-4 rounded">
                                             <div className="flex items-start">
                                                 <div className="flex-shrink-0">
-                                                    <svg className="h-5 w-5 text-purple-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <svg className="h-5 w-5 text-purple-600 dark:text-purple-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                                                     </svg>
                                                 </div>

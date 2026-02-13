@@ -349,7 +349,7 @@ export default function ReportsPage() {
             {/* Header - Fixed at the top of the component */}
             <div className="flex-none flex justify-between items-center">
                 <div>
-                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-400 dark:to-indigo-400">
+                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 ">
                         Interview Reports
                     </h1>
                     <p className="text-muted-foreground mt-1">
@@ -398,11 +398,11 @@ export default function ReportsPage() {
 
                             {/* Row 4: Overall Score */}
                             <div className="flex flex-col items-center">
-                                <Card className="w-full h-28 border-blue-100 dark:border-blue-900 shadow-md transform hover:scale-[1.01] transition-transform duration-200">
+                                <Card className="w-full h-28 border-blue-100 shadow-md transform hover:scale-[1.01] transition-transform duration-200">
                                     <CardContent className="h-full flex flex-col items-center justify-center text-center p-2">
                                         <div className="text-xs font-bold uppercase tracking-widest mb-1">Overall Score</div>
                                         <div className="flex items-baseline gap-2">
-                                            <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 dark:from-blue-400 dark:to-indigo-300 drop-shadow-sm">
+                                            <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 drop-shadow-sm">
                                                 {selectedQuestion.evaluation.overall.toFixed(1)}
                                             </span>
                                             <span className="text-2xl text-muted-foreground font-medium font-sans">/ 10</span>
@@ -417,12 +417,12 @@ export default function ReportsPage() {
                             {/* Strengths */}
                             <div>
                                 <h4 className="text-lg font-bold text-foreground mb-3">Strengths:</h4>
-                                <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900 rounded-xl p-6 h-full shadow-sm">
+                                <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-6 h-full shadow-sm">
                                     {selectedQuestion.evaluation.strengths && selectedQuestion.evaluation.strengths.length > 0 ? (
                                         <ul className="space-y-3">
                                             {selectedQuestion.evaluation.strengths.map((s, idx) => (
-                                                <li key={idx} className="flex gap-3 text-base text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                                                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5 text-emerald-600 dark:text-emerald-500" />
+                                                <li key={idx} className="flex gap-3 text-base text-emerald-800 leading-relaxed">
+                                                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5 text-emerald-600 " />
                                                     <span>{s}</span>
                                                 </li>
                                             ))}
@@ -436,12 +436,12 @@ export default function ReportsPage() {
                             {/* Weaknesses */}
                             <div>
                                 <h4 className="text-lg font-bold text-foreground mb-3">Areas for Improvement:</h4>
-                                <div className="bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900 rounded-xl p-6 h-full shadow-sm">
+                                <div className="bg-red-50 border border-red-100 rounded-xl p-6 h-full shadow-sm">
                                     {selectedQuestion.evaluation.weaknesses && selectedQuestion.evaluation.weaknesses.length > 0 ? (
                                         <ul className="space-y-3">
                                             {selectedQuestion.evaluation.weaknesses.map((w, idx) => (
-                                                <li key={idx} className="flex gap-3 text-base text-red-800 dark:text-red-300 leading-relaxed">
-                                                    <XCircle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-500" />
+                                                <li key={idx} className="flex gap-3 text-base text-red-800 leading-relaxed">
+                                                    <XCircle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 " />
                                                     <span>{w}</span>
                                                 </li>
                                             ))}
@@ -580,7 +580,7 @@ export default function ReportsPage() {
                             {/* Calendar */}
                             <div className="space-y-2">
                                 <Label>Interview Dates</Label>
-                                <div className="flex justify-center bg-blue-50/50 dark:bg-slate-900/50 rounded-xl p-2 border border-blue-100 dark:border-slate-800 h-[350px] items-start">
+                                <div className="flex justify-center bg-blue-50/50 rounded-xl p-2 border border-blue-100 h-[350px] items-start">
                             <Calendar
                                         mode="single"
                                         selected={dateFilter}
@@ -798,7 +798,7 @@ export default function ReportsPage() {
 
                         <TabsContent value="table" className="animate-in fade-in zoom-in-95 duration-300">
                             <div className="flex justify-end mb-4">
-                                <Button onClick={downloadCSV} variant="outline" className="gap-2 bg-background hover:bg-emerald-50 dark:hover:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800 hover:border-emerald-300 dark:hover:border-emerald-700 shadow-sm">
+                                <Button onClick={downloadCSV} variant="outline" className="gap-2 bg-background hover:bg-emerald-50 text-emerald-700 border-emerald-200 hover:border-emerald-300 shadow-sm">
                                     <FileText className="h-4 w-4" /> Export to Excel
                                 </Button>
                             </div>

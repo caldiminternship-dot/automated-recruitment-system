@@ -6,6 +6,8 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2, ChevronRight, PlayCircle, Star, Users, Zap } from 'lucide-react'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { DarkModeParticles } from '@/components/dark-mode-particles'
 
 export default function Home() {
   const { isAuthenticated, user, isLoading } = useAuth()
@@ -32,20 +34,25 @@ export default function Home() {
     )
   }
 
+
+  // ... existing code ...
+
   return (
-    <div className="min-h-screen bg-background font-sans selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900 dark:selection:text-indigo-100">
+    <div className="min-h-screen bg-background font-sans selection:bg-indigo-100 selection:text-indigo-900 overflow-x-hidden">
+      <DarkModeParticles />
       
       {/* Navigation - Glassmorphism */}
       <nav className="fixed w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="/logo.png" alt="Caldim.ai Logo" className="h-10 w-auto" />
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
               Caldim<span className="font-light text-slate-500 dark:text-slate-400">.ai</span>
             </span>
           </div>
           
           <div className="flex gap-4 items-center">
+            <ThemeToggle />
             {!isAuthenticated ? (
               <>
                 <Link href="/auth/login">
@@ -86,7 +93,7 @@ export default function Home() {
             
             <div className="mb-8">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
-                &ldquo;Great vision without great people is <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">irrelevant</span>.&rdquo;
+                &ldquo;Great vision without great people is <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 ">irrelevant</span>.&rdquo;
               </h1>
               <p className="mt-4 text-2xl md:text-3xl font-medium text-muted-foreground">
                 - Jim Collins
@@ -121,7 +128,7 @@ export default function Home() {
       </div>
 
       {/* Features Grid */}
-      <div className="py-24 bg-background relative">
+      <div className="py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
@@ -144,12 +151,12 @@ export default function Home() {
       </div>
 
       {/* Dual Audience Section */}
-      <div className="py-24 bg-secondary/30">
+      <div className="py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16">
             
             {/* Candidate Card */}
-            <div className="group relative bg-card rounded-3xl p-10 shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative bg-card/5 backdrop-blur-md rounded-3xl p-10 shadow-lg border border-white/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Users className="h-40 w-40 text-indigo-600" />
               </div>
@@ -168,7 +175,7 @@ export default function Home() {
             </div>
 
             {/* HR Card */}
-            <div className="group relative bg-slate-900 rounded-3xl p-10 shadow-xl overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div className="group relative bg-card/5 backdrop-blur-md rounded-3xl p-10 shadow-xl overflow-hidden hover:-translate-y-1 transition-all duration-300 border border-white/10">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
               <div className="relative z-10">
                 <h3 className="text-3xl font-bold text-white mb-6">For HR Teams</h3>
@@ -191,7 +198,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-background border-t border-border py-12">
+      <footer className="border-t border-white/10 py-12 relative z-10 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <img src="/logo.png" alt="Caldim.ai Logo" className="h-8 w-auto" />
@@ -214,7 +221,7 @@ export default function Home() {
 // Sub-components for cleanliness
 function FeatureCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
   return (
-    <div className="p-8 rounded-2xl bg-card border border-border hover:border-primary/20 hover:bg-accent/5 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group">
+    <div className="p-8 rounded-2xl bg-card/5 backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-card/10 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group">
       <div className="mb-6 p-3 bg-background rounded-xl shadow-sm inline-block group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>

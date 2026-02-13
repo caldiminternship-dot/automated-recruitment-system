@@ -56,10 +56,10 @@ export default function CandidateInterviewsPage() {
 
     const getStatusColor = (status: string) => {
         switch (status) {
-            case 'pending': return 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300'
-            case 'completed': return 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300'
-            case 'in_progress': return 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300'
-            default: return 'bg-muted text-muted-foreground'
+            case 'pending': return 'bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 border-yellow-500/20 border'
+            case 'completed': return 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20 border'
+            case 'in_progress': return 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20 border'
+            default: return 'bg-muted text-muted-foreground border-border border'
         }
     }
 
@@ -111,7 +111,7 @@ export default function CandidateInterviewsPage() {
 
             {isLoading ? (
                 <div className="text-center py-12">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
                 </div>
             ) : filteredInterviews.length === 0 ? (
                 <div className="text-center py-16 bg-card rounded-xl border border-border">
@@ -121,7 +121,7 @@ export default function CandidateInterviewsPage() {
             ) : (
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     {filteredInterviews.map((interview, index) => (
-                        <Card key={interview.id} style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-card to-blue-50/30 dark:to-blue-900/10 border-border backdrop-blur-sm group animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                        <Card key={interview.id} style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-card border-border backdrop-blur-sm group animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader className="flex flex-row items-center justify-between pb-2">
                                 <div>
                                     <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">{interview.job_title}</CardTitle>
@@ -134,12 +134,12 @@ export default function CandidateInterviewsPage() {
                                 </span>
                             </CardHeader>
                             <CardContent>
-                                <div className="flex justify-between items-center text-sm text-muted-foreground mb-4 bg-muted/50 p-3 rounded-lg border border-border">
+                                <div className="flex justify-between items-center text-sm text-muted-foreground mb-4 bg-muted/30 p-3 rounded-lg border border-border">
                                     <div>
                                         <span className="font-semibold text-foreground">Locked Skill:</span> {interview.locked_skill}
                                     </div>
                                     {interview.score !== null && (
-                                        <div className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">
+                                        <div className="text-primary font-bold bg-primary/10 px-2 py-1 rounded border border-primary/20">
                                             Score: {interview.score}/10
                                         </div>
                                     )}
@@ -148,7 +148,7 @@ export default function CandidateInterviewsPage() {
                                 <div className="flex gap-4">
                                     {interview.status === 'pending' || interview.status === 'in_progress' ? (
                                         <Button
-                                            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
+                                            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-lg transition-all"
                                             onClick={() => router.push(`/interview/${interview.id}`)}
                                         >
                                             {interview.status === 'pending' ? 'Start Interview' : 'Resume Interview'}

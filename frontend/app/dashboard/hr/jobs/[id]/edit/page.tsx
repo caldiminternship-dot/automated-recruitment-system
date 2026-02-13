@@ -93,7 +93,7 @@ export default function HREditJobPage({ params }: PageProps) {
 
             <Card className="border-border backdrop-blur-md bg-card/70 shadow-xl rounded-3xl animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                 <CardHeader>
-                    <CardTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
+                    <CardTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 ">
                         Edit Job Position
                     </CardTitle>
                     <CardDescription>
@@ -103,7 +103,7 @@ export default function HREditJobPage({ params }: PageProps) {
                 <CardContent>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         {error && (
-                            <div className="p-4 bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 rounded-2xl text-sm border border-red-200 dark:border-red-900/50">
+                            <div className="p-4 bg-red-50 text-red-600 rounded-2xl text-sm border border-red-200 ">
                                 {error}
                             </div>
                         )}

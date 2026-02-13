@@ -9,7 +9,8 @@ import Link from 'next/link'
 import { SidebarProvider, SidebarTrigger } from '@/components/animate-ui/components/radix/sidebar'
 import { AppSidebar } from '@/components/app-sidebar'
 import { UserNav } from '@/components/user-nav'
-import { ModeToggle } from '@/components/mode-toggle'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { DarkModeParticles } from '@/components/dark-mode-particles'
 
 export default function DashboardLayout({
   children,
@@ -26,7 +27,7 @@ export default function DashboardLayout({
 
   useEffect(() => {
     if (isMounted && !isLoading && !isAuthenticated) {
-      router.push('/auth/login')
+      router.push('/')
     }
   }, [isAuthenticated, isLoading, isMounted, router])
 
@@ -44,6 +45,7 @@ export default function DashboardLayout({
   return (
     <SidebarProvider>
       <div className="flex min-h-screen w-full bg-transparent relative overflow-hidden">
+        <DarkModeParticles />
         
         <AppSidebar />
         <div className="flex-1 flex flex-col min-h-screen relative z-10 transition-all duration-300">
@@ -54,8 +56,10 @@ export default function DashboardLayout({
                 Caldim Recruitment Portal
               </h1>
             </div>
+
+
             <div className="flex items-center gap-4">
-              <ModeToggle />
+              <ThemeToggle />
               <UserNav />
             </div>
           </header>

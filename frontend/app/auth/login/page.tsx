@@ -43,30 +43,30 @@ export default function LoginPage() {
   return (
 
 
-      <Card className="w-full max-w-md shadow-2xl relative z-10 bg-white/70 backdrop-blur-xl border-white/40">
+      <Card className="w-full max-w-md shadow-2xl relative z-10 bg-card/10 backdrop-blur-xl border-white/10">
         <CardContent className="p-8">
           
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
                <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
             </div>
-            <h1 className="text-3xl font-bold text-slate-900 mb-2">Welcome Back</h1>
-            <p className="text-slate-500">Sign in to access your dashboard</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
+            <p className="text-muted-foreground">Sign in to access your dashboard</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {error && (
-              <div className="p-3 bg-red-50/80 border border-red-200 rounded-lg text-red-600 text-sm backdrop-blur-sm">
+              <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-lg text-red-500 text-sm backdrop-blur-sm">
                 {error}
               </div>
             )}
 
             <div className="space-y-2">
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="email" className="block text-sm font-medium text-foreground">
                 Email Address
               </label>
               <div className="relative">
-                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
                   <Mail className="h-4 w-4" />
                 </div>
                 <input
@@ -75,7 +75,7 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full pl-10 pr-4 py-3 bg-white/50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all placeholder:text-slate-400"
+                  className="w-full pl-10 pr-4 py-3 bg-background/50 border border-input rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground text-foreground"
                   placeholder="name@company.com"
                   disabled={isSubmitting}
                 />
@@ -84,15 +84,15 @@ export default function LoginPage() {
 
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <label htmlFor="password" className="block text-sm font-medium text-slate-700">
+                <label htmlFor="password" className="block text-sm font-medium text-foreground">
                   Password
                 </label>
-                <Link href="/auth/forgot-password" className="text-xs text-indigo-600 hover:text-indigo-700 font-medium">
+                <Link href="/auth/forgot-password" className="text-xs text-primary hover:text-primary/80 font-medium">
                   Forgot password?
                 </Link>
               </div>
               <div className="relative">
-                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
                   <Lock className="h-4 w-4" />
                 </div>
                 <input
@@ -101,7 +101,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full pl-10 pr-4 py-3 bg-white/50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all placeholder:text-slate-400"
+                  className="w-full pl-10 pr-4 py-3 bg-background/50 border border-input rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground text-foreground"
                   placeholder="••••••••"
                   disabled={isSubmitting}
                 />
@@ -111,7 +111,7 @@ export default function LoginPage() {
             <Button
               type="submit"
               disabled={isSubmitting || isLoading}
-              className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white py-6 rounded-xl shadow-lg shadow-indigo-500/25 transition-all duration-300 hover:-translate-y-0.5"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 rounded-xl shadow-lg shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5"
             >
               {isSubmitting ? (
                 <>
@@ -128,9 +128,9 @@ export default function LoginPage() {
           </form>
 
           <div className="mt-8 text-center">
-            <p className="text-slate-600 text-sm">
+            <p className="text-muted-foreground text-sm">
               Don't have an account?{' '}
-              <Link href="/auth/register" className="text-indigo-600 hover:text-indigo-700 font-bold hover:underline">
+              <Link href="/auth/register" className="text-primary hover:text-primary/80 font-bold hover:underline">
                 Create one now
               </Link>
             </p>

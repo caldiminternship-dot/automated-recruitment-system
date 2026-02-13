@@ -16,7 +16,7 @@ export default function DashboardRedirect() {
                 router.push('/dashboard/candidate')
             }
         } else if (!isLoading && !user) {
-            router.push('/auth/login')
+            router.push('/')
         }
     }, [user, isLoading, router])
 

@@ -28,18 +28,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${outfit.variable} font-sans antialiased relative`}>
-        <AnimatedBackground />
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
+          <AnimatedBackground />
           <AuthProvider>
             {children}
           </AuthProvider>
+          <Analytics />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   )

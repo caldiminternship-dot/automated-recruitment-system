@@ -182,8 +182,8 @@ export default function CandidateJobsPage() {
                     {filteredJobs.map((job) => (
                         <Card key={job.id} className={`group hover:-translate-y-1 transition-all duration-300 border backdrop-blur-md shadow-sm hover:shadow-xl ${
                             job.is_applied 
-                            ? 'bg-gradient-to-br from-emerald-50/80 to-teal-50/80 dark:from-emerald-950/30 dark:to-teal-950/30 border-emerald-100 dark:border-emerald-900 opacity-90' 
-                            : 'bg-gradient-to-br from-card to-indigo-50/40 dark:to-indigo-950/20 border-border hover:to-indigo-50/60 dark:hover:to-indigo-900/30 hover:border-indigo-200/50 dark:hover:border-indigo-800/50'
+                            ? 'bg-muted/50 border-emerald-500/30 opacity-90' 
+                            : 'bg-card border-border hover:border-primary/30'
                         }`}>
                             <CardHeader className="pb-3">
                                 <div className="flex justify-between items-start gap-4">
@@ -191,17 +191,17 @@ export default function CandidateJobsPage() {
                                         {job.title}
                                     </CardTitle>
                                     {job.is_applied && (
-                                        <span className="bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">
+                                        <span className="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">
                                             Applied
                                         </span>
                                     )}
                                 </div>
                                 <CardDescription className="flex flex-wrap gap-2 mt-3">
-                                    <span className="bg-indigo-50 text-indigo-600 border border-indigo-100 text-xs px-2.5 py-0.5 rounded-full font-medium">
+                                    <span className="bg-foreground/5 text-foreground/80 border border-border text-xs px-2.5 py-0.5 rounded-full font-medium">
                                         {job.experience_level.replace('_', ' ').toUpperCase()}
                                     </span>
                                     {!job.is_applied && (
-                                        <span className="bg-blue-50 text-blue-600 border border-blue-100 text-xs px-2.5 py-0.5 rounded-full font-medium">
+                                        <span className="bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-xs px-2.5 py-0.5 rounded-full font-medium">
                                             {job.status.toUpperCase()}
                                         </span>
                                     )}
@@ -213,20 +213,20 @@ export default function CandidateJobsPage() {
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {job.required_skills.split(',').slice(0, 3).map((skill, i) => (
-                                        <span key={i} className="text-xs bg-muted/50 text-muted-foreground px-2.5 py-1 rounded-md border border-border">
+                                        <span key={i} className="text-xs bg-muted text-muted-foreground px-2.5 py-1 rounded-md border border-border">
                                             {skill.trim()}
                                         </span>
                                     ))}
                                     {job.required_skills.split(',').length > 3 && (
-                                        <span className="text-xs text-slate-400 px-2 py-1">+more</span>
+                                        <span className="text-xs text-muted-foreground px-2 py-1">+more</span>
                                     )}
                                 </div>
                                 <div className="grid gap-2">
                                     <Button
                                         className={`w-full font-medium shadow-md transition-all ${
                                             job.is_applied 
-                                            ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200 cursor-default border border-emerald-200' 
-                                            : 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white shadow-indigo-500/20 hover:shadow-indigo-500/30'
+                                            ? 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-500/20 cursor-default border border-emerald-500/20' 
+                                            : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-indigo-500/20 hover:shadow-indigo-500/30'
                                         }`}
                                         onClick={() => !job.is_applied && handleApplyClick(job.id)}
                                         disabled={job.is_applied}
@@ -235,7 +235,7 @@ export default function CandidateJobsPage() {
                                     </Button>
                                     <Button
                                         variant="outline"
-                                        className="w-full bg-transparent border-input text-muted-foreground hover:text-primary hover:bg-primary/10 hover:border-primary/30 transition-all"
+                                        className="w-full bg-transparent border-input text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
                                         onClick={() => setViewJob(job)}
                                     >
                                         View Details
@@ -270,7 +270,7 @@ export default function CandidateJobsPage() {
                                 />
                             </div>
                             {error && (
-                                <p className="text-sm text-red-600 dark:text-red-400 font-medium bg-red-50 dark:bg-red-900/30 p-2 rounded border border-red-100 dark:border-red-900/50">{error}</p>
+                                <p className="text-sm text-red-600 font-medium bg-red-50 p-2 rounded border border-red-100 ">{error}</p>
                             )}
                         </div>
                         <DialogFooter>
@@ -303,9 +303,9 @@ export default function CandidateJobsPage() {
             <Dialog open={!!viewJob} onOpenChange={(open) => !open && setViewJob(null)}>
                 <DialogContent className="sm:max-w-2xl bg-card/95 backdrop-blur-xl border border-border text-foreground max-h-[90vh] overflow-y-auto shadow-2xl">
                     <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">{viewJob?.title}</DialogTitle>
+                        <DialogTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 ">{viewJob?.title}</DialogTitle>
                         <DialogDescription className="text-base mt-2 flex gap-2 items-center">
-                            <span className="bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 px-2 py-0.5 rounded text-xs border border-indigo-100 dark:border-indigo-800">
+                            <span className="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded text-xs border border-indigo-100 ">
                                 {viewJob?.experience_level.replace('_', ' ').toUpperCase()}
                             </span>
                             <span className="text-muted-foreground/50">•</span>

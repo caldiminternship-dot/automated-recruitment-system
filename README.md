@@ -1,4 +1,4 @@
-# HR Recruitment System - Complete Setup Guide
+# Automated Recruitment System - Complete Setup Guide
 
 An AI-powered, fully automated recruitment platform with intelligent interviews, resume screening, and data-driven hiring decisions.
 
@@ -180,10 +180,12 @@ Frontend: `http://localhost:3000`
 **Test Credentials** (created automatically by backend):
 
 Candidate:
+
 - Email: `candidate@example.com`
 - Password: `password123`
 
 HR Manager:
+
 - Email: `hr@company.com`
 - Password: `password123`
 
@@ -194,12 +196,14 @@ HR Manager:
 ### Frontend (`/app`)
 
 **Authentication & Layout:**
+
 - `/lib/auth-context.tsx` - Auth state management with useAuth hook
 - `/lib/api-client.ts` - Centralized API client with JWT handling
 - `/app/auth/login` - Login page
 - `/app/auth/register` - Registration page
 
 **Candidate Interface:**
+
 - `/app/dashboard/candidate` - Candidate dashboard
 - Browse jobs
 - Submit applications
@@ -207,6 +211,7 @@ HR Manager:
 - Take AI interviews
 
 **HR Interface:**
+
 - `/app/dashboard/hr` - HR dashboard
 - Create job postings
 - Review applications
@@ -253,21 +258,22 @@ HR Manager:
 
 **Core Tables:**
 
-| Table | Purpose |
-|-------|---------|
-| `users` | User accounts (candidates & HR) |
-| `jobs` | Job postings |
-| `applications` | Job applications |
-| `resume_extractions` | Parsed resume data |
-| `interviews` | Interview sessions |
-| `interview_questions` | AI-generated questions |
-| `interview_answers` | Candidate responses |
-| `interview_reports` | AI evaluation reports |
-| `hiring_decisions` | Final hiring decisions |
-| `notifications` | User notifications |
-| `activity_logs` | Audit trail |
+| Table                 | Purpose                         |
+| --------------------- | ------------------------------- |
+| `users`               | User accounts (candidates & HR) |
+| `jobs`                | Job postings                    |
+| `applications`        | Job applications                |
+| `resume_extractions`  | Parsed resume data              |
+| `interviews`          | Interview sessions              |
+| `interview_questions` | AI-generated questions          |
+| `interview_answers`   | Candidate responses             |
+| `interview_reports`   | AI evaluation reports           |
+| `hiring_decisions`    | Final hiring decisions          |
+| `notifications`       | User notifications              |
+| `activity_logs`       | Audit trail                     |
 
 **Key Constraints:**
+
 - Interview can only exist with approved application
 - Resume must be uploaded before interview
 - One application per candidate per job
@@ -278,6 +284,7 @@ HR Manager:
 ## API Endpoints Reference
 
 ### Authentication
+
 ```
 POST /api/auth/register          # Register user
 POST /api/auth/login             # Login & get token
@@ -285,6 +292,7 @@ GET  /api/auth/me                # Get current user
 ```
 
 ### Jobs
+
 ```
 POST /api/jobs                   # Create job (HR)
 GET  /api/jobs                   # List jobs
@@ -294,6 +302,7 @@ DELETE /api/jobs/{id}            # Close job (HR)
 ```
 
 ### Applications
+
 ```
 POST /api/applications/apply             # Apply for job
 GET  /api/applications/my-applications   # My applications
@@ -303,6 +312,7 @@ PUT  /api/applications/{id}/status       # Update status (HR)
 ```
 
 ### Interviews
+
 ```
 POST /api/interviews/start                    # Start interview
 GET  /api/interviews/{id}/current-question    # Get current question
@@ -313,6 +323,7 @@ GET  /api/interviews/{id}/report              # Get report (HR)
 ```
 
 ### Hiring Decisions
+
 ```
 PUT /api/decisions/applications/{id}/decide   # Make decision (HR)
 GET /api/decisions/applications/{id}/decision # Get decision
@@ -360,11 +371,13 @@ GET /api/decisions/pipeline                   # Hiring pipeline (HR)
 ## Environment Variables
 
 ### Frontend (`.env.local`)
+
 ```
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 ```
 
 ### Backend (`backend/.env`)
+
 ```
 # Database
 DATABASE_URL=postgresql+psycopg2://postgres:8765@localhost:5432/hr_system
@@ -429,6 +442,7 @@ Swagger UI provides interactive API testing with all endpoints.
 ### Debug Logging
 
 Enable in `backend/.env`:
+
 ```
 DEBUG=True
 ```
@@ -452,12 +466,14 @@ Backend will log all SQL queries and HTTP requests.
 ### Deployment Options:
 
 **Frontend (Vercel):**
+
 ```bash
 # Push to GitHub and connect to Vercel
 git push origin main
 ```
 
 **Backend (Railway, Heroku, AWS):**
+
 ```bash
 # Set environment variables in platform
 # Deploy Python FastAPI application
@@ -468,12 +484,14 @@ git push origin main
 ## Troubleshooting
 
 ### Database Connection Error
+
 ```
 Solution: Verify PostgreSQL is running and credentials are correct
 - psql -U postgres -h localhost -d hr_system -c "SELECT 1;"
 ```
 
 ### OpenAI API Key Error
+
 ```
 Solution: Set OPENAI_API_KEY in backend/.env
 - Verify key format: sk-...
@@ -481,6 +499,7 @@ Solution: Set OPENAI_API_KEY in backend/.env
 ```
 
 ### CORS Error in Frontend
+
 ```
 Solution: Update CORS settings in backend app/main.py
 - Add frontend URL to allowed_origins
@@ -488,6 +507,7 @@ Solution: Update CORS settings in backend app/main.py
 ```
 
 ### Auth Token Expired
+
 ```
 Solution: Login again to get new token
 - JWT expires after JWT_EXPIRATION_MINUTES (default 15 min)

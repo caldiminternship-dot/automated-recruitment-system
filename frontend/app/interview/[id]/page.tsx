@@ -239,7 +239,7 @@ export default function InterviewPage() {
             {/* Header */}
             <div className="bg-background/80 backdrop-blur-md shadow-sm border-b border-border px-8 py-4 flex justify-between items-center sticky top-0 z-10">
                 <div className="flex items-center gap-4">
-                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent">
+                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                         AI Interview Assistant
                     </h1>
                     {interviewData?.locked_skill && (
@@ -268,7 +268,7 @@ export default function InterviewPage() {
                     </div>
 
 
-                    <p className="text-xs font-bold text-blue-600 dark:text-blue-400 mb-3 uppercase tracking-widest flex items-center gap-2">
+                    <p className="text-xs font-bold text-blue-600 mb-3 uppercase tracking-widest flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
                         Current Question
                     </p>

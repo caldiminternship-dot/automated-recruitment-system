@@ -134,7 +134,7 @@ export default function HRJobsPage() {
             </div>
 
             {error && (
-                <div className="bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 p-4 rounded-lg mb-6 border border-red-200 dark:border-red-900">
+                <div className="bg-red-50 text-red-600 p-4 rounded-lg mb-6 border border-red-200 ">
                     {error}
                 </div>
             )}
@@ -168,7 +168,7 @@ export default function HRJobsPage() {
                                 <div>
                                     <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{job.title}</CardTitle>
                                     <CardDescription className="flex items-center gap-2 mt-1 text-muted-foreground">
-                                        <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${job.status === 'open' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 shadow-sm' : 'bg-muted text-muted-foreground'
+                                        <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${job.status === 'open' ? 'bg-green-100 text-green-700 shadow-sm' : 'bg-muted text-muted-foreground'
                                             }`}>
                                             {job.status.toUpperCase()}
                                         </span>
@@ -193,7 +193,7 @@ export default function HRJobsPage() {
                                             <Button
                                                 variant="outline"
                                                 size="sm"
-                                                className="text-amber-600 hover:text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-900/20 border-amber-200 dark:border-amber-800"
+                                                className="text-amber-600 hover:text-amber-700 hover:bg-amber-50 border-amber-200 "
                                                 onClick={() => handleClose(job.id)}
                                             >
                                                 Close
@@ -203,7 +203,7 @@ export default function HRJobsPage() {
                                     <Button
                                         variant="ghost"
                                         size="sm"
-                                        className="text-red-600 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-900/20 h-8"
+                                        className="text-red-600 hover:text-red-700 hover:bg-red-50 h-8"
                                         onClick={() => handleDelete(job.id)}
                                     >
                                         Delete

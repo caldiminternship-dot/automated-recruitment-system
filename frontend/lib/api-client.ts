@@ -63,7 +63,7 @@ export class APIClient {
       // Handle 401: Clear token and redirect to login
       if (response.status === 401 && typeof window !== 'undefined') {
         localStorage.removeItem('auth_token')
-        window.location.href = '/auth/login?expired=true'
+        window.location.href = '/'
       }
 
       const error = await response.json().catch(() => ({ detail: response.statusText }))

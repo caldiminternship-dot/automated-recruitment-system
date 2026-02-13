@@ -117,12 +117,12 @@ export function PipelineBoard() {
     return (
         <div className="flex h-full gap-6 overflow-x-auto pb-4 px-2">
             {STATUS_COLUMNS.map((column, colIndex) => (
-                <div key={column.id} style={{ animationDelay: `${colIndex * 150}ms` }} className="min-w-[320px] w-[320px] h-full max-h-full flex flex-col bg-slate-50/50 backdrop-blur-sm rounded-xl border border-slate-200/60 p-3 shadow-inner overflow-hidden animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                <div key={column.id} style={{ animationDelay: `${colIndex * 150}ms` }} className="min-w-[320px] w-[320px] h-full max-h-full flex flex-col bg-muted/30 backdrop-blur-sm rounded-xl border border-border/60 p-3 shadow-inner overflow-hidden animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                     <div className="flex items-center justify-between p-2 mb-3 shrink-0">
                         <div className="flex items-center gap-2">
-                            <h3 className="font-bold text-sm text-slate-700 uppercase tracking-wide">{column.label}</h3>
+                            <h3 className="font-bold text-sm text-muted-foreground uppercase tracking-wide">{column.label}</h3>
                         </div>
-                        <Badge variant="secondary" className="bg-white text-slate-600 shadow-sm border border-slate-100">
+                        <Badge variant="secondary" className="bg-background text-muted-foreground shadow-sm border border-border">
                             {getColumnApplications(column.id).length}
                         </Badge>
                     </div>
@@ -130,17 +130,17 @@ export function PipelineBoard() {
                     <ScrollArea className="flex-1 min-h-0 pr-2">
                         <div className="space-y-3 p-1">
                             {getColumnApplications(column.id).map((app, index) => (
-                                <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="cursor-pointer hover:shadow-lg transition-all duration-300 bg-white/80 hover:bg-white backdrop-blur-md border-white/50 group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
+                                <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="cursor-pointer hover:shadow-lg transition-all duration-300 bg-card/80 hover:bg-card backdrop-blur-md border-border/50 group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
                                     <CardHeader className="p-3 pb-1">
                                         <div className="flex items-center space-x-2.5">
-                                            <Avatar className="h-8 w-8 border-2 border-white shadow-sm shrink-0">
-                                                <AvatarFallback className="bg-gradient-to-br from-indigo-100 to-purple-100 text-indigo-700 font-bold text-xs">
+                                            <Avatar className="h-8 w-8 border-2 border-background shadow-sm shrink-0">
+                                                <AvatarFallback className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 text-primary font-bold text-xs">
                                                     {app.candidate.full_name?.charAt(0)}
                                                 </AvatarFallback>
                                             </Avatar>
                                             <div className="overflow-hidden min-w-0">
-                                                <CardTitle className="text-sm font-bold text-slate-800 truncate leading-tight">{app.candidate.full_name}</CardTitle>
-                                                <CardDescription className="text-[11px] truncate text-slate-500 font-medium leading-tight mt-0.5" title={app.job_title}>
+                                                <CardTitle className="text-sm font-bold text-foreground truncate leading-tight">{app.candidate.full_name}</CardTitle>
+                                                <CardDescription className="text-[11px] truncate text-muted-foreground font-medium leading-tight mt-0.5" title={app.job_title}>
                                                     {app.job_title}
                                                 </CardDescription>
                                             </div>
@@ -152,8 +152,8 @@ export function PipelineBoard() {
                                                 <Badge
                                                     variant="outline"
                                                     className={`text-[10px] px-1.5 py-0 h-5 border ${app.skill_match_percentage > 80
-                                                            ? "bg-green-50 text-green-700 border-green-200"
-                                                            : "bg-amber-50 text-amber-700 border-amber-200"
+                                                            ? "bg-green-500/10 text-green-700 dark:text-green-400 border-green-500/20"
+                                                            : "bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/20"
                                                         }`}
                                                 >
                                                     Match: {Math.round(app.skill_match_percentage)}%

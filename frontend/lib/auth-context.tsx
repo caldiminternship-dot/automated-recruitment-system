@@ -65,7 +65,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setToken(null)
         setUser(null)
         if (response.status === 401) {
-          window.location.href = '/auth/login?expired=true'
+          window.location.href = '/'
         }
       }
     } catch (error) {
