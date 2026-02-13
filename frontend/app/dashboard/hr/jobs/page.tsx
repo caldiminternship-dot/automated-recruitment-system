@@ -95,7 +95,7 @@ export default function HRJobsPage() {
             </div>
 
             {/* Filter Toolbar */}
-            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
+            <div className="bg-card/50 p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
                         <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -144,7 +144,7 @@ export default function HRJobsPage() {
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
                 </div>
             ) : filteredJobs.length === 0 ? (
-                <div className="text-center py-16 bg-card rounded-xl border border-border shadow-sm">
+                <div className="text-center py-16 bg-card/50 rounded-xl border border-border shadow-sm">
                     <div className="mb-4 text-muted-foreground">
                         <svg className="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -162,7 +162,7 @@ export default function HRJobsPage() {
                         <Card 
                             key={job.id} 
                             style={{ animationDelay: `${index * 150}ms` }}
-                            className="hover:shadow-lg transition-all duration-300 bg-card border-border backdrop-blur-sm group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both"
+                            className="hover:shadow-lg transition-all duration-300 bg-card/50 border-border backdrop-blur-sm group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both"
                         >
                             <CardHeader className="flex flex-row items-center justify-between pb-2">
                                 <div>

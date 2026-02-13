@@ -349,7 +349,7 @@ export default function ReportsPage() {
             {/* Header - Fixed at the top of the component */}
             <div className="flex-none flex justify-between items-center">
                 <div>
-                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 ">
+                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-sky-300 dark:to-indigo-300">
                         Interview Reports
                     </h1>
                     <p className="text-muted-foreground mt-1">

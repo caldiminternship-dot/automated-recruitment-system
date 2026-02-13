@@ -130,7 +130,7 @@ export default function CandidateJobsPage() {
         <div className="p-8 max-w-7xl mx-auto z-10 relative">
             
             {/* Filter Toolbar - Light Glassmorphism */} 
-            <div className="bg-card/80 backdrop-blur-md border border-border p-4 rounded-xl shadow-sm mb-8 flex flex-wrap gap-4 items-center justify-between transition-all hover:shadow-md">
+            <div className="bg-card/50 backdrop-blur-md border border-border p-4 rounded-xl shadow-sm mb-8 flex flex-wrap gap-4 items-center justify-between transition-all hover:shadow-md">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative group">
                         <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4 transition-colors group-focus-within:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -183,7 +183,7 @@ export default function CandidateJobsPage() {
                         <Card key={job.id} className={`group hover:-translate-y-1 transition-all duration-300 border backdrop-blur-md shadow-sm hover:shadow-xl ${
                             job.is_applied 
                             ? 'bg-muted/50 border-emerald-500/30 opacity-90' 
-                            : 'bg-card border-border hover:border-primary/30'
+                            : 'bg-card/50 border-border hover:border-primary/30'
                         }`}>
                             <CardHeader className="pb-3">
                                 <div className="flex justify-between items-start gap-4">

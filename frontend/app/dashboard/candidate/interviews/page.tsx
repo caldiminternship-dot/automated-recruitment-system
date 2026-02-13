@@ -69,7 +69,7 @@ export default function CandidateInterviewsPage() {
             <p className="text-muted-foreground mb-8">Manage and review your AI interviews.</p>
 
             {/* Filter Toolbar */}
-            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
+            <div className="bg-card/50 p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
                         <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,14 +114,14 @@ export default function CandidateInterviewsPage() {
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
                 </div>
             ) : filteredInterviews.length === 0 ? (
-                <div className="text-center py-16 bg-card rounded-xl border border-border">
+                <div className="text-center py-16 bg-card/50 rounded-xl border border-border">
                     <h3 className="text-lg font-medium text-foreground mb-2">No interviews found</h3>
                     <p className="text-muted-foreground mb-6">Your scheduled or completed interviews will appear here.</p>
                 </div>
             ) : (
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     {filteredInterviews.map((interview, index) => (
-                        <Card key={interview.id} style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-card border-border backdrop-blur-sm group animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                        <Card key={interview.id} style={{ animationDelay: `${index * 100}ms` }} className="hover:shadow-lg transition-all duration-300 bg-card/50 border-border backdrop-blur-sm group animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader className="flex flex-row items-center justify-between pb-2">
                                 <div>
                                     <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">{interview.job_title}</CardTitle>

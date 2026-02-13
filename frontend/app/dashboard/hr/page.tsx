@@ -89,7 +89,7 @@ export default function HRDashboard() {
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-400 dark:to-indigo-400">
+          <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-sky-300 dark:to-indigo-300">
             Recruitment Dashboard
           </h1>
           <p className="text-muted-foreground mt-2">Overview of your hiring pipeline and activities</p>
@@ -147,7 +147,7 @@ export default function HRDashboard() {
 
         {/* Chart Section */}
         <div className="lg:col-span-2 animate-in zoom-in-95 fade-in duration-1000 ease-out delay-300 fill-mode-both">
-          <Card className="h-full shadow-lg border-border backdrop-blur-md bg-card/70">
+          <Card className="h-full shadow-lg border-border backdrop-blur-md bg-card/50">
             <CardHeader>
               <div className="flex items-center justify-between">
                 <div>
@@ -164,23 +164,23 @@ export default function HRDashboard() {
                 {chartData.length > 0 ? (
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
                       <XAxis
                         dataKey="name"
-                        stroke="hsl(var(--muted-foreground))"
+                        stroke="var(--foreground)"
                         fontSize={12}
                         tickLine={false}
                         axisLine={false}
                       />
                       <YAxis
-                        stroke="hsl(var(--muted-foreground))"
+                        stroke="var(--foreground)"
                         fontSize={12}
                         tickLine={false}
                         axisLine={false}
                       />
                       <Tooltip
-                        cursor={{ fill: 'hsla(var(--primary), 0.1)' }}
-                        contentStyle={{ borderRadius: '12px', border: '1px solid hsl(var(--border))', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', backgroundColor: 'hsl(var(--card))', color: 'hsl(var(--foreground))' }}
+                        cursor={{ fill: 'transparent' }}
+                        contentStyle={{ borderRadius: '12px', border: '1px solid var(--border)', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', backgroundColor: 'var(--card)', color: 'var(--foreground)' }}
                       />
                       <Bar dataKey="value" radius={[6, 6, 0, 0]} barSize={40} activeBar={false}>
                         {chartData.map((entry, index) => (
@@ -202,7 +202,7 @@ export default function HRDashboard() {
 
         {/* Recent Activity / Quick Actions */}
         <div className="space-y-6 animate-in slide-in-from-right-12 fade-in duration-1000 ease-out delay-500 fill-mode-both">
-          <Card className="shadow-lg border-border backdrop-blur-md bg-card/70">
+          <Card className="shadow-lg border-border backdrop-blur-md bg-card/50">
             <CardHeader>
               <CardTitle className="text-foreground">Quick Actions</CardTitle>
             </CardHeader>
@@ -297,7 +297,7 @@ export default function HRDashboard() {
 
 function StatsCard({ title, value, icon: Icon, color, bg }: any) {
   return (
-    <Card className="shadow-sm hover:shadow-lg transition-all duration-300 border-border backdrop-blur-md bg-card/70 group hover:-translate-y-1">
+    <Card className="shadow-sm hover:shadow-lg transition-all duration-300 border-border backdrop-blur-md bg-card/50 group hover:-translate-y-1">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
           {title}

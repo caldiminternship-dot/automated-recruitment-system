@@ -90,7 +90,7 @@ export default function CandidateApplicationsPage() {
             <p className="text-muted-foreground mb-8">Track your status and take interviews.</p>
 
             {/* Filter Toolbar */}
-            <div className="bg-card p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
+            <div className="bg-card/50 p-4 rounded-lg border border-border shadow-sm mb-6 flex flex-wrap gap-4 items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700 ease-out">
                 <div className="flex-1 min-w-[200px]">
                     <div className="relative">
                         <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@ export default function CandidateApplicationsPage() {
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
                 </div>
             ) : filteredApplications.length === 0 ? (
-                <div className="text-center py-16 bg-card rounded-xl border border-border">
+                <div className="text-center py-16 bg-card/50 rounded-xl border border-border">
                     <h3 className="text-lg font-medium text-foreground mb-2">No applications match your filtering criteria</h3>
                     <p className="text-muted-foreground mb-6">Start applying for jobs to see them here.</p>
                     <Link href="/dashboard/candidate/jobs">
@@ -146,7 +146,7 @@ export default function CandidateApplicationsPage() {
             ) : (
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     {filteredApplications.map((app, index) => (
-                        <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="bg-card border-border hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
+                        <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="bg-card/50 border-border hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-both">
                             <CardHeader>
                                 <CardTitle>{app.job.title}</CardTitle>
                                 <CardDescription>Applied on {new Date(app.applied_at).toLocaleDateString()}</CardDescription>

@@ -48,7 +48,8 @@ export default function LoginPage() {
           
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-               <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
+               <img src="/logo.png" alt="Logo" className="h-12 w-auto dark:hidden" />
+               <img src="/logo-dark.png" alt="Logo" className="h-12 w-auto hidden dark:block" />
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
             <p className="text-muted-foreground">Sign in to access your dashboard</p>

@@ -130,7 +130,7 @@ export function PipelineBoard() {
                     <ScrollArea className="flex-1 min-h-0 pr-2">
                         <div className="space-y-3 p-1">
                             {getColumnApplications(column.id).map((app, index) => (
-                                <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="cursor-pointer hover:shadow-lg transition-all duration-300 bg-card/80 hover:bg-card backdrop-blur-md border-border/50 group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
+                                <Card key={app.id} style={{ animationDelay: `${index * 100}ms` }} className="cursor-pointer hover:shadow-lg transition-all duration-300 bg-card/50 hover:bg-card backdrop-blur-md border-border/50 group hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
                                     <CardHeader className="p-3 pb-1">
                                         <div className="flex items-center space-x-2.5">
                                             <Avatar className="h-8 w-8 border-2 border-background shadow-sm shrink-0">

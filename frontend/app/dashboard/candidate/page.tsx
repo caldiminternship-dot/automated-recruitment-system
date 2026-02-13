@@ -38,7 +38,7 @@ export default function CandidateDashboard() {
     <div className="p-8">
       <div className="grid md:grid-cols-3 gap-6 mb-8">
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-0 fill-mode-both">
-            <Card className="bg-card backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
+            <Card className="bg-card/50 backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
             <CardHeader className="pb-2">
                 <CardTitle className="text-foreground font-bold group-hover:text-primary transition-colors flex justify-between items-center">
                     Applications
@@ -59,7 +59,7 @@ export default function CandidateDashboard() {
         </div>
 
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-100 fill-mode-both">
-            <Card className="bg-card backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
+            <Card className="bg-card/50 backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
             <CardHeader className="pb-2">
                 <CardTitle className="text-foreground font-bold group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors flex justify-between items-center">
                     Interviews
@@ -80,7 +80,7 @@ export default function CandidateDashboard() {
         </div>
 
         <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-200 fill-mode-both">
-            <Card className="bg-card backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
+            <Card className="bg-card/50 backdrop-blur-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
             <CardHeader className="pb-2">
                 <CardTitle className="text-foreground font-bold group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors flex justify-between items-center">
                     Opportunities
@@ -101,7 +101,7 @@ export default function CandidateDashboard() {
         </div>
       </div>
 
-      <Card className="bg-card backdrop-blur-xl border border-border shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden animate-in zoom-in-95 fade-in duration-1000 ease-out delay-300 fill-mode-both">
+      <Card className="bg-card/50 backdrop-blur-xl border border-border shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden animate-in zoom-in-95 fade-in duration-1000 ease-out delay-300 fill-mode-both">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-foreground">
              <span className="p-2 bg-muted text-primary rounded-lg shadow-sm">🚀</span> 

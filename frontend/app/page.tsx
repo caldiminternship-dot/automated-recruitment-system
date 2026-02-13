@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2, ChevronRight, PlayCircle, Star, Users, Zap } from 'lucide-react'
-import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { ToggleTheme } from '@/components/lightswind/toggle-theme'
 import { DarkModeParticles } from '@/components/dark-mode-particles'
 
 export default function Home() {
@@ -45,14 +45,15 @@ export default function Home() {
       <nav className="fixed w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Caldim.ai Logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="Caldim.ai Logo" className="h-10 w-auto dark:hidden" />
+            <img src="/logo-dark.png" alt="Caldim.ai Logo" className="h-10 w-auto hidden dark:block" />
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
               Caldim<span className="font-light text-slate-500 dark:text-slate-400">.ai</span>
             </span>
           </div>
           
           <div className="flex gap-4 items-center">
-            <ThemeToggle />
+            <ToggleTheme animationType="swipe-down" />
             {!isAuthenticated ? (
               <>
                 <Link href="/auth/login">
@@ -132,17 +133,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={<Zap className="h-8 w-8 text-amber-500" />}
+              icon={<Zap className="h-8 w-8 text-amber-500 dark:text-amber-400" />}
               title="AI Interviews"
               desc="Adaptive conversational AI that interviews candidates in real-time, asking follow-up questions tailored to their expertise."
             />
             <FeatureCard 
-              icon={<CheckCircle2 className="h-8 w-8 text-emerald-500" />}
+              icon={<CheckCircle2 className="h-8 w-8 text-emerald-500 dark:text-emerald-400" />}
               title="Smart Screening"
               desc="Automatically parse resumes and match skills against job descriptions accurately."
             />
             <FeatureCard 
-              icon={<Users className="h-8 w-8 text-indigo-500" />}
+              icon={<Users className="h-8 w-8 text-indigo-500 dark:text-indigo-400" />}
               title="Unbiased Scoring"
               desc="Data-driven evaluation reports that highlight technical strengths and soft skills without human bias."
             />
@@ -158,7 +159,7 @@ export default function Home() {
             {/* Candidate Card */}
             <div className="group relative bg-card/5 backdrop-blur-md rounded-3xl p-10 shadow-lg border border-white/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Users className="h-40 w-40 text-indigo-600" />
+                <Users className="h-40 w-40 text-indigo-600 dark:text-indigo-400" />
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-6">For Candidates</h3>
               <ul className="space-y-4 mb-8">
@@ -168,7 +169,7 @@ export default function Home() {
                 <ListItem text="Track real-time status" />
               </ul>
               <Link href="/auth/register?role=candidate">
-                 <Button variant="link" className="text-indigo-600 hover:text-indigo-800 p-0 text-lg font-semibold">
+                 <Button variant="link" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 p-0 text-lg font-semibold">
                    Join as Talent &rarr;
                  </Button>
               </Link>
@@ -178,12 +179,12 @@ export default function Home() {
             <div className="group relative bg-card/5 backdrop-blur-md rounded-3xl p-10 shadow-xl overflow-hidden hover:-translate-y-1 transition-all duration-300 border border-white/10">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-white mb-6">For HR Teams</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-6">For HR Teams</h3>
                 <ul className="space-y-4 mb-8">
-                  <ListItem text="Post jobs in seconds" dark={true} />
-                  <ListItem text="Automate initial screening" dark={true} />
-                  <ListItem text="View detailed candidate analytics" dark={true} />
-                  <ListItem text="Reduce time-to-hire by 50%" dark={true} />
+                  <ListItem text="Post jobs in seconds" />
+                  <ListItem text="Automate initial screening" />
+                  <ListItem text="View detailed candidate analytics" />
+                  <ListItem text="Reduce time-to-hire by 50%" />
                 </ul>
                 <Link href="/auth/login?role=hr">
                   <Button className="bg-foreground text-background hover:bg-muted rounded-full px-8 py-6 text-lg font-bold">
@@ -201,7 +202,8 @@ export default function Home() {
       <footer className="border-t border-white/10 py-12 relative z-10 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Caldim.ai Logo" className="h-8 w-auto" />
+            <img src="/logo.png" alt="Caldim.ai Logo" className="h-8 w-auto dark:hidden" />
+            <img src="/logo-dark.png" alt="Caldim.ai Logo" className="h-8 w-auto hidden dark:block" />
             <span className="text-lg font-bold text-foreground">Caldim.ai</span>
           </div>
           <p className="text-muted-foreground text-sm">

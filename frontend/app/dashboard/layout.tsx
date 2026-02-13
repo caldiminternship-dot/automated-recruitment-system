@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { SidebarProvider, SidebarTrigger } from '@/components/animate-ui/components/radix/sidebar'
 import { AppSidebar } from '@/components/app-sidebar'
 import { UserNav } from '@/components/user-nav'
-import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { ToggleTheme } from '@/components/lightswind/toggle-theme'
 import { DarkModeParticles } from '@/components/dark-mode-particles'
 
 export default function DashboardLayout({
@@ -51,15 +51,16 @@ export default function DashboardLayout({
         <div className="flex-1 flex flex-col min-h-screen relative z-10 transition-all duration-300">
           <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b border-border px-6 bg-background/60 backdrop-blur-md sticky top-0 z-20 shadow-sm transition-colors duration-300">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
-              <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">
+              <img src="/logo.png" alt="Logo" className="h-8 w-auto dark:hidden" />
+              <img src="/logo-dark.png" alt="Logo" className="h-8 w-auto hidden dark:block" />
+              <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-300 dark:to-violet-300">
                 Caldim Recruitment Portal
               </h1>
             </div>
 
 
             <div className="flex items-center gap-4">
-              <ThemeToggle />
+              <ToggleTheme animationType="circle-spread" />
               <UserNav />
             </div>
           </header>
@@ -67,6 +68,7 @@ export default function DashboardLayout({
             {children}
           </div>
         </div>
+        
       </div>
     </SidebarProvider>
   )
